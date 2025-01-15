@@ -1,2 +1,2 @@
-# CatMan_Dev @BrianKalbermatter [CatMan](Url)
+# @BrianKalbermatter - [CatMan](Url)
 ## My works
