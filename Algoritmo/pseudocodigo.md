@@ -1,4 +1,4 @@
-# ![https://github.com/BrianKalbermatter](Iconopunio.jpg) {Algoritmos y Estructura de Datos}
+# ![https://BrianKalbermatter.com](Iconopunio.jpg) {Algoritmos y Estructura de Datos}
 
 ## Clonar el Repositorio
 ```bash
