@@ -1,84 +1,136 @@
-Notas importantes:
-    Fijarse siempre que es lo que conoce el usuario y lo que le estas mostrando.
-###########################################################################################################################################################################
-Estructura del pseudocodigo: 
+# ![https://github.com/BrianKalbermatter](Iconopunio.jpg) {Algoritmos y Estructura de Datos}
 
-Accion ejercicioCinco es 
-    Ambiente
-        ALFA, BETA: Real;
-        JOTA, I, L: Entero;
-    Proceso
-        ALFA := 2.5; 
-        JOTA := 2;
-        I := 2 * JOTA;
-        L := JOTA * I;
-        ALFA := ALFA + BETA;
+## Clonar el Repositorio
+```bash
+git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
+```
 
+## Notas importantes:
+    Son solo pseudocodigos personales para la Facultad! Especiales solo para una materia.
+    
+    IVA: 0.25
+    IVA mas: 1.25
+
+![DOC Personal](internal_documentation_guide-1200x684.jpg)
+# [DOC Personal]
+
+    ACCION [Nombre_de_la_Accion] ES
+        AMBIENTES:
+            [Datos/ Definidar/ Inicializar -> Constantes o Variables]
+        PROCESO
+            [Acciones: Proceso de ejecucion]
+    FIN ACCION    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Palabras Reservadas    
+
+## Estructura del pseudocodigo: 
+``` bash
+ACCION ejercicioCinco ES 
+    AMBIENTE:
+        ALFA, BETA: Real
+        JOTA, I, L: Entero
+    PROCESO
+        ALFA := 2.5 
+        JOTA := 2
+        I := 2 * JOTA
+        L := JOTA * I
+        ALFA := ALFA + BETA
+        ESCRIBIR('Estas son las variables que tenes que colocarle sus valores: ');
         ESCRIBIR('El valor de "I" es =', I);
         ESCRIBIR('El valor de "L" es =', L);
+        ESCRIBIR('El valor de Beta es=', BETA);
         ESCRIBIR('El valor de "ALFA" y "BETA" es =', ALFA);
-    Fin Proceso
-Fin Accion
-###########################################################################################################################################################################
+FIN ACCION
+```
 
-###########################################################################################################################################################################
-//Consigna del problema:
-//Se desea calcular la superficie de un trapecio, para la cual se ingresa la longitud de ambas bases y la altura. En base a la fórmula:
-//S=(Bmay+Bmen) × h sobre 2
+## Consigna del problema:
+**Se desea calcular la superficie de un trapecio, para la cual se ingresa la longitud de ambas bases y la altura. En base a la fórmula:
+S = (Bmay + Bmen) × h sobre 2
+Finalizando el proceso, emitir dicha superficie y los valores ingresados.**
+```bash
+    ACCION ejercicio_1.1.5.4 ES
+        AMBIENTE:
+            base_mayor:Real
+            base_menor:Real
+            altura:Real
+            superficie_trapecio:Real
+        PROCESO
+            ESCRIBIR('Base Mayor: ');
+            LEER(base_mayor);
 
-Finalizando el proceso, emitir dicha superficie y los valores ingresados.
-Accion ejercicio_1.1.5.4 es
-    Ambiente
-        base_mayor:Entero
-        base_menor:Entero
-        altura:Entero
-        superficie_trapecio:Real
-    Proceso
-        Esc('Base Mayor: '); Leer(base_mayor);
+            ESCRIBIR('Base Menor: '); 
+            LEER(base_menor);
 
-        Esc('Base Menor: '); Leer(base_menor);
-        
-        Esc('Altura: '); Leer(altura);
-        
-        superficie_trapecio:= (base_mayor + base_menor) * altura / 2
-        Esc('La superficie es igual a: ', superficie_trapecio)
-    Fin Proceso
-Fin Accion
-###########################################################################################################################################################################
+            ESCRIBIR('Altura: '); 
+            LEER(altura);
 
-###########################################################################################################################################################################
-//Consigna 1.1.5.5
-//Se desea calcular el valor de la sección (S) de un conductor, la cual se determina en función de la corriente eléctrica I y de la conductividad C del material (C=I/S). Además, a la sección así obtenida se le incrementa un 25% por razones de seguridad.
-
-Accion actividad_Dos es
-    Ambiente
-        s:Real
-        i:Real
-        //Comentario: c=i/s
-    Proceso
-        ESCRIBIR('El valor de la sección (S) de un conductor es: ')
-        LEER(s)
-        
-        ESCRIBIR('El valor de la corriente electrica I es: ')
-        LEER(i)
-
-        //Comentario: Incremento del 25%
-        c := i/s
-        resultado := c + (c * 25/100)
-        ESCRIBIR('Mas el 25% es: ', resultado)
-    Fin Proceso
-Fin Accion
-##############################################################################################################################################################################################
-//Ejercicio 1.1.5.3
-
-//Se desea comprar una PC y una impresora. Calcular el precio total: el cual está dado por la suma de los precios de costos, los porcentajes de ganancia del vendedor y un 21% de IVA. Supóngase una ganancia del vendedor del 12% por la PC y 7% por la impresora. Se leen los costos y se imprimen el precio total de ventas.
-
-Accion PcAndImpresoras es
-    Ambiente 
-        
+            superficie_trapecio:= (base_mayor + base_menor) * altura / 2
+            ESCRIBIR('La superficie es igual a: ', superficie_trapecio)
+    FIN ACCION
+```
 
 
+## Consigna 1.1.5.5
 
+**Se desea calcular el valor de la sección (S) de un conductor, la cual se determina en función de la corriente eléctrica I y de la conductividad C del material (C=I/S). Además, a la sección así obtenida se le incrementa un 25% por razones de seguridad.**
+
+```bash
+    ACCION actividad_Dos ES
+        AMBIENTE:
+            s:Real
+            i:Real
+            //COMENTARIO: c=i/s
+        PROCESO
+            ESCRIBIR('El valor de la sección (S) de un conductor es: ');
+            LEER(s);
+
+            ESCRIBIR('El valor de la corriente electrica I es: ');
+            LEER(i);
+
+            //COMENTARIO: Incremento del 25%
+            c := i/s
+            resultado := c + (c * 25/100)
+            ESCRIBIR('Mas el 25% es: ', resultado);
+    FIN ACCION
+```
+## Consigna 1.1.5.3
+
+**Se desea comprar una PC y una impresora. Calcular el precio total: el cual está dado por la suma de los precios de costos, los porcentajes de ganancia del vendedor y un 21% de IVA. Supóngase una ganancia del vendedor del 12% por la PC y 7% por la impresora. Se leen los costos y se imprimen el precio total de ventas.**
+```bash
+    ACCION PcAndImpresoras ES
+        AMBIENTE:
+```
 
 
 
@@ -108,7 +160,10 @@ Accion PcAndImpresoras es
 
 
 
-##############################################################################################################################################################################################
+
+
+
+####
 //Ejercicio 1.1.5.6
 // Realizar un programa que lea dos número complejos, (a,b) y (c,d), y calcule su producto:(a,b)∗(c,d)=(ac−db,ad+ bc)
 
@@ -139,7 +194,7 @@ Accion PcAndImpresoras es
 
 
 
-##############################################################################################################################################################################################
+####
 // Escriba un algoritmo que halle la media geométrica de tres valores X, Y, Z. Este debe emitir los tres valores por separado y luego el valor medio. La media geométrica es igual a (X×Y×Z)/3
 
 
@@ -169,9 +224,9 @@ Accion PcAndImpresoras es
 
 
 # Estructuras Secuenciales
-##############################################################################################################################################################################################
-
-// Ejercicio 1.1.5.1
+####
+## Ejercicio 1.1.5.1
+- **Consigna:**
 // Escribir un programa que permita calcular el precio de un artículo para un año dado, considerando que la inflación es del 4 por 100 anual.
 
 // La fórmula del precio es: P = C * (1 + R) ^ (N - A)
@@ -180,6 +235,7 @@ Accion PcAndImpresoras es
 // N - Año futuro.
 // R - Tasa de Inflación.
 // A - Año actual.
+```bash
 
 
 
@@ -203,10 +259,12 @@ Accion PcAndImpresoras es
 
 
 
+####
+## Ejercicio 1.1.5.2
+- **Consigna:**
+**Las raíces de una ecuación de segundo grado ax2+bx+c=0 son reales si y sólo si el discriminante dado por (b2−4ac) no es negativo. Se desea leer el valor de los coeficientes a, b, c e imprimir el resultado del discriminante. Realizar prueba de escritorio.**
+```bash
 
-##############################################################################################################################################################################################
-//Ejercicio 1.1.5.2
-// Las raíces de una ecuación de segundo grado ax2+bx+c=0 son reales si y sólo si el discriminante dado por (b2−4ac) no es negativo. Se desea leer el valor de los coeficientes a, b, c e imprimir el resultado del discriminante. Realizar prueba de escritorio.
 
 
 
@@ -226,11 +284,13 @@ Accion PcAndImpresoras es
 
 
 
+####
+## Ejercicio 1.1.6
+- **Consigna:**
+**// Escriba un algoritmo que permita ingresar 3 valores numéricos y determine cuál es el mayor, el medio y el menor. (era el 3 de los complementarios)**
+```bash
 
 
-##############################################################################################################################################################################################
-//Ejercicio 1.1.6
-// Escriba un algoritmo que permita ingresar 3 valores numéricos y determine cuál es el mayor, el medio y el menor. (era el 3 de los complementarios)
 
 
 
@@ -255,11 +315,7 @@ Accion PcAndImpresoras es
 
 
 
-
-
-##############################################################################################################################################################################################
-
-##############################################################################################################################################################################################
+####
 // Ejercicio 1.1.7
 // Escriba un algoritmo que acepte dos números, calcule la suma e imprima el mensaje de acuerdo al resultado obtenido.
 
