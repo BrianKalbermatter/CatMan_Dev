@@ -1,4 +1,4 @@
-# ![https://BrianKalbermatter.com](Iconopunio.jpg) {Algoritmos y Estructura de Datos}
+# ![https://github.com/BrianKalbermatter](Iconopunio.jpg) {Algoritmos y Estructura de Datos}
 
 ## Clonar el Repositorio
 ```bash
@@ -13,48 +13,8 @@ git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
 
 ![DOC Personal](internal_documentation_guide-1200x684.jpg)
 # [DOC Personal]
-
-    ACCION [Nombre_de_la_Accion] ES
-        AMBIENTES:
-            [Datos/ Definidar/ Inicializar -> Constantes o Variables]
-        PROCESO
-            [Acciones: Proceso de ejecucion]
-    FIN ACCION    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Palabras Reservadas    
-
 ## Estructura del pseudocodigo: 
+
 ``` bash
 ACCION ejercicioCinco ES 
     AMBIENTE:
@@ -74,10 +34,57 @@ ACCION ejercicioCinco ES
 FIN ACCION
 ```
 
+    ACCION [Nombre_de_la_Accion] ES
+        AMBIENTES:
+            [Datos/ Definidar/ Inicializar -> Constantes o Variables]
+        PROCESO
+            [Acciones: Proceso de ejecucion]
+    FIN ACCION    
+## Palabras Reservadas    
+    VARIABLES -> :
+    CONSTANTES -> =
+    ASIGNACION -> :=
+    ABSO
+    BOOLEANO
+    NUMERICO -> ENTERO, REAL N(10)
+    ALFANUMERICO -> CARACTER -> AN(20)
+    CONSTANTES
+    VARIABLES
+    REDOND
+    TRUNC
+    ESCRIBIR
+    LEER
+    ASIGNAR
+    CARACTER
+    ACCION -> SERIA EL TODO DE UN ALGORITMO
+    FUNCION -> SUBACCION 
+    MODULO -> PROCESO
+    ESCRIBIR -> IMPRIMIR ALGO POR PANTALLA
+    LEER -> TOMAR UN OBJETO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Consigna del problema:
-**Se desea calcular la superficie de un trapecio, para la cual se ingresa la longitud de ambas bases y la altura. En base a la fórmula:
-S = (Bmay + Bmen) × h sobre 2
-Finalizando el proceso, emitir dicha superficie y los valores ingresados.**
+
+**Se desea calcular la superficie de un trapecio, para la cual se ingresa la longitud de ambas bases y la altura. En base a la fórmula: S = (Bmay + Bmen) × h sobre 2. Finalizando el proceso, emitir dicha superficie y los valores ingresados.**
+
 ```bash
     ACCION ejercicio_1.1.5.4 ES
         AMBIENTE:
@@ -96,9 +103,21 @@ Finalizando el proceso, emitir dicha superficie y los valores ingresados.**
             LEER(altura);
 
             superficie_trapecio:= (base_mayor + base_menor) * altura / 2
-            ESCRIBIR('La superficie es igual a: ', superficie_trapecio)
+            ESCRIBIR('La superficie es igual a: ', superficie_trapecio);
     FIN ACCION
 ```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Consigna 1.1.5.5
@@ -124,6 +143,22 @@ Finalizando el proceso, emitir dicha superficie y los valores ingresados.**
             ESCRIBIR('Mas el 25% es: ', resultado);
     FIN ACCION
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Consigna 1.1.5.3
 
 **Se desea comprar una PC y una impresora. Calcular el precio total: el cual está dado por la suma de los precios de costos, los porcentajes de ganancia del vendedor y un 21% de IVA. Supóngase una ganancia del vendedor del 12% por la PC y 7% por la impresora. Se leen los costos y se imprimen el precio total de ventas.**
@@ -163,9 +198,10 @@ Finalizando el proceso, emitir dicha superficie y los valores ingresados.**
 
 
 
-####
-//Ejercicio 1.1.5.6
-// Realizar un programa que lea dos número complejos, (a,b) y (c,d), y calcule su producto:(a,b)∗(c,d)=(ac−db,ad+ bc)
+
+## Consigna 1.1.5.6
+
+**Realizar un programa que lea dos número complejos, (a,b) y (c,d), y calcule su producto:(a,b)∗(c,d)=(ac−db,ad+ bc)**
 
 
 
@@ -193,8 +229,8 @@ Finalizando el proceso, emitir dicha superficie y los valores ingresados.**
 
 
 
+## Consigna
 
-####
 // Escriba un algoritmo que halle la media geométrica de tres valores X, Y, Z. Este debe emitir los tres valores por separado y luego el valor medio. La media geométrica es igual a (X×Y×Z)/3
 
 
@@ -224,10 +260,9 @@ Finalizando el proceso, emitir dicha superficie y los valores ingresados.**
 
 
 # Estructuras Secuenciales
-####
-## Ejercicio 1.1.5.1
-- **Consigna:**
-// Escribir un programa que permita calcular el precio de un artículo para un año dado, considerando que la inflación es del 4 por 100 anual.
+## Consigna 1.1.5.1
+
+**Escribir un programa que permita calcular el precio de un artículo para un año dado, considerando que la inflación es del 4 por 100 anual.**
 
 // La fórmula del precio es: P = C * (1 + R) ^ (N - A)
 
