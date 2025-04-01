@@ -105,8 +105,7 @@ FIN ACCION
     FIN ACCION
 ```
 
-## Ejercicio 1.1.5.2
-- **Consigna:**
+## - Consigna 1.1.5.2
 **Las raíces de una ecuación de segundo grado ax2+bx+c=0 son reales si y sólo si el discriminante dado por (b2−4ac) no es negativo. Se desea leer el valor de los coeficientes a, b, c e imprimir el resultado del discriminante. Realizar prueba de escritorio.**
 ```bash
     ACCION ecuacion_segundo_grado ES
@@ -127,7 +126,7 @@ FIN ACCION
     FIN ACCION
 ```
 
-## Consigna 1.1.5.3
+## - Consigna 1.1.5.3
 
 **Se desea comprar una PC y una impresora. Calcular el precio total: el cual está dado por la suma de los precios de costos, los porcentajes de ganancia del vendedor y un 21% de IVA. Supóngase una ganancia del vendedor del 12% por la PC y 7% por la impresora. Se leen los costos y se imprimen el precio total de ventas.**
 ```bash
@@ -159,7 +158,7 @@ FIN ACCION
     FIN ACCION
 ```
 
-## Consigna 1.1.5.4:
+## - Consigna 1.1.5.4:
 
 **Se desea calcular la superficie de un trapecio, para la cual se ingresa la longitud de ambas bases y la altura. En base a la fórmula: S = (Bmay + Bmen) × h sobre 2. Finalizando el proceso, emitir dicha superficie y los valores ingresados.**
 
@@ -185,7 +184,7 @@ FIN ACCION
     FIN ACCION
 ```
 
-## Consigna 1.1.5.5
+## - Consigna 1.1.5.5
 
 **Se desea calcular el valor de la sección (S) de un conductor, la cual se determina en función de la corriente eléctrica I y de la conductividad C del material (C=I/S). Además, a la sección así obtenida se le incrementa un 25% por razones de seguridad.**
 
@@ -209,7 +208,7 @@ FIN ACCION
     FIN ACCION
 ```
 
-## Consigna 1.1.5.6
+## - Consigna 1.1.5.6
 
 **Realizar un programa que lea dos número complejos, (a,b) y (c,d), y calcule su producto:(a,b)∗(c,d)=(ac−db,ad+ bc)**
 
