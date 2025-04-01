@@ -1,4 +1,7 @@
 # ![https://github.com/BrianKalbermatter](Iconopunio.jpg) {Algoritmos y Estructura de Datos}
+INDICE
+[![Estructura del pseudocodigo]]()
+
 
 ## Clonar el Repositorio
 ```bash
@@ -57,11 +60,28 @@ FIN ACCION
     ACCION -> SERIA EL TODO DE UN ALGORITMO
     FUNCION -> SUBACCION 
     MODULO -> PROCESO
-    ESCRIBIR -> IMPRIMIR ALGO POR PANTALLA
-    LEER -> TOMAR UN OBJETO
+    ESCRIBIR -> ("IMPRIMIR ALGO POR PANTALLA")
+    LEER -> (TOMAR UN OBJETO)
+
+## - Consigna 1.1.6
+**Escriba un algoritmo que permita ingresar 3 valores numéricos y determine cuál es el mayor, el medio y el menor. (era el 3 de los complementarios)**
+```bash
+```
+
+## - Consigna 1.1.7
+**Escriba un algoritmo que acepte dos números, calcule la suma e imprima el mensaje de acuerdo al resultado obtenido.**
+
+**Suma <= 50**
+**Suma > 50 y <= 100**
+**Suma > 100 y <= 200**
+**Suma > 200**
+```bash
+
+```
+
 
 # Estructuras Secuenciales
-## Consigna 1.1.5.1
+## - Consigna 1.1.5.1
 
 **Escribir un programa que permita calcular el precio de un artículo para un año dado, considerando que la inflación es del 4 por 100 anual. La fórmula del precio es: P = C * (1 + R) ^ (N - A). C - Precio actual. N - Año futuro. R - Tasa de Inflación. A - Año actual.**
 ```bash
@@ -72,16 +92,16 @@ FIN ACCION
             año_futuro: Entero
             año_actual: Entero
         PROCESO
-            ESCRIBIR"Coloque el precio actual de su artículo, porfavor: ";
+            ESCRIBIR("Coloque el precio actual de su artículo, porfavor: ");
             LEER(precio_actual);
 
-            ESCRIBIR"Coloque el año actual y luego el año futuro: ";
-            ESCRIBIR"Año Actual: ";
+            ESCRIBIR("Coloque el año actual y luego el año futuro: ");
+            ESCRIBIR("Año Actual: ");
             LEER(año_actual);
-            ESCRIBIR"Año Futuro: ";
+            ESCRIBIR("Año Futuro: ");
             LEER(año_futuro);
             result := precio_actual * (1 + tasa_de_inflacion) ** (año_futuro - año_actual)
-            ESCRIBIR"Resultado con el calculo final del articulo agregando la tasa de inflacion:", result;
+            ESCRIBIR("Resultado con el calculo final del articulo agregando la tasa de inflacion:", result);
     FIN ACCION
 ```
 
@@ -89,7 +109,22 @@ FIN ACCION
 - **Consigna:**
 **Las raíces de una ecuación de segundo grado ax2+bx+c=0 son reales si y sólo si el discriminante dado por (b2−4ac) no es negativo. Se desea leer el valor de los coeficientes a, b, c e imprimir el resultado del discriminante. Realizar prueba de escritorio.**
 ```bash
-
+    ACCION ecuacion_segundo_grado ES
+        AMBIENTE
+            variable_a: Real
+            variable_b: Real
+            variable_c: Real
+        PROCESO
+            ESCRIBIR("Enunciado: Coloque las distintas variables de a, b, c para resolver la ecuacion de segundo grado (b2−4ac)")
+            ESCRIBIR("Variable A: ");
+            LEER(variable_a)
+            ESCRIBIR("Variable B: ");
+            LEER(variable_b);
+            ESCRIBIR("Variable C: ");
+            LEER(variable_c); 
+            resultado_discriminante := variable_b**2 - 4 * variable_a * variable_c
+            ESCRIBIR("Esta es la discriminante resultado: ", resultado_discriminante);
+    FIN ACCION
 ```
 
 ## Consigna 1.1.5.3
@@ -112,15 +147,15 @@ FIN ACCION
             //COMENTARIO: resultado con las ganancias mas el IVA
             resultado_con_ganancia := resultado_compra * mas_12_ganancia * mas_7_ganancia
 
-            ESCRIBIR"Este es el costo de su impresora:", costo_impresora;
+            ESCRIBIR("Este es el costo de su impresora:", costo_impresora);
             
-            ESCRIBIR"Este es el costo de su PC: ", costo_PC;
+            ESCRIBIR("Este es el costo de su PC: ", costo_PC);
             
             //COMENTARIO: resultado de la compra con el IVA
-            ESCRIBIR"Cantidad con IVA: ", resultado_compra;
+            ESCRIBIR("Cantidad con IVA: ", resultado_compra);
             
             //COMENTARIO: resultado con las ganancias mas el IVA
-            ESCRIBIR"Cantidad Final: ", resultado_con_ganancia;
+            ESCRIBIR("Cantidad Final: ", resultado_con_ganancia);
     FIN ACCION
 ```
 
@@ -174,40 +209,26 @@ FIN ACCION
     FIN ACCION
 ```
 
-
-
 ## Consigna 1.1.5.6
 
 **Realizar un programa que lea dos número complejos, (a,b) y (c,d), y calcule su producto:(a,b)∗(c,d)=(ac−db,ad+ bc)**
 
 
-## Consigna
+## - Consigna 1.1.5.7
 
 // Escriba un algoritmo que halle la media geométrica de tres valores X, Y, Z. Este debe emitir los tres valores por separado y luego el valor medio. La media geométrica es igual a (X×Y×Z)/3
 
+# Estructuras condicionales y repetitivas
+## - Consigna 1.1.6
+Escriba un algoritmo que permita ingresar 3 valores numéricos y determine cuál es el mayor, el medio y el menor. (era el 3 de los complementarios)
+
+Ejercicio 1.1.8
+Escriba un algoritmo que permita conocer la edad de una persona, con solo ingresar la fecha de nacimiento y la fecha actual, ambas en el formato: DIA, MES, AÑO
 
 
 
 
 
-####
-## Ejercicio 1.1.6
-- **Consigna:**
-**// Escriba un algoritmo que permita ingresar 3 valores numéricos y determine cuál es el mayor, el medio y el menor. (era el 3 de los complementarios)**
-```bash
-
-####
-// Ejercicio 1.1.7
-// Escriba un algoritmo que acepte dos números, calcule la suma e imprima el mensaje de acuerdo al resultado obtenido.
-
-// Suma <= 50
-// Suma > 50 y <= 100
-// Suma > 100 y <= 200
-// Suma > 200
-
-##############################################################################################################################################################################################
-
-##############################################################################################################################################################################################
 
 
 
