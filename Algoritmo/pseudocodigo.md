@@ -8,8 +8,8 @@ git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
 ## Notas importantes:
     Son solo pseudocodigos personales para la Facultad! Especiales solo para una materia.
     
-    IVA: 0.25
-    IVA mas: 1.25
+    IVA: 0.21
+    IVA mas: 0.21
 
 ![DOC Personal](internal_documentation_guide-1200x684.jpg)
 # [DOC Personal]
@@ -52,8 +52,6 @@ FIN ACCION
     VARIABLES
     REDOND
     TRUNC
-    ESCRIBIR
-    LEER
     ASIGNAR
     CARACTER
     ACCION -> SERIA EL TODO DE UN ALGORITMO
@@ -62,26 +60,54 @@ FIN ACCION
     ESCRIBIR -> IMPRIMIR ALGO POR PANTALLA
     LEER -> TOMAR UN OBJETO
 
+# Estructuras Secuenciales
+## Consigna 1.1.5.1
 
+**Escribir un programa que permita calcular el precio de un artículo para un año dado, considerando que la inflación es del 4 por 100 anual. La fórmula del precio es: P = C * (1 + R) ^ (N - A). C - Precio actual. N - Año futuro. R - Tasa de Inflación. A - Año actual.**
+```bash
+    
+```
 
+## Ejercicio 1.1.5.2
+- **Consigna:**
+**Las raíces de una ecuación de segundo grado ax2+bx+c=0 son reales si y sólo si el discriminante dado por (b2−4ac) no es negativo. Se desea leer el valor de los coeficientes a, b, c e imprimir el resultado del discriminante. Realizar prueba de escritorio.**
+```bash
 
+```
 
+## Consigna 1.1.5.3
 
+**Se desea comprar una PC y una impresora. Calcular el precio total: el cual está dado por la suma de los precios de costos, los porcentajes de ganancia del vendedor y un 21% de IVA. Supóngase una ganancia del vendedor del 12% por la PC y 7% por la impresora. Se leen los costos y se imprimen el precio total de ventas.**
+```bash
+    ACCION PcAndImpresoras ES
+        AMBIENTE
+            //COMENTARIO: Costo de los electrodomesticos
+            costo_impresora: 20000
+            costo_PC: 90000
+            //COMENTARIO: Mas el iva y su ganancia del vendedor
+            mas_12_ganancia= 1.12
+            mas_7_ganancia= 1.07 
+            costo_iva= 1.21
+        PROCESO
+            //COMENTARIO: resultado con el IVA solo de las dos compras
+            resultado_compra := costo_iva * costo_impresora + costo_PC
+            
+            //COMENTARIO: resultado con las ganancias mas el IVA
+            resultado_con_ganancia := resultado_compra * mas_12_ganancia * mas_7_ganancia
 
+            ESCRIBIR"Este es el costo de su impresora:", costo_impresora;
+            
+            ESCRIBIR"Este es el costo de su PC: ", costo_PC;
+            
+            //COMENTARIO: resultado de la compra con el IVA
+            ESCRIBIR"Cantidad con IVA: ", resultado_compra;
+            
+            //COMENTARIO: resultado con las ganancias mas el IVA
+            ESCRIBIR"Cantidad Final: ", resultado_con_ganancia;
+    FIN ACCION
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-## Consigna del problema:
+## Consigna 1.1.5.4:
 
 **Se desea calcular la superficie de un trapecio, para la cual se ingresa la longitud de ambas bases y la altura. En base a la fórmula: S = (Bmay + Bmen) × h sobre 2. Finalizando el proceso, emitir dicha superficie y los valores ingresados.**
 
@@ -106,19 +132,6 @@ FIN ACCION
             ESCRIBIR('La superficie es igual a: ', superficie_trapecio);
     FIN ACCION
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Consigna 1.1.5.5
 
@@ -146,173 +159,14 @@ FIN ACCION
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Consigna 1.1.5.3
-
-**Se desea comprar una PC y una impresora. Calcular el precio total: el cual está dado por la suma de los precios de costos, los porcentajes de ganancia del vendedor y un 21% de IVA. Supóngase una ganancia del vendedor del 12% por la PC y 7% por la impresora. Se leen los costos y se imprimen el precio total de ventas.**
-```bash
-    ACCION PcAndImpresoras ES
-        AMBIENTE:
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Consigna 1.1.5.6
 
 **Realizar un programa que lea dos número complejos, (a,b) y (c,d), y calcule su producto:(a,b)∗(c,d)=(ac−db,ad+ bc)**
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Consigna
 
 // Escriba un algoritmo que halle la media geométrica de tres valores X, Y, Z. Este debe emitir los tres valores por separado y luego el valor medio. La media geométrica es igual a (X×Y×Z)/3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Estructuras Secuenciales
-## Consigna 1.1.5.1
-
-**Escribir un programa que permita calcular el precio de un artículo para un año dado, considerando que la inflación es del 4 por 100 anual.**
-
-// La fórmula del precio es: P = C * (1 + R) ^ (N - A)
-
-// C - Precio actual.
-// N - Año futuro.
-// R - Tasa de Inflación.
-// A - Año actual.
-```bash
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-####
-## Ejercicio 1.1.5.2
-- **Consigna:**
-**Las raíces de una ecuación de segundo grado ax2+bx+c=0 son reales si y sólo si el discriminante dado por (b2−4ac) no es negativo. Se desea leer el valor de los coeficientes a, b, c e imprimir el resultado del discriminante. Realizar prueba de escritorio.**
-```bash
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -325,31 +179,6 @@ FIN ACCION
 **// Escriba un algoritmo que permita ingresar 3 valores numéricos y determine cuál es el mayor, el medio y el menor. (era el 3 de los complementarios)**
 ```bash
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ####
 // Ejercicio 1.1.7
 // Escriba un algoritmo que acepte dos números, calcule la suma e imprima el mensaje de acuerdo al resultado obtenido.
@@ -358,36 +187,6 @@ FIN ACCION
 // Suma > 50 y <= 100
 // Suma > 100 y <= 200
 // Suma > 200
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ##############################################################################################################################################################################################
 
