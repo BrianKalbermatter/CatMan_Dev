@@ -65,7 +65,24 @@ FIN ACCION
 
 **Escribir un programa que permita calcular el precio de un artículo para un año dado, considerando que la inflación es del 4 por 100 anual. La fórmula del precio es: P = C * (1 + R) ^ (N - A). C - Precio actual. N - Año futuro. R - Tasa de Inflación. A - Año actual.**
 ```bash
-    
+    ACCION inflaciones_de_articulos ES
+        AMBIENTE
+            tasa_de_inflacion = 4 / 100
+            precio_actual: N(10)
+            año_futuro: Entero
+            año_actual: Entero
+        PROCESO
+            ESCRIBIR"Coloque el precio actual de su artículo, porfavor: ";
+            LEER(precio_actual);
+
+            ESCRIBIR"Coloque el año actual y luego el año futuro: ";
+            ESCRIBIR"Año Actual: ";
+            LEER(año_actual);
+            ESCRIBIR"Año Futuro: ";
+            LEER(año_futuro);
+            result := precio_actual * (1 + tasa_de_inflacion) ** (año_futuro - año_actual)
+            ESCRIBIR"Resultado con el calculo final del articulo agregando la tasa de inflacion:", result;
+    FIN ACCION
 ```
 
 ## Ejercicio 1.1.5.2
