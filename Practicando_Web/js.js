@@ -1,43 +1,4 @@
-<!--ASPIRO A ESTO: https://www.ibm.com/history/personal-computer -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informatorio | Etapa 1</title>
-    <link rel="stylesheet" type="text/css" href="css.css" media="screen"/>
-</head>
-<body>
-    <header href="#Inicio" class="header_main">
-        <div class="navegation-bar">
-            <div class="section-icon">
-                <h1>Porfolio Personal</h1>
-                
-                <section class="icon">
-                    <img src="Iconopunio.jpg" alt="Imagen Logo Pagina" />
-                </section>
-            </div>
-            <nav class="bar-on">
-                <ul class="navegation_bar_button">
-                    <li>
-                        <button href="#Inicio">Inicio de pagina</button>
-                    </li>
-                    <li>
-                        <button>Final de pagina</button>
-                    </li>
-                </ul>
-            </nav>
-            
-        </div>
-        <article class="header-name name-personal">
-            Kalbermatter, Brian
-        </article>
-    
-    </header>
-
-    <canvas id="c"></canvas>
-    <script>
-        const c = document.querySelector('#c');
+const c = document.querySelector('#c');
 const ctx = c.getContext('2d');
 
 const dpr = Math.min(2, window.devicePixelRatio);
@@ -240,9 +201,3 @@ window.addEventListener('resize', () => {
 })
 
 animate(0);
-    </script>
-</body>
-</html>
-<!--Modificar el antiguo porfolio sobre mi y colocarlo aca para mas sabor y agregar en style tambien
-Flexbox
--->

@@ -1,23 +1,36 @@
+/*A quien voy a modificar*/
+/*A que voy a modificar
+https://campus-informatorio.chaco.gob.ar/mod/supervideo/view.php?id=271
+
+
+Grid
+*/
 :root{
     --main-color: black;
 
-    background: rgb(225, 225, 225);
+    --background: rgb(225, 225, 225);
 }
-.body{
+*{
     font-size: 1em;
+}
+.section-icon .icon{
+    align-self: center;
+}
+.navegation-bar{
+    background-color: var(--background);
+    display: flex;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
 }
 .header-name{
     color: var(--main-color);
     margin-top: auto;
 }
-.navegation-bar{
-    font-weight: normal;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 52px;
-    width: 2px;
-    height: 10px;
+.navegation_bar_button{
+    display: flex;
+    align-items: flex-end;
 }
-.section-icon .icon{
-    margin: 0px;
-    padding: 0px;
+.navegation_bar_button li{
+    display: flex;
 }

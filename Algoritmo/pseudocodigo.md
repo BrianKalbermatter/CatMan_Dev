@@ -224,7 +224,22 @@ FIN ACCION
 ## - Consigna 1.1.5.7
 **Escriba un algoritmo que halle la media geométrica de tres valores X, Y, Z. Este debe emitir los tres valores por separado y luego el valor medio. La media geométrica es igual a (X×Y×Z)/3**
 ```bash
-
+    ACCION algoritmo_media_geometrica ES
+        AMBIENTE:
+            variable_x: Real
+            variable_y: Real
+            variable_z: Real
+        PROCESO
+            ESCRIBIR("Ingrese el primer valor de la variable X: ");
+            LEER(variable_x);
+            ESCRIBIR("Ingrese el segundo valor de la variable Y: ");
+            LEER(variable_y);
+            ESCRIBIR("Ingrese el tercer valor de la variable Z: ");
+            LEER(variable_z);
+            ESCRIBIR("Estos son los valores que ingreso", variable_x, variable_y, variable_z);
+            resultado_medio := variable_x * variable_y * variable_z / 3
+            ESCRIBIR("Este es el valor medio: ", resultado_medio);
+    FIN ACCION
 ```
 
 
@@ -237,7 +252,6 @@ FIN ACCION
 
 ## - Consigna 1.1.7
 **Escriba un algoritmo que acepte dos números, calcule la suma e imprima el mensaje de acuerdo al resultado obtenido.**
-
 **Suma <= 50**
 **Suma > 50 y <= 100**
 **Suma > 100 y <= 200**
@@ -250,21 +264,7 @@ FIN ACCION
 ```bash
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Decisiones en el Mundo Real
+# Decisiones en el Mundo Real: Parte I
 ## 🔹 Objetivo:
 
 **Trabajar en equipo para resolver un problema utilizando estructuras condicionales, asignándolo en función de los apellidos de los integrantes.**
@@ -353,10 +353,131 @@ Un restaurante permite pagar con tarjeta solo si el monto total de la cuenta sup
 
 💡 Consejo: Trabajen en equipo, discutan las soluciones y revisen sus respuestas antes de entregarlas. ¡Buena suerte! 🚀🔥
 
+# Ejercicios del mundo Real: Parte II
 
+1. Calculadora de Tarifa de Taxi 🚕
+📌 Problema: Diseña un algoritmo que calcule la tarifa de un taxi basado en la distancia recorrida y el tiempo de espera.
 
+Tarifa base: $5
 
+Costo por kilómetro: $1.50
 
+Costo por minuto de espera: $0.50
+
+📌 Entrada: Distancia en km, tiempo de espera en minutos.
+📌 Salida: Costo total del viaje.
+```bash
+
+```
+
+2. Cajero Automático 💰
+📌 Problema: Escribe un algoritmo que simule un cajero automático.
+
+El usuario ingresa su PIN (3 intentos máximo).
+
+Luego elige entre retirar dinero, consultar saldo o salir.
+
+Si retira dinero, el saldo debe actualizarse y verificarse que haya suficiente.
+
+📌 Entrada: PIN, opción del menú, cantidad a retirar.
+📌 Salida: Mensajes sobre transacción exitosa o error.
+```bash
+
+```
+
+3. Conversor de Monedas 💱
+📌 Problema: Diseña un conversor de monedas que permita convertir entre USD, EUR y MXN según una tasa de cambio fija.
+
+📌 Entrada: Cantidad, moneda origen, moneda destino.
+📌 Salida: Monto convertido.
+```bash
+
+```
+
+4. Sistema de Notas y Promedios 📚
+📌 Problema: Un profesor necesita un algoritmo que reciba las notas de 5 estudiantes y determine:
+
+Promedio de la clase
+
+Quién obtuvo la nota más alta y quién la más baja
+
+📌 Entrada: Lista de 5 calificaciones.
+📌 Salida: Promedio, nota más alta y más baja.
+```bash
+
+```
+
+5. Control de Inventario de Tienda 🏪
+📌 Problema: Un negocio tiene un inventario con productos. Cada vez que un cliente compra algo, el stock debe actualizarse.
+
+Si el producto se agota, mostrar "Producto agotado".
+
+📌 Entrada: Nombre del producto, cantidad comprada.
+📌 Salida: Stock actualizado o mensaje de agotado.
+```bash
+
+```
+
+6. Simulador de Semáforo 🚦
+📌 Problema: Simula un semáforo que cambia de color cada X segundos en este orden:
+🔴 Rojo → 🟡 Amarillo → 🟢 Verde → 🔴 Rojo
+
+📌 Entrada: Tiempo que permanece en cada color.
+📌 Salida: Mostrar el color actual según el tiempo.
+```bash
+
+```
+
+7. Control de Temperatura en un Invernadero 🌱
+📌 Problema: Diseña un algoritmo que controle la temperatura en un invernadero.
+
+Si la temperatura es menor a 18°C, encender calefacción.
+
+Si es mayor a 25°C, encender ventilador.
+
+Si está entre 18°C y 25°C, mantener estable.
+
+📌 Entrada: Temperatura actual.
+📌 Salida: Acción a tomar.
+```bash
+
+```
+
+8. Sistema de Registro de Estacionamiento 🚗
+📌 Problema: Un estacionamiento cobra así:
+
+1ra hora: $10
+
+Horas siguientes: $5 c/u
+
+Si el coche es eléctrico, tiene 50% de descuento.
+
+📌 Entrada: Horas estacionado, tipo de auto.
+📌 Salida: Costo total a pagar.
+```bash
+
+```
+
+9. Detector de Números Primos 🔢
+📌 Problema: Crea un algoritmo que determine si un número ingresado es primo o no.
+
+📌 Entrada: Número entero positivo.
+📌 Salida: "Es primo" o "No es primo".
+```bash
+
+```
+
+10. Generador de Contraseñas Seguras 🔐
+📌 Problema: Diseña un algoritmo que genere una contraseña aleatoria con:
+
+8 caracteres
+
+Letras mayúsculas, minúsculas, números y símbolos.
+
+📌 Salida: Contraseña generada.
+```bash
+
+```
 
 
 
