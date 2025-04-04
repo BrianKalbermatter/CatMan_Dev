@@ -1,0 +1,23 @@
+:root{
+    --main-color: black;
+
+    background: rgb(225, 225, 225);
+}
+.body{
+    font-size: 1em;
+}
+.header-name{
+    color: var(--main-color);
+    margin-top: auto;
+}
+.navegation-bar{
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 52px;
+    width: 2px;
+    height: 10px;
+}
+.section-icon .icon{
+    margin: 0px;
+    padding: 0px;
+}
