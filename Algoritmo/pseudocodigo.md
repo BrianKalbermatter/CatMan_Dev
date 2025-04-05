@@ -1,3 +1,4 @@
+
 # ![https://github.com/BrianKalbermatter](Iconopunio.jpg) {Algoritmos y Estructura de Datos}
 INDICE
 [![Estructura del pseudocodigo]]()
@@ -15,6 +16,7 @@ git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
 # [DOC Personal]
 IVA: 0.21
 IVA mas: 0.21
+# PARADIGMA ESTRUCTURAL
 ## Estructura del pseudocodigo: 
 
 ``` bash
@@ -247,7 +249,7 @@ FIN ACCION
 ## - Consigna 1.1.6
 **Escriba un algoritmo que permita ingresar 3 valores numéricos y determine cuál es el mayor, el medio y el menor. (era el 3 de los complementarios)**
 ```bash
-
+    
 ```
 
 ## - Consigna 1.1.7
@@ -264,6 +266,16 @@ FIN ACCION
 ```bash
 
 ```
+Ejercicio 1.1.9
+Una persona decide realizar un viaje a Europa, para lo cual necesita una determinada cantidad de euros. La persona tiene ahorrada una cierta suma en dólares y desea saber si es suficiente y, en caso de haber diferencia (de más o de menos) a cuantos pesos equivale. Realice un algoritmo que solucione el problema, para lo cual deberá prever que se ingresen las equivalencias de monedas que considere necesarias (por ejemplo la cotizacion en pesos de dólar y/o del euro, o a cuantos euros equivale un dólar).
+
+Ejercicio 1.1.10
+Dados dos números enteros A y B generar un algoritmo que permita determinar si A es divisor de B o B es divisor de A.
+
+
+
+
+
 # Decisiones en el Mundo Real: Parte I
 ## 🔹 Objetivo:
 
@@ -480,6 +492,16 @@ Letras mayúsculas, minúsculas, números y símbolos.
 ```
 
 
+# Algoritmo para repasar
+**Consignas:**
+## Hacer un algoritmo que indique que calificacion tiene un alumno dada su nota numerica segun el siguiente criterio.
 
+- Suspenso, si la nota es inferior a 5.
+- Aprobado, si la nota esta en el intervalo [5, 7].
+- Notable, si la nota esta en el intervalo [7, 9].
+- Sobresaliente, si la nota esta en el intervalo [9, 10].
+- Matricula de Honor, si la nota es un 10.
+
+## Escribe un algoritmo que determine el signo del zodiaco basado en el dia y mes de nacimiento ingresado por el usuario.
 
 

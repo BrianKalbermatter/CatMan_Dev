@@ -7,25 +7,17 @@ Grid
 */
 :root{
     --main-color: black;
-
+    
+}
+:root{
     --background: rgb(225, 225, 225);
 }
-*{
-    font-size: 1em;
-}
-.section-icon .icon{
-    align-self: center;
-}
-.navegation-bar{
-    background-color: var(--background);
+.section-icon .icon_logo_perfil{
     display: flex;
-    font-weight: normal;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100px;
+    
 }
 .header-name{
     color: var(--main-color);
-    margin-top: auto;
 }
 .navegation_bar_button{
     display: flex;
@@ -34,3 +26,13 @@ Grid
 .navegation_bar_button li{
     display: flex;
 }
+.navegacion__imagenteclado{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+}
+.header__description .personal__description{
+
+}
+
