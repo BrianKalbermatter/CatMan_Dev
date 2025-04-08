@@ -1,3 +1,6 @@
+from tkinter import Tk
+root = Tk()
+
 #Ejercicio 1.1.7
 
 #Escriba un algoritmo que acepte dos números, calcule la suma e imprima el mensaje de acuerdo al resultado obtenido.
@@ -30,7 +33,7 @@ algoritmo(num1, num2)
 # Escriba un algoritmo que permita conocer la edad de una persona, con solo ingresar la fecha de nacimiento y la fecha actual, ambas en el formato: DIA, MES, AÑO
 
 
-
+root.mainloop()
 
 
 
