@@ -1,7 +1,7 @@
-
 # ![https://github.com/BrianKalbermatter](Iconopunio.jpg) {Algoritmos y Estructura de Datos}
-INDICE
-## Índice
+![Portada](39t58hlgr7nd1.png)
+
+# INDICE
 - [Repo](#clonar-el-repositorio)
 - [Introduccion](#introduccion)
 - [Estructura](#estructura)
@@ -15,6 +15,8 @@ INDICE
 - [Ej: 1.1.5.5](#consigna-1155)
 - [Ej: 1.1.5.6](#consigna-1156)
 - [Ej: 1.1.5.7](#consigna-1157)
+---
+- [Pascal](/MyFirst_OS/pascal.pas)
 ---
 
 ![logo](logo-GitHub.jpg)
