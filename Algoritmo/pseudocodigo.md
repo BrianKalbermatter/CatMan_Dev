@@ -1,9 +1,14 @@
 
 # ![https://github.com/BrianKalbermatter](Iconopunio.jpg) {Algoritmos y Estructura de Datos}
 INDICE
-[![Estructura del pseudocodigo]]()
+## Índice
+- [Introduccion](#Introduccion)
+- [Variables](#Variables)
+- [Uso](#uso)
+- [Licencia](#licencia)
 
 
+![DOC_Personal](logo-GitHub.jpg)
 ## Clonar el Repositorio
 ```bash
 git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
@@ -12,59 +17,108 @@ git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
 ## Notas importantes:
 **Son solo pseudocodigos personales para la Facultad! Especiales solo para una materia.**
 
-![DOC Personal](internal_documentation_guide-1200x684.jpg)
-# [DOC Personal]
-IVA: 0.21
-IVA mas: 0.21
-# PARADIGMA ESTRUCTURAL
-## Estructura del pseudocodigo: 
+![Imagen_Doc](internal_documentation_guide-1200x684.jpg)
 
-``` bash
-ACCION ejercicioCinco ES 
-    AMBIENTE:
-        ALFA, BETA: Real
-        JOTA, I, L: Entero
-    PROCESO
-        ALFA := 2.5 
-        JOTA := 2
-        I := 2 * JOTA
-        L := JOTA * I
-        ALFA := ALFA + BETA
-        ESCRIBIR('Estas son las variables que tenes que colocarle sus valores: ');
-        ESCRIBIR('El valor de "I" es =', I);
-        ESCRIBIR('El valor de "L" es =', L);
-        ESCRIBIR('El valor de Beta es=', BETA);
-        ESCRIBIR('El valor de "ALFA" y "BETA" es =', ALFA);
-FIN ACCION
-```
-
-    ACCION [Nombre_de_la_Accion] ES
-        AMBIENTES:
-            [Datos/ Definidar/ Inicializar -> Constantes o Variables]
-        PROCESO
-            [Acciones: Proceso de ejecucion]
-    FIN ACCION    
-## Palabras Reservadas    
+# Introduccion
+## Palabras Reservadas - Pascal  
     VARIABLES -> :
     CONSTANTES -> =
     ASIGNACION -> :=
     ABSO
     BOOLEANO
-    NUMERICO -> ENTERO, REAL N(10)
+    ENTERO - Integer
+    NUMERICO -> Entero, Real, N(10)
     ALFANUMERICO -> CARACTER -> AN(20)
     CONSTANTES
     VARIABLES
     REDOND
     TRUNC
     ASIGNAR
-    ACCION -> SERIA EL TODO DE UN ALGORITMO
-    FUNCION -> SUBACCION 
+    ACCION -> SERIA EL TODO DE UN ALGORITMO -> program
+    AMBIENTE -> var
+    FUNCION -> SUBACCION, Procedimiento
     MODULO -> PROCESO
-    ESCRIBIR -> ("IMPRIMIR ALGO POR PANTALLA")
-    LEER -> (TOMAR UN OBJETO)
+    ESCRIBIR -> ("IMPRIMIR ALGO POR PANTALLA") - WriteLn('');
+    LEER -> (TOMAR UN OBJETO) - ReadLn();
+
+# Estructura del Proceso:
+    begin
+    end. (fin punto final)
+
+# Numeros o cantidad de numeros de variables
+    Shortint = -128..127
+    Integer
+    Longint
+    Byte
+    Word
+    Cardinal
+    Real
+    Single
+    Double
+    Extended
+    Comp
+# Ejecuciones en la bash:
+''' bash
+    Tengo que estar en la carpeta del archivo donde se encuentra mi .o .exe
+    fpc nombre_del_archivo.pas
+    ./pascal.pas
+'''
+
+Bits - Binarios
+0   0
+1	1
+2	10
+3	11
+4	100
+5	101
+6	110
+7	111
+8   1000
+
+# Variables:
+Las variables se definen dentro de:
+``` bash
+var 
+    num1 : Integer;
+    num2 : Integer;
+    resultado : Integer
+```
+# PARADIGMA ESTRUCTURAL
+## Estructura del pseudocodigo:
+**Estructura original para la facu:**
+``` bash
+    ACCION [Nombre_de_la_Accion] ES
+        AMBIENTES:
+            [Datos/ Definidar/ Inicializar -> Constantes o Variables]
+        PROCESO
+            [Acciones: Proceso de ejecucion]
+    FIN ACCION 
+```
+
+--------------------------------------------------------------------------
 
 
+``` bash
+    ACCION ejercicioCinco ES 
+        AMBIENTE:
+            ALFA, BETA: Real
+            JOTA, I, L: Entero
+        PROCESO
+            ALFA := 2.5 
+            JOTA := 2
+            I := 2 * JOTA
+            L := JOTA * I
+            ALFA := ALFA + BETA
+            ESCRIBIR('Estas son las variables que tenes que colocarle sus valores: ');
+            ESCRIBIR('El valor de "I" es =', I);
+            ESCRIBIR('El valor de "L" es =', L);
+            ESCRIBIR('El valor de Beta es=', BETA);
+            ESCRIBIR('El valor de "ALFA" y "BETA" es =', ALFA);
+    FIN ACCION
+```
 
+--------------------------------------------------------------------------
+# EJERCICIOS DE ALGORITMO
 
 # Estructuras Secuenciales
 ## - Consigna 1.1.5.1
@@ -77,6 +131,7 @@ FIN ACCION
             precio_actual: N(10)
             año_futuro: Entero
             año_actual: Entero
+            result: Real 
         PROCESO
             ESCRIBIR("Coloque el precio actual de su artículo, porfavor: ");
             LEER(precio_actual);
@@ -99,6 +154,7 @@ FIN ACCION
             variable_a: Real
             variable_b: Real
             variable_c: Real
+            resultado_discriminante: Real
         PROCESO
             ESCRIBIR("Enunciado: Coloque las distintas variables de a, b, c para resolver la ecuacion de segundo grado (b2−4ac)")
             ESCRIBIR("Variable A: ");
@@ -119,12 +175,15 @@ FIN ACCION
     ACCION PcAndImpresoras ES
         AMBIENTE
             //COMENTARIO: Costo de los electrodomesticos
+            
             costo_impresora: 20000
             costo_PC: 90000
             //COMENTARIO: Mas el iva y su ganancia del vendedor
             mas_12_ganancia= 1.12
             mas_7_ganancia= 1.07 
             costo_iva= 1.21
+            resultado_compra: Real
+            resultado_con_ganancia: Real
         PROCESO
             //COMENTARIO: resultado con el IVA solo de las dos compras
             resultado_compra := costo_iva * costo_impresora + costo_PC
