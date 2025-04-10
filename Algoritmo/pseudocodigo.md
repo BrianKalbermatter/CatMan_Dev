@@ -2,14 +2,26 @@
 # ![https://github.com/BrianKalbermatter](Iconopunio.jpg) {Algoritmos y Estructura de Datos}
 INDICE
 ## Índice
-- [Introduccion](#Introduccion)
-- [Variables](#Variables)
-- [Uso](#uso)
-- [Licencia](#licencia)
+- [Repo](#clonar-el-repositorio)
+- [Introduccion](#introduccion)
+- [Estructura](#estructura)
+- [Estructura del Pseudocodigo](#estructura-del-pseudocodigo)
+- [Ejercicios](#ejercicios-de-algoritmo)
+- [Estructura Secuencial](#estructuras-secuenciales)
+- [Ej: 1.1.5.1](#consigna-1151)
+- [Ej: 1.1.5.2](#consigna-1152)
+- [Ej: 1.1.5.3](#consigna-1153)
+- [Ej: 1.1.5.4](#consigna-1154)
+- [Ej: 1.1.5.5](#consigna-1155)
+- [Ej: 1.1.5.6](#consigna-1156)
+- [Ej: 1.1.5.7](#consigna-1157)
+---
 
+![logo](logo-GitHub.jpg)
 
-![DOC_Personal](logo-GitHub.jpg)
-## Clonar el Repositorio
+---
+
+# Clonar el Repositorio
 ```bash
 git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
 ```
@@ -40,7 +52,7 @@ git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
     MODULO -> PROCESO
     ESCRIBIR -> ("IMPRIMIR ALGO POR PANTALLA") - WriteLn('');
     LEER -> (TOMAR UN OBJETO) - ReadLn();
-
+# Estructura
 # Estructura del Proceso:
     begin
     end. (fin punto final)
