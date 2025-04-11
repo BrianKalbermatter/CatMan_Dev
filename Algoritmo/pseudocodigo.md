@@ -16,6 +16,14 @@
 - [Ej: 1.1.5.5](#consigna-1155)
 - [Ej: 1.1.5.6](#consigna-1156)
 - [Ej: 1.1.5.7](#consigna-1157)
+- [Ej: 1.1.6](#--consigna-116)
+- [Ej: 1.1.7](#--consigna-117)
+- [Ej: 1.1.8](#--consigna-118)
+- [Desiciones del Mundo Real: Parte I](#decisiones-en-el-mundo-real-parte-i)
+- [Desiciones del Mundo Real: Parte II](#ejercicios-del-mundo-real-parte-ii)
+- [Algoritmos de Repaso](#algoritmo-para-repasar)
+
+
 ---
 - [Pascal](/MyFirst_OS/pascal.pas)
 ---
