@@ -45,7 +45,7 @@ git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
 # Introduccion
 ## Palabras Reservadas - Pascal  
     VARIABLES -> :
-    CONSTANTES -> =
+    CONSTANTES -> = Para definir una constante se debe colocar primero en la estructura el type.
     ASIGNACION -> :=
     ABSO
     BOOLEANO
@@ -80,6 +80,7 @@ git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
     Double
     Extended
     Comp
+
 # Ejecuciones en la bash:
 ''' bash
     Tengo que estar en la carpeta del archivo donde se encuentra mi .o .exe

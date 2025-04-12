@@ -39,6 +39,7 @@ La velocidad instantanea puede ser negativa,cero o positiva.
 - La Rapidez instantanea de una particula se define como la magnitud de su velocidad instantanea. Como con la rapidez promedio, la rapidez instantanea no tiene direccion asociada con ella.
 
 ## Modelos de analisis: La particula bajo velocidad constante
-
+- 1. Comportamiento de entidad fisica.
+- 2. Comportamiento de dicha entidad con el entorno.
 
 
