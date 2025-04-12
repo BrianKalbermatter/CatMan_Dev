@@ -12,11 +12,12 @@
         // Puede tener parametros SI.
         // LLamadas dentro de expresiones. Se puede usar dentro de expresiones.
 
+// B - Explica si es posible reemplazar completamente los procedimientos por funciones en todos los casos, o si existen situaciones en las que los procedimientos son indispensables. Justifica tu respues con ejemplos teoricos o practicos.
+
 // Ejemplo de Procedimiento en PASCAL:
 program funcandproce;
 
 procedure Saludar(nombre: string);
-
 begin
     WriteLn(nombre);
 end;
@@ -24,3 +25,11 @@ end;
 begin
     Saludar('Juan');
 end.
+// Ejemplo de Funcion en PASCAL:
+
+// Una variable elevada por 10 elevado a mas 1. El E+001, Es lo mismo que 1x10^1 o que es lo mismo a 11
+
+
+
+
+
