@@ -3,6 +3,8 @@
 # Guia:
 
 ``` 
+    https://github.com/Fr0sT-Brutal/awesome-pascal#multimedia
+
     https://wiki.osdev.org/Expanded_Main_Page
     Writing a Simple Operating System — from Scratch (James Molloy)
 ```
