@@ -39,6 +39,7 @@ git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
 
 ## Notas importantes:
 **Son solo pseudocodigos personales para la Facultad! Especiales solo para una materia.**
+**Antes de realizar cada ejercicio siempre leer primero bien la consigna y luego realizarla.**
 
 ![Imagen_Doc](internal_documentation_guide-1200x684.jpg)
 
@@ -332,7 +333,63 @@ var
 ## - Consigna 1.1.6
 **Escriba un algoritmo que permita ingresar 3 valores numéricos y determine cuál es el mayor, el medio y el menor. (era el 3 de los complementarios)**
 ```bash
-    
+ACCION ES
+    AMBIENTE:
+        num_uno, num_dos, num_tres : N(3);
+        menor, medio, mayor : N(3);
+    PROCESO:
+        ESCRIBIR('Coloque 3 numeros para determinar cual es el mas grande');
+        ESCRIBIR('Coloque el valor Uno:');
+        LEER(num_uno);
+        ESCRIBIR('Coloque el valor Dos:');
+        LEER(num_dos);
+        ESCRIBIR('Coloque el valor Tres:');
+        LEER(num_tres);
+
+        //Comentario: Se determina el mayor, medio, menor
+        Si (num_uno >= num_dos) Y (num_uno >= num_tres) ENTONCES
+            mayor := num_uno;
+            Si (num_dos >= num_tres) Entonces
+                medio := num_dos;
+                menor := num_tres;
+            Sino
+                medio := num_tres;
+                menor := num_dos;
+            Fin Si
+            //ESCRIBIR('El primer numero es mayor que los tres : ', num_uno);
+        Fin Si
+
+        //Comentario: Segunda ocacion de mayor, medio, menor
+        Sino 
+            Si (num_dos >= num_uno) Y (num_dos >= num_tres) ENTONCES
+                mayor := num_dos;
+                Si (num_uno >= num_tres) Entonces
+                    medio := num_uno;
+                    menor := num_tres;
+                Sino
+                    medio := num_tres;
+                    menor := num_uno;
+                FinSi
+                //ESCRIBIR('El segundo numero es mayor que los tres :', num_dos);
+            FinSi
+        Fin Si
+
+        //Comentario: Tercera ocacion de mayor, medio, menor
+        Sino
+            mayor := num_tres;
+            Si (num_uno >= num_dos) Entonces
+                medio := num_uno;
+                menor := num_dos;
+            Sino
+                medio := num_dos;
+                menor := num_uno;
+            FinSi
+            //ESCRIBIR('El mayor es el tercer numero :', num_tres);
+        Fin Si
+        ESCRIBIR("Mayor: ", mayor);
+        ESCRIBIR("Medio: ", medio);
+        ESCRIBIR("Menor: ", menor);
+FIN ACCION
 ```
 
 ## - Consigna 1.1.7
@@ -342,12 +399,12 @@ var
 **Suma > 100 y <= 200**
 **Suma > 200**
 ```bash
-
+    //Aca hay que utilizar un Segun, comparacion de valores
 ```
 ## - Consigna 1.1.8
 **Escriba un algoritmo que permita conocer la edad de una persona, con solo ingresar la fecha de nacimiento y la fecha actual, ambas en el formato: DIA, MES, AÑO**
 ```bash
-
+    
 ```
 Ejercicio 1.1.9
 Una persona decide realizar un viaje a Europa, para lo cual necesita una determinada cantidad de euros. La persona tiene ahorrada una cierta suma en dólares y desea saber si es suficiente y, en caso de haber diferencia (de más o de menos) a cuantos pesos equivale. Realice un algoritmo que solucione el problema, para lo cual deberá prever que se ingresen las equivalencias de monedas que considere necesarias (por ejemplo la cotizacion en pesos de dólar y/o del euro, o a cuantos euros equivale un dólar).
@@ -387,50 +444,15 @@ Una tienda en línea ofrece envíos gratuitos solo si el monto de la compra supe
             
     FIN ACCION
 ```
-
-
-🔹 Problema 2: 🕐 Hora del Día
-
-Pide al usuario que ingrese la hora actual en formato 24 horas (ejemplo: 15 para 3 PM). Luego, muestra un mensaje dependiendo de la franja horaria:
-
-
-
-
+---
+**🔹 Problema 2: 🕐 Hora del Día**
+**Pide al usuario que ingrese la hora actual en formato 24 horas (ejemplo: 15 para 3 PM). Luego, muestra un mensaje dependiendo de la franja horaria:**
 6 a 11 → "🌅 ¡Buenos días!"
-
-
-
-
 12 a 17 → "🌞 ¡Buenas tardes!"
-
-
-
-
 18 a 23 → "🌙 ¡Buenas noches!"
-
-
-
-
 0 a 5 → "🌃 ¡Es de madrugada!"
-
-
-
-
-🔹 Problema 3: 🎢 Acceso a una Atracción
-
-Una montaña rusa tiene dos requisitos de seguridad:
-
-
-
-
-La altura mínima para subir es de 1.50 metros.
-
-
-
-
-La edad mínima es de 12 años.
-
-Escribe un programa que reciba la altura y edad de una persona y determine si puede subir 🎟️ o si no cumple los requisitos 🚫.
+**🔹 Problema 3: 🎢 Acceso a una Atracción**
+Una montaña rusa tiene dos requisitos de seguridad: La altura mínima para subir es de 1.50 metros. La edad mínima es de 12 años. Escribe un programa que reciba la altura y edad de una persona y determine si puede subir 🎟️ o si no cumple los requisitos 🚫.
 
 
 
@@ -588,3 +610,34 @@ Letras mayúsculas, minúsculas, números y símbolos.
 ## Escribe un algoritmo que determine el signo del zodiaco basado en el dia y mes de nacimiento ingresado por el usuario.
 
 
+# ALGORITMOS NUEVOS PARA PRACTICAR DE UN TP
+
+Este es el link para acceder al TP: [Link](https://linktr.ee/aed.2025.c)
+
+---
+## Ejercicio 12 - cargar un valor entre 100 y 1000, calcular si es mult de 3 y separar unidad, centena y decena
+```bash
+Accion numero ES
+    Ambiente
+        valorInicial, numero: N(3);
+    Proceso
+        valorInicial := 0;
+        ESCRIBIR("Este algoritmo define si es multiplo de 3, y desglosa el num en Unidad, Decena, Centena");
+        ESCRIBIR("Ingrese un valor entre 100 y 1000");
+        LEER(num);
+        Si numero >= 100 y numero < 1000 ENTONCES
+            ESCRIBIR("Unidad: ", num MOD 10);
+            valorInicial := num DIV 10;
+            ESCRIBIR("Decena: ", valorInicial MOD 10);
+            ESCRIBIR("Centena: ", valorInicial DIV 10);
+            Si (num MOD 3 = valorIncial) ENTONCES;
+                ESCRIBIR("Es multiplo de 3");
+            Sino
+                ESCRIBIR("No es multiplo");
+            Finsi
+        Sino
+            ESCRIBIR("no cumple la condicion de estar entre 100 y 1000");
+        Finsi
+FinAccion
+```
+---
