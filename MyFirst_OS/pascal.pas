@@ -1,6 +1,10 @@
 // fpc pascal.pas
 // ./pascal
 
+// https://github.com/cfenollosa/os-tutorial
+// https://littleosbook.github.io/
+// Crear un Bootloader
+
 // - type se usa para definir tipos de datos, mientras que const se usa para definir valores constantes.
 // Se pueden definir del 1..200 por ejemplo
 

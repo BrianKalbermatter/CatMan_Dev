@@ -404,7 +404,7 @@ FIN ACCION
 ## - Consigna 1.1.8
 **Escriba un algoritmo que permita conocer la edad de una persona, con solo ingresar la fecha de nacimiento y la fecha actual, ambas en el formato: DIA, MES, AÑO**
 ```bash
-    
+
 ```
 Ejercicio 1.1.9
 Una persona decide realizar un viaje a Europa, para lo cual necesita una determinada cantidad de euros. La persona tiene ahorrada una cierta suma en dólares y desea saber si es suficiente y, en caso de haber diferencia (de más o de menos) a cuantos pesos equivale. Realice un algoritmo que solucione el problema, para lo cual deberá prever que se ingresen las equivalencias de monedas que considere necesarias (por ejemplo la cotizacion en pesos de dólar y/o del euro, o a cuantos euros equivale un dólar).
@@ -615,7 +615,7 @@ Letras mayúsculas, minúsculas, números y símbolos.
 Este es el link para acceder al TP: [Link](https://linktr.ee/aed.2025.c)
 
 ---
-## Ejercicio 12 - cargar un valor entre 100 y 1000, calcular si es mult de 3 y separar unidad, centena y decena
+## Escriba un algoritmo que acepte un número entero mayor a 100 y menor a 1000, y muestre cómo está compuesto (unidades, decenas y centenas) y si es múltiplo de 3.
 ```bash
 Accion numero ES
     Ambiente
@@ -624,13 +624,15 @@ Accion numero ES
         valorInicial := 0;
         ESCRIBIR("Este algoritmo define si es multiplo de 3, y desglosa el num en Unidad, Decena, Centena");
         ESCRIBIR("Ingrese un valor entre 100 y 1000");
-        LEER(num);
-        Si numero >= 100 y numero < 1000 ENTONCES
-            ESCRIBIR("Unidad: ", num MOD 10);
-            valorInicial := num DIV 10;
+        LEER(numero);
+
+        Si (numero > 100) y (numero < 1000) ENTONCES
+            ESCRIBIR("Unidad: ", numero MOD 10);
+            valorInicial := numero DIV 10;
             ESCRIBIR("Decena: ", valorInicial MOD 10);
             ESCRIBIR("Centena: ", valorInicial DIV 10);
-            Si (num MOD 3 = valorIncial) ENTONCES;
+            
+            Si (numero MOD 3 = 0) ENTONCES
                 ESCRIBIR("Es multiplo de 3");
             Sino
                 ESCRIBIR("No es multiplo");
