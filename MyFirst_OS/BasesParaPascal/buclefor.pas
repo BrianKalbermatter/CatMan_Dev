@@ -22,4 +22,17 @@ repeat
     ReadLn(salida);
 until (salida>=0) and (salida<=9);
 WriteLn('Por fin un valor correcto, terminado');
+
+
+Write('Introduce un numero: '); ReadLn(contador);
+x := 0;
+while x <> contador do 
+begin
+    WriteLn(x);
+    x := x + 1;
+end;
 end.
+
+
+
+

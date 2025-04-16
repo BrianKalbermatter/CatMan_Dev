@@ -6,7 +6,8 @@
     - Siempre se ejecuta almenos una vez.
     - Se repite hasta que sea verdadera.
 
-##
+## 
+    - Hace el chequeo de la condicion al pricipio, y puede evitar usar bloque si solo hay una instruccion. 
 
 ```bash
 // Bucle repite hasta que sea verdadera y se sale cuando es falso
