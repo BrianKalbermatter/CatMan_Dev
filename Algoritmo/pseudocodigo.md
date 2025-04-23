@@ -643,3 +643,52 @@ Accion numero ES
 FinAccion
 ```
 ---
+
+
+
+
+
+
+
+
+
+
+
+# EJERCICIO DE DICORD DE ALGORITMO
+```bash
+    ACCION ViajeEuropa ES
+        AMBIENTE:
+            PrecioViaje, cotiz_eu_a_dol, cotiz_eu_a_pesos: real;
+            dolares, euros_disponibles, diferencia, pesos: real;
+    
+        PROCESO
+            ESCRIBIR('Con este algoritmo sabra si cuenta con dinero para el viaje a Europa.');
+            ESCRIBIR('Ingrese el monto que dispone en dolares (USD): ');
+            LEER(dolares);
+            
+            ESCRIBIR('Ingrese el valor del viaje en euros (EUR): ');
+            LEER(PrecioViaje);
+            
+            ESCRIBIR('Ingrese la cotizacion del euro respecto al dolar (1 EUR = ? USD): ');
+            LEER(cotiz_eu_a_dol);
+            
+            ESCRIBIR('Ingrese la cotizacion del euro respecto al peso (1 EUR = ? ARS): ');
+            LEER(cotiz_eu_a_pesos);
+    
+            euros_disponibles := dolares / cotiz_eu_a_dol;
+            diferencia := euros_disponibles - PrecioViaje;
+    
+            SI diferencia = 0 ENTONCES
+                ESCRIBIR('¡Felicidades! Tiene el dinero justo para el viaje.')
+                SINO
+                    SI diferencia > 0 ENTONCES
+                        pesos := diferencia * cotiz_eu_a_pesos;
+                        ESCRIBIR('¡Felicidades! Le sobra dinero. Sobrante: ',pesos, ' pesos.');
+                    FIN_SI
+                SINO
+                    pesos := abs(diferencia) * cotiz_eu_a_pesos;
+                    ESCRIBIR('Aun no alcanza. Le faltan: ',pesos, ' pesos.');
+                FIN_SI
+            FIN_SI
+    FIN ACCION
+```

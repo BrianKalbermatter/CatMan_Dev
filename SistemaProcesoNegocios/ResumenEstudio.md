@@ -11,12 +11,22 @@
 - **Medio ambiente.** Todo lo que rodea al sistema y existe fuera de el, lo cual a su vez constituye un sistema dentro de otro sistema y asi hasta el infinito.
 
 ## Se fundamenta en tres **PREMISAS BASICAS**:
+# SACADO DEL APUNTE
 - **Los sistemas existen dentro de sistemas :** 
         Las moleculas existen dentro de **celulas**, las celulas dentro de **tejidos**, los tejidos dentro de **organos**, los organos dentro de **organismos**, los organismos dentro de **colonias**, las colonias dentro de **culturas nutrientes**, las culturas dentro de **conjuntos mayores de culturas** y asi **sucesivamente**.
 - **Los sistemas son abiertos :**
         Cada sistema que se examine, excepto el menor o mayor, recibe y descarga algo en los otros sistemas, generalmente en aquellos que le son contiguos. Los sistemas abiertos son caracterizados por un proceso de intercambio infinito con su ambiente, que son los otros sistemas. Cuando el intercambio cesa, el sistema se desintegra, esto es, pierde sus fuentes de energia.
 - **Las funciones de un sistema depende de su estructura :**
         Para los sistemas biologicos y mecanicos esta afirmacion es intuitiva. Los tejidos musculares, por ejemplo, se contraen porque estan constituidos por una estructura celular que permite contracciones.
+
+# SACADO DE INTERNET
+## **Tres premisas basicas de los sistemas:**
+- 1. **Todo Sistema tiene un proposito u objetivo**
+        Todo sistema existe para cumplir una funcion dentro de un entorno mas amplio. Ejemplo: un sistema contable tiene el proposito de registrar y controlar las operaciones financieras.
+- 2. **Todo Sistema tiene partes interrelacionadas (Subsistemas)**
+        Un sistema no es una unidad aislada, sino que esta compuesto por elementos o procesos que trabajan juntos. Si una parte falla, puede afecta a todo el sistema.
+- 3. **Todo sistema opera dentro de un entorno**
+        Ningun sistema funciona completamente aislado. Interactua con su entorno (otros sistemas, clientes, gobierno, mercado). Esto da luga a entradas (inputs) y salidas (outputs).
 ---
 
 ---
@@ -30,8 +40,6 @@
 - La administracion sistematica se refiere a la aplicacion de un modelo general de insumo-proceso de transformacion-productos con flujos identificables de materia, energia e informacion. Enfatiza las interacciones entre los subsistemas, asi como la del sistema con la del suprasistema al que pertenece la organizacion.
 
 # CONCEPTO de Sistemas:
-
-
 Se puede definir un sistema como un conjunto de elemento dinamicamente relacionados entre si, realizando una actividad para alcanzar un objetivo, operando sobre entradas (informacion, energia o materia) y proveyendo salidas (informacion, energia o materia) procesadas, al medio ambiente en el cual esta inserto. Los elementos son el organo de que lo componen. Formando actividades que es la operacion o procesamiento del sistema para alcanzar un objetivo, o sea la finalidad del sistema, operando sobre datos, energia y materia. Para proveer informacion, energia o materia que son las salidas del sistema.
 
 El sistema esta inserto en un determinado ambiente o medio(entorno) con el cual intercambia o no materia, energia o informacion de acuerdo a su condicion de abierto o cerrado.
@@ -59,7 +67,7 @@ Entrada --> Sistema --> Salida
 Pagina 8 of 16
 
 2. **Medio y los limites de un sistema**: El medio se refiere al conjunto de objetos exteriores que rodean, contienen o influyen al sistema. El medio estaria integrado por todos los sistemas sobre los cuales no se tienen control y que no estan integrado por todos los sistemas. Los sistemas abiertos interactuan con otros sistemas.
-- La definicion de limites de sistema determina cuales sistemas se cinsideran bajo control. Entre el sistema y el medio no hay lineas claras de separacion.
+- La definicion de limites de sistema determina cuales sistemas se consideran bajo control. Entre el sistema y el medio no hay lineas claras de separacion.
 - A medida que ocurren, la propia influencia del sistema tiene una retroalimentacion (feedback).
 Sucede un proceso constante y de adaptacion, evolucion del sistema que responde tanto a lo interno como a lo externo 
 
@@ -135,44 +143,162 @@ Es la parte inferior o parte de un sistema. Es conformado por los elementos que 
 Es el sistema de menor jerarquia y que no necesita ser factorizado para su analisis. Se define por sus entradas y salidas.
 # Sistema de la caja negra
 Es al nombre de denominacion que damos a un sistema al que no podemos factorizar, no lo conocemos internamente sino que conocemos su comportamiento exterior, que se visualiza por sus entradas y salidas.
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Una caja negra es un enfoque o modelo de analisis donde solo nos interesa el comportamiento del sistema (Entradas y Salidas), pero no nos preocupamos por como funciona internamente (los procesos y mecanismos internos).
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
 # Ejercicios:
 🔧 Sistema a analizar: Una Cafetera Eléctrica
 📋 Tu tarea:
 Analizarla identificando los siguientes elementos clave:
+---
+## Nombre del sistema
+- Lapiz
+---
+## Tipo de sistema
+- Tecnologico, material, cerrado, pasivo(no tiene energia propia como un sistema electrico).
 
-Nombre del sistema
+- **Tecnologico**: 
+        - Porque es un objeto creado por el ser humano para cumplir una funcion especifica.
+        - No es natural ni biologico, sino que fue disenado con una intencion funcional: En este caso escribir o dibujar.
+- **Material**:
+        - Porque esta compuesto por elementos **fisicos y tangibles**.
+        - El cuerpo de madera, la mina de grafito, la goma(si tiene): todo se puede tocar.
+Comparando con un software o sistema de gestion online seria no material (**abstracto**).
+- **Cerrado**:
+        - No intercambia informacion ni energia de manera compleja con el entorno.
+        - Solo cumple su funcion cuando alguien lo usa, y no se adapta autmoaticamente al entorno como haria un sistema abierto.
+Comparando con un sistema abierto seria una computadora conectada a interner, que recibe y responde datos constantemente.
+- **Pasivo**:
+        - No tiene energia propia ni se activa por si mismo.
+        - Necesita que una persona lo manipule(tome el lapiz y escriba) para cumplir su proposito.
+Sistema activo: una cafetera electrica, un celular, un robot.
+---
+## Elementos del sistema
+## Entradas
+Fuerza humana(cuando lo agarras y lo moves).
+Superficie de escritura(papel, carton, pizarra, pared blanca, etc.).
+Informacion(lo que se quiere escribir/dibujar).
+---
+## Proceso
+El grafito del lapiz se transfiere al papel por presion y movimiento manual, creando trazos.
+Es una **transformacion mecanica**. 
+## TRANSFORMACION MECANICA:
+        Una transformacion mecanica es un tipo de proceso donde la entrada sufre una modificacion fisica o estructural a traves de un mecanismo o accion mecanica (sin cambios quimicos o electricos). En palabras mas simples: Es cuando algo se transforma usando una fuerza, maquina o movimiento, como cortar, presionar, mezclar, girar, etc.
+---
+## Salidas
+- Texto, dibujo o trazos visibles en el papel.
+---
+## Límites del sistema
+Delimita hasta donde llega sus componentes internos y desde donde empieza el entorno.
+Dentro del limite del sistema(Es parte del lapiz):
+- Mina o grafito (el nucleo)
+- Madera que lo recubre
+- Borrador(si tiene)
+- Funda metalica que sujeta el borrador
+- Su forma fisica total(cilidrico, hexagonal, etc).
 
-Tipo de sistema
-
-Entradas
-
-Proceso
-
-Salidas
-
-Límites del sistema
-
-Entorno
-
-Retroalimentación
-
-Objetivo del sistema
-
-
-
-
-
+**Ayuda a:**
+Analizar el sistema como algo cerrado o controlado.
+Ver que elementos lo afectan o lo usan desde fuera (entradas/salidas).
+Comprender como se relaciona con otros sistemas o usuarios.
+---
+## Componentes fisicos
+Cuerpo de madera(estructura).
+Mina de grafito(componente funcional) : **Esto seria una caja negra**.
+Goma de borrar(opcional, salida correctiva). 
+---
+## Entorno
+- Persona usuaria.
+- Utiles de oficina o escolares.
+- Condiciones del entorno(humedad, tipo de papel, etc.).
+---
+## Retroalimentación:
+- Algunas cafeteras modernas tienen luces LED o emiten un sonido para decir que el proceso termino, eso seria feedback(salida de informacion hacia el usuario). 
+---
+## Objetivo del sistema
+- Permitir escribir o dibujar sobre una superficie (Trazar).
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+## Nombre del Sistema:
+- Cafetera electrica
+## Entrada
+- Energia electrica(corriente que la activa)
+- Agua
+- Cafe molido
+- Filtro de papel
+- Informacion del usuario(Configuracion del boton o temporizador)
+## Salida
+- Cafe
+- Agua que queda en el tanque
+- vapor 
+## Proceso
+- Hacer el cafe automaticamente despues de presionar un boton.
+- El agua va al tanque donde se calienta el cafe para ser despues depositado en el vaso.
+- Es una transformacion mecanica y termica
+## Salida
+- El cafe caliente 
+## Componentes fisicos
+- Cafetera de metal
+- Contiene una jarra para el agua
+- Contiene un depositador de cafe molido
+## Entorno del sistema
+- El vaso
+- El ser humano
+- en el caso que sea en una cafeteria las personas
+- la mesa donde esta apollado
+- la electricidad
+- la jarra
+## Retroalimentacion 
+- Sensores
+- botones para regular la temperatura
+- boton para medir la taza o vaso a llenar
+## Objetivo del sistema
+- Hacer cafe y depositarlo en un vaso 
+## Tipo de sistema
+- **Tecnologico**(usa componentes electricos/ mecanicos)
+- **Automatico/ semi automatico**(si no requiere atencion constante)
+- **Cerrado o semi-cerrado**(Interactua con el entorno pero tiene un proceso interno definido).
+- **Material**(es fisico)
+- **Retroalimentacion interna**
 
