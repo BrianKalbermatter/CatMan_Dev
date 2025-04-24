@@ -41,6 +41,22 @@ git clone https://github.com/BrianKalbermatter/CatMan_Dev.git
 **Son solo pseudocodigos personales para la Facultad! Especiales solo para una materia.**
 **Antes de realizar cada ejercicio siempre leer primero bien la consigna y luego realizarla.**
 
+Primero las constantes y luego las variables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![Imagen_Doc](internal_documentation_guide-1200x684.jpg)
 
 # Introduccion
@@ -655,6 +671,7 @@ FinAccion
 
 
 # EJERCICIO DE DICORD DE ALGORITMO
+## Ejercicio 1.1.9 
 ```bash
     ACCION ViajeEuropa ES
         AMBIENTE:
@@ -680,15 +697,19 @@ FinAccion
     
             SI diferencia = 0 ENTONCES
                 ESCRIBIR('¡Felicidades! Tiene el dinero justo para el viaje.')
+            SINO
+                SI diferencia > 0 ENTONCES
+                    pesos := diferencia * cotiz_eu_a_pesos;
+                    ESCRIBIR('¡Felicidades! Le sobra dinero. Sobrante: ',pesos, ' pesos.');
                 SINO
-                    SI diferencia > 0 ENTONCES
-                        pesos := diferencia * cotiz_eu_a_pesos;
-                        ESCRIBIR('¡Felicidades! Le sobra dinero. Sobrante: ',pesos, ' pesos.');
-                    FIN_SI
-                SINO
-                    pesos := abs(diferencia) * cotiz_eu_a_pesos;
+                    pesos := abso(diferencia) * cotiz_eu_a_pesos;
                     ESCRIBIR('Aun no alcanza. Le faltan: ',pesos, ' pesos.');
                 FIN_SI
             FIN_SI
     FIN ACCION
 ```
+
+
+
+# Estructuras Ciclica
+Repetidores
