@@ -708,8 +708,628 @@ FinAccion
             FIN_SI
     FIN ACCION
 ```
+# Ejercicio 11:
+Dados dos **numeros enteros** A y B generar un algoritmo que permita determinar si A es divisor de B o B es divisor de A.
+```bash
+    ACCION numeros_divisores ES
+        AMBIENTE
+            numero_entero_A: ENTERO;
+            numero_entero_B: ENTERO;
+            resto_AyB: ENTERO;
+        PROCESO
+            ESCRIBIR("Se determinara si A es divisor de B o B es divisor de A colocando los valores que coloques.");
+            ESCRIBIR("Escribe dos valores: Uno para A y otro para B.");
+            LEER(numero_entero_A);
+            ESCRIBIR("Numero A asignado es: ", numero_entero_A);
+            LEER(numero_entero_B);
+            ESCRIBIR("Numero B asignado es: ", numero_entero_B);
+            SI numero_entero_A % numero_entero_B = 0 ENTONCES
+                ESCRIBIR("A es divisor de B");
+                SINO
+                    SI numero_entero_B % numero_entero_A
+                        ESCRIBIR("B es divisor de A");
+                    FIN SI
+                SINO
+                    ESCRIBIR("No son divisores");
+            FIN SI
+    FIN ACCION
+```
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+file:///C:/Users/Usuario/Downloads/Desaf%C3%ADo%20en%20clases%20-%20Estructuras%20de%20Control%20(1).pdf
+---
+---
+# TRAFAJO PRACTICO
+
+## DESAFIO #1
+Preguntas:
+- 1. ¿Cuál es la diferencia entre una estructura de control secuencial y una
+repetitiva?
+**Respuesta:** 
+**Estructura De Control Secuencial:**
+En la estructura de control secuencial los pasos se ejecutan uno tras otros. Esto quiere decir que no es posible acelerar el proceso ejecutando mas pasos al mismo tiempo, porque cada paso tiene lugar desde el estado dejando por el paso anterior. Es decir que se hace de forma paso por paso sin saltarse ninguno. Se almacenan en la misma memoria. Se forma el famoso "cuello de botella" es una de las principales limitaciones de la estructura secuencial. 
+Esta limitacion ha llevado al desarrollo de **Procesamiento Parelelo, arquitectura multicore, computacion distribuida**.
+Por ejemplo:
+```bash
+    estado_actual :='INICIO';
+    //Comentario: No se puede saltar directamente a 'FINAL'
+    //Comentario: Debe pasar por 'PROCESO' primero
+    estado_actual :='PROCESO';
+    estado_actual :='FINAL';
+```
+**Estructura De Control Repetitivo:**
+Es un conjunto de instrucciones que se repite mientras se cumpla una condicion. Se almacena en la misma memoria. La principal diferencia esta en el flujo de ejecucion no en el almacenamiento.
+Es decir que, La principal diferencia **NO** esta en donde se almacenan, sino en **COMO** se ejecutan.
+La diferencia entre esta y el secuencial esta en el patron de ejecucion.
+```bash
+   MIENTRAS condicion HACER
+       instruccion1;
+       instruccion2;
+   FIN MIENTRAS
+```
+
+- 2. ¿En qué casos es más conveniente usar un ciclo Pre-test en lugar de uno manejado por contador?
+Respuesta: 
+Se usaria un pre-test cuando no sabes el numero exacto de iteraciones. Podes saltar el bucle completamente si la condicion es falsa desde el inicio.
+Pero para un manejador de contadores usarias cuando sabes exactamente cuantas iteraciones necesitas. Y se termina el bucle cuando termina la cantidad de iteraciones.
+
+**Escenario:** Una academia necesita llevar el control de asistencia de estudiantes durante una semana. Cada dia se registra cuantos estudiantes asistieron y al final se quiere saber el promedio de asistencia semanal.
+### Respuesta:
+Lo que se pide es llevar un control de asistencia de estudiantes durante una semana(7 dias) Se utilizaria un segun
+Cada dia 
+se registra cuantos estudiantes asistieron 
+---
+# CON UN SEGUN 
+```bash
+    ACCION asistencias_estudiantes ES
+    
+    AMBIENTE:
+        total_de_asistencias_semanal: ENTERO;
+        numero_estudiantes: ENTERO;
+        dias: ENTERO;
+        dia_semana: ENTERO;
+    PROCESO:
+        total_de_asistencias_semanal:=0;
+        SEGUN dia_semana HACER
+            CASO 1: //COMENTARIO: Lunes
+                ESCRIBIR('Describa cuantos estudiantes asistieron el dia Lunes:'); 
+                LEER(numero_estudiantes);
+                total_de_asistencias_semanal := total_de_asistencias_semanal + numero_estudiantes  
+            CASO 2: //COMENTARIO: Martes
+                ESCRIBIR('Describa cuantos estudiantes asistieron el dia Martes:');
+                LEER(numero_estudiantes);
+                total_de_asistencias_semanal := total_de_asistencias_semanal + numero_estudiantes
+            CASO 3: //COMENTARIO: Miercoles
+                ESCRIBIR('Describa cuantos estudiantes asistieron el dia Miercoles:');
+                LEER(numero_estudiantes);
+                total_de_asistencias_semanal := total_de_asistencias_semanal + numero_estudiantes
+            CASO 4: //COMENTARIO: Jueves
+                ESCRIBIR('Describa cuantos estudiantes asistieron el dia Jueves:');
+                LEER(numero_estudiantes);
+                total_de_asistencias_semanal := total_de_asistencias_semanal + numero_estudiantes     
+            CASO 5: //COMENTARIO: Viernes
+                ESCRIBIR('Describa cuantos estudiantes asistieron el dia Viernes:');
+                LEER(numero_estudiantes);
+                total_de_asistencias_semanal := total_de_asistencias_semanal + numero_estudiantes
+            SINO
+                ESCRIBIR('Numero De Dia No Valido.');
+        FIN SEGUN
+        ESCRIBIR('El total de las asistencias de la semana es de: ', total_de_asistencias_semanal);
+        ESCRIBIR('El promedio de la semana de asistencias es de:', total_de_asistencias_semanal / 5);
+        
+        //COMENTARIO: LO QUE HICE FUE AL RESULTADO QUE SE FUE ACUMULANDO EN LA SEMA DIVIDIRLO POR 5, QUE SON LOS 5 DIAS DE LA SEMANA Y TENER ASI EL PROMEDIO DE ASISTENCIAS SEMANALES.
+    
+    FIN ACCION
+
+```
+---
+# CON UN PARA
+```bash
+DESDE 1 HASTA 7
+```
+# CON UN MIENTRAS
+
+# CON UN REPETIR
+
+
+
+## DESAFIO #2
+Preguntas:
+- 1. ¿Qué papel juega la variable de control en los bucles manejados por contador?
+
+- 2. ¿Qué sucede si no se actualiza la condición de corte en un ciclo Pretest?
+
+**Escenario:** Un almacen desea registrar el stock inicial de 10 productos y simular la venta diaria de cada uno durante 5 dias. Se debe informar cuantos productos quedaron sin stock al final de la semana.
+
+# CON UN SEGUN
+
+# CON UN PARA
+```bash
+    ACCION almacen ES
+    AMBIENTE:
+        stock_productos: ENTERO;
+        cinco_dias: ENTERO;
+        venta_productos: ENTERO;
+        cantidad_producto_totales: ENTERO;
+    PROCESO:
+        stock_productos:= 10;
+        PARA cinco_dias DESDE 1 HASTA 5 HACER
+            ESCRIBIR('Cuantos productos quiere llevar tengo 10. Coloque un valor: ');
+            LEER(venta_productos);
+            SI venta_productos <= stock_productos ENTONCES
+                cantidad_producto_totales:= stock_productos - venta_productos
+
+            FIN SI
+        FIN PARA;
+        ESCRIBIR('Cantidad de producto que quedan en stock son:',cantidad_producto_totales);
+    FIN ACCION
+```
+
+# CON UN MIENTRAS
+
+# CON UN REPETIR
+
+## DESAFIO #3
+Preguntas:
+1. ¿Qué diferencia hay entre una estructura manejada por contador y una Posttest si se quiere validar datos al menos una vez?
+
+2. ¿Qué técnicas se pueden aplicar para asegurar que los datos ingresados sean correctos dentro de un ciclo?
+
+**Escenario:** Un sistema de lotería permite ingresar hasta 5 números elegidos por el usuario, entre 1 y 45, sin repetir. Se debe validar cada número, almacenarlos, y luego mostrar los elegidos. 
+
+## DESAFIO #4
+Preguntas:
+1. ¿Qué consecuencias puede traer una mala elección del tipo de ciclo repetitivo en un algoritmo?
+
+2. ¿Por qué es importante definir correctamente la condición de salida de un ciclo pre-test?
+
+**Escenario:** Una empresa de energía simula el consumo de electricidad de una casa durante los 30 días del mes. Cada día se ingresan los kWh consumidos. Se debe mostrar el total y el promedio mensual.
+
+## DESAFIO #5
+Preguntas:
+1. Describa cómo un mal diseño de la condición de corte en un ciclo puede llevar a un bucle infinito.
+
+2. ¿Qué estructuras de control usaría para analizar múltiples indicadores de rendimiento por semana? Justifique.
+
+## DESAFIO #6
+Preguntas Teoricas:
+1. ¿Qué criterios se deben considerar para elegir una estructura repetitiva manejada por contador en vez de una pretest?
+2. ¿Qué características debe tener un ciclo para poder procesar una cantidad indefinida de datos correctamente?
+
+**Escenario:** Se ingresan los precios de 20 productos de una compra para calcular el total y aplicar un descuento por monto. Si el total supera los $20000 tiene un descuento del 5%, si supera los $35000 tiene un descuento del 10%, en otro caso no tiene descuento.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+# Estructuras de Control
+**Diferencia entre PRE-TEST y POST-TEST en estructuras de control**:
+## PRE-TEST (Mientras/While):
+- La condicion se evalua **ANTES** de ejecutar el cuerpo del bucle.
+- Si la condicion es falsa desde el inicio, el bucle no se ejecuta ni una vez.
+```bash
+   MIENTRAS condicion HACER
+       instrucciones
+   FIN MIENTRAS
+```
+## POST-TEST (Repetir/Do-While):
+- La condicion se evalua DESPUES de ejecutar el cuerpo del bucle.
+- El bucle se ejecuta al menos una vez, incluso si la condicion es falsa.
+```bash
+   REPETIR
+       instrucciones
+   HASTA condicion
+```
+### Cuándo usar cada uno:
+
+Usar **Pre-Test**:
+No sabes si necesitas ejecutar el bucle al menos una vez. La condicion puede ser falsa desde el inicio. Ejemplo: Procesar numeros hasta encontrar uno negativo,
+```bash
+    MIENTRAS numero >= 0 HACER
+        LEER(numero)
+    FIN MIENTRAS
+``` 
+Usar **Post-test**:
+Sabes que necesitas ejecutar el bucle al menos una vez. La validacion debe ocurrir despues de la primera ejecucion. Ejemplo: Pedir una contrasena hasta que sea correcta,
+```bash
+   REPETIR
+       LEER(contraseña)
+   HASTA contraseña = "correcta"
+```
+La eleccion entre uno u otro depende de si necesitas garantizar al menos una ejecucion del bucle(post-test) o si quieres podes saltar el bucle completamente (pre-test).
+
+
+
+---
+# Pascal
+file:///C:/Users/Usuario/Documents/Libros/Programacion/libro-completo-PASCAL.pdf
+
+## Division euclidea: o division entera es una operacion matematica que se usa en arimetica y tiene aplicaciones importantes en la programacion, en Pascal se presenta de dos formas: 
+- **DIV:** Devuelve el cociente de la division entera.
+- **MOD:** Devuelve el resto de la division entera.
+
+(**dividendo = (divisor x cociente) + resto**) el par (0, dividendo) siempre es una solucion.
+Es muy util para calcular el maximo comun divisor (MCD).
+Trabajar con Arimetica Modular
+**Arimetica Modular**: Tambien conocida como arimetica del reloj o arimetica de los residuos es un sistema de arimetica para numeros enteros donde los numeros "dan la vuelta" al llegar a un valor modular.
+Por ejemplo:
+Dias de la semana (modulo 7)
+Si hoy es lunes (1) y queremos saber que dia sera
+dia := (1 + 10) MOD 7  --> Resultado: 4 (viernes)
+
+**Algoritmo de hash** se refiere a una funcion matematica que convierte datos de cualquier tamano en una cadena de longitud fija.
+
+* Las tres partes fundamentales de un algoritmo
+Entrada
+Proceso
+Salida
+
+# PRECISION
+**Precision Numerica:** Es un concepto de dimenciones. Se refiere a cuantos digitos significativos puede manejar un algoritmo.
+Como por ejemplo:
+En PASCAL
+Real // Este significa Presicion Estandar
+Single // Este significa Presicion Simple
+Double // Este significa Presicion Doble
+Extended // Este significa Presicion Extendida
+Tambien esta Precision en Calculos, Decisiones, Datos
+
+**Suma Lenta:**
+```bash 
+ACCION SumaLenta ES
+    AMBIENTE:
+        a, b: Entero;
+        resultado: Entero;
+    PROCESO:
+        resultado := 0;
+        MIENTRAS b > 0 HACER
+            resultado := resultado + 1;
+            b := b - 1;
+        FIN MIENTRAS;
+        resultado := resultado + a;
+        ESCRIBIR("La suma lenta de ", a, " y ", b, " es: ", resultado);
+FIN ACCION
+```
+Lo que hace este algoritmo es:
+Inicializacion de **resultado** en 0
+A las variables a y b por obviedad se le asigna un valor por ejemplo a: 10 y b: 10.
+Bucle MIENTRAS: El bucle se ejecuta mietras b sea mayor que 0. Se incrementa en cada iteracion
+Se incrementa **resultado** en 1
+se decrementa b en 1
+Suma final: Despues de que el bucle termina, se suma a al **resultado**.
+
+# DETERMINISMO
+Significa que un algoritmo siempre producira el mismo resultado cuando se le dan las mismas entradas y se ejecuta en las mismas condiciones.
+
+# FINITUD
+La descripcion de un algoritmo debe ser finita
+
+En el contexto y teoria de conjuntos, la expresion "F ⊂ E" significa que F es un subconjunto propio de E.
+**Esto significa que:**
+- Todos los elementos de F estan contenidos en E 
+- F no es igual a E(E contiene al menos un elemento que no esta en F).
+## Ejemplo:
+```bash
+ACCION EjemploSubconjunto ES
+    AMBIENTE:
+        // E = {1,2,3,4,5,6,7,8,9,10}
+        // F = {2,4,6,8}
+        conjunto_E: Arreglo[1..10] de Entero;
+        conjunto_F: Arreglo[1..4] de Entero;
+        elemento: Entero;
+        pertenece: Booleano;
+    
+    PROCESO:
+        // Inicializar conjunto E
+        PARA i DESDE 1 HASTA 10 HACER
+            conjunto_E[i] := i;
+        FIN PARA;
+        
+        // Inicializar conjunto F (números pares)
+        conjunto_F[1] := 2;
+        conjunto_F[2] := 4;
+        conjunto_F[3] := 6;
+        conjunto_F[4] := 8;
+        
+        // Verificar si un elemento pertenece a F
+        ESCRIBIR("Ingrese un número para verificar si pertenece a F: ");
+        LEER(elemento);
+        
+        pertenece := FALSO;
+        PARA i DESDE 1 HASTA 4 HACER
+            SI conjunto_F[i] = elemento ENTONCES
+                pertenece := VERDADERO;
+            FIN SI;
+        FIN PARA;
+        
+        SI pertenece ENTONCES
+            ESCRIBIR("El elemento ", elemento, " pertenece a F");
+        SINO
+            ESCRIBIR("El elemento ", elemento, " no pertenece a F");
+        FIN SI;
+        
+        // Verificar que F es subconjunto de E
+        ESCRIBIR("Verificando que F es subconjunto de E...");
+        PARA i DESDE 1 HASTA 4 HACER
+            elemento := conjunto_F[i];
+            pertenece := FALSO;
+            PARA j DESDE 1 HASTA 10 HACER
+                SI conjunto_E[j] = elemento ENTONCES
+                    pertenece := VERDADERO;
+                FIN SI;
+            FIN PARA;
+            SI NO pertenece ENTONCES
+                ESCRIBIR("¡Error! F no es subconjunto de E");
+                SALIR;
+            FIN SI;
+        FIN PARA;
+        ESCRIBIR("F es subconjunto de E");
+FIN ACCION
+```
+---
+## EJEMPLO EN PASCAL
+
+```bash
+program EjemploSubconjunto;
+var
+  conjunto_E: array[1..10] of Integer;
+  conjunto_F: array[1..4] of Integer;
+  elemento: Integer;
+  pertenece: Boolean;
+  i, j: Integer;
+begin
+  // Inicializar conjunto E
+  for i := 1 to 10 do
+    conjunto_E[i] := i;
+  
+  // Inicializar conjunto F (números pares)
+  conjunto_F[1] := 2;
+  conjunto_F[2] := 4;
+  conjunto_F[3] := 6;
+  conjunto_F[4] := 8;
+  
+  // Verificar si un elemento pertenece a F
+  Write('Ingrese un número para verificar si pertenece a F: ');
+  ReadLn(elemento);
+  
+  pertenece := False;
+  for i := 1 to 4 do
+    if conjunto_F[i] = elemento then
+      pertenece := True;
+  
+  if pertenece then
+    WriteLn('El elemento ', elemento, ' pertenece a F')
+  else
+    WriteLn('El elemento ', elemento, ' no pertenece a F');
+  
+  // Verificar que F es subconjunto de E
+  WriteLn('Verificando que F es subconjunto de E...');
+  for i := 1 to 4 do
+  begin
+    elemento := conjunto_F[i];
+    pertenece := False;
+    for j := 1 to 10 do
+      if conjunto_E[j] = elemento then
+        pertenece := True;
+    
+    if not pertenece then
+    begin
+      WriteLn('¡Error! F no es subconjunto de E');
+      Exit;
+    end;
+  end;
+  WriteLn('F es subconjunto de E');
+end.
+```
+
+---
+
+# Automata finito o maquina de estados finitos
+
+## Ejemplo:
+
+```bash
+ACCION EjemploTransicion ES
+    
+    AMBIENTE:
+        //COMENTARIO: E = {'INICIO', 'PROCESO', 'FINAL'}
+        
+        estado_actual: Texto;
+    
+    PROCESO:
+        estado_actual := 'INICIO';
+        
+        //COMENTARIO: Función de transición t
+
+        SEGUN estado_actual HACER
+            CASO 'INICIO':
+                estado_actual := 'PROCESO';  //COMENTARIO: t('INICIO') = 'PROCESO'
+            CASO 'PROCESO':
+                estado_actual := 'FINAL';   //COMENTARIO: t('PROCESO') = 'FINAL'
+            CASO 'FINAL':
+                estado_actual := 'INICIO';   //COMENTARIO: t('FINAL') = 'INICIO'
+        FIN SEGUN
+
+FIN ACCION
+```
+# Cualidades deseables de un algoritmo:
+## Generalidad y Eficiencia
+**Generalidad**:
+Es deseable que un algoritmo sirva para una clase de problemas lo mas amplia posible. Por ejemplo, la clase de problemas "resolver una ecuacion de segundo grado, es mas consistente que la de resolver ecuanciones de primer grado".
+**Eficiencia**:
+Se considera que un algoritmo es mas eficiente cuantos menos pasos emplea en llevar a cabo su cometido.
+
+**Numero Pedrisco:**
+Un numero pedrisco es un numero entero positivo que sigue una secuencia matematica. La secuencia se define por reglas:
+1. Si el numero es par, se divide por 2.
+2. Si el numero es impar, se multiplica por 3 y se suma 1.
+```bash
+
+ACCION SecuenciaPedrisco ES
+    AMBIENTE:
+        numero: Entero
+        secuencia: Entero
+    PROCESO:
+        ESCRIBIR("Ingrese un número entero positivo: ")
+        LEER(numero)
+        
+        ESCRIBIR("Secuencia de Pedrisco para ", numero, ":")
+        ESCRIBIR(numero)
+        
+        MIENTRAS numero > 1 HACER
+            SI numero MOD 2 = 0 ENTONCES
+                // Si es par, dividir por 2
+                numero := numero DIV 2
+            SINO
+                // Si es impar, multiplicar por 3 y sumar 1
+                numero := (numero * 3) + 1
+            FIN SI
+            ESCRIBIR(numero)
+        FIN MIENTRAS
+FIN ACCION
+```
+me quede en la pagina 38.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Link para los ejercicios, guia: **https://linktr.ee/aed.2025.c**. UTN
 # Estructuras Ciclica
 Repetidores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+![ImagenTablaDeTiposDeDatos](./Tabla_de_Tipos_de_Numeros_de_Pascal.png)
+
+# Tarea De Tipos De Numeros De Pascal
+## Dia π
+Desafío 1: Fibonacci Básico
+Implementa una función que devuelva el n-ésimo término de la secuencia de Fibonacci
+Entrada: Un número entero n (0 <= n <= 40)
+Salida: El n-ésimo término de la secuencia.
+Ejemplo:
+Entrada: 10
+Salida: 55
+Restricciones: Solución iterativa o recursiva SIN optimización.
+Recuerden envíar su código usando las triples comillas invertidas
+
+## Desafío 2: Fibonacci Optimizado
+Optimiza el cálculo del n-ésimo término de Fibonacci utilizando memoización o programación dinámica.
+Entrada: Un número entero n (0 <= n <= 10^6)
+Salida: El n-ésimo término de Fibonacci módulo 10^9+7
+Ejemplo:
+**Entrada** 1000000
+**Salida**: ??? (gran número)
+
+Restricciones: La solución debe ejecutrase en O(log n) o mejor
+
+# RESPUESTA:

@@ -93,32 +93,7 @@ Ideal para aprender a usar repeat...until o while.
 
 
 
----
-![ImagenTablaDeTiposDeDatos](./Tabla_de_Tipos_de_Numeros_de_Pascal.png)
 
-# Tarea
-## Dia π
-Desafío 1: Fibonacci Básico
-Implementa una función que devuelva el n-ésimo término de la secuencia de Fibonacci
-Entrada: Un número entero n (0 <= n <= 40)
-Salida: El n-ésimo término de la secuencia.
-Ejemplo:
-Entrada: 10
-Salida: 55
-Restricciones: Solución iterativa o recursiva SIN optimización.
-Recuerden envíar su código usando las triples comillas invertidas
-
-## Desafío 2: Fibonacci Optimizado
-Optimiza el cálculo del n-ésimo término de Fibonacci utilizando memoización o programación dinámica.
-Entrada: Un número entero n (0 <= n <= 10^6)
-Salida: El n-ésimo término de Fibonacci módulo 10^9+7
-Ejemplo:
-**Entrada** 1000000
-**Salida**: ??? (gran número)
-
-Restricciones: La solución debe ejecutrase en O(log n) o mejor
-
-# RESPUESTA:
 
 
 
