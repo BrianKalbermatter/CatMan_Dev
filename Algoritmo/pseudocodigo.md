@@ -805,30 +805,30 @@ Pero para un manejador de contadores usarias cuando sabes exactamente cuantas it
 
 **Escenario:** Una academia necesita llevar el control de asistencia de estudiantes durante una semana. Cada dia se registra cuantos estudiantes asistieron y al final se quiere saber el promedio de asistencia semanal.
 ### Respuesta:
-Lo que se pide es llevar un control de asistencia de estudiantes durante una semana(7 dias) Se utilizaria un segun
+Lo que se pide es llevar un control de asistencia de estudiantes durante una semana(5 dias) Se utilizaria un segun
 Cada dia 
 se registra cuantos estudiantes asistieron 
 ---
-# CON UN SEGUN 
+
 ```bash
     ACCION asistencias_estudiantes ES
     
     AMBIENTE:
         total_de_asistencias_semanal: ENTERO;
         numero_estudiantes: ENTERO;
-        dias: ENTERO;
-        dia_semana: ENTERO;
+        dia: ENTERO;
+        promedio_semanal: REAL;
     PROCESO:
         total_de_asistencias_semanal:=0;
-        ESCRIBIR('Escribe el dia de la semana que desea verificar:');
-        LEER(dia_semana);
-
-        PARA dia_semana < 6 HACER
-            ESCRIBIR('El total de las asistencias de la semana es de: ', total_de_asistencias_semanal);
-            ESCRIBIR('El promedio de la semana de asistencias es de:', total_de_asistencias_semanal / 5);
         
-        //COMENTARIO: LO QUE HICE FUE AL RESULTADO QUE SE FUE ACUMULANDO EN LA SEMANA DIVIDIRLO POR 5, QUE SON LOS 5 DIAS DE LA SEMANA Y TENER ASI EL PROMEDIO DE ASISTENCIAS SEMANALES.
-    
+        PARA dia DESDE 1 HASTA 5 HACER
+            ESCRIBIR('Ingrese la cantidad de estudiantes que asistieron el dia ', dia, ": ");
+            LEER(numero_estudiantes)
+            total_de_asistencias:= total_de_asistencias_semanal + numero_estudiantes;
+        FIN_PARA;
+        promedio_semanal:= total_de_asistencias_semanal/ 5;
+        ESCRIBIR("El numero de asistencias de la semana es ", total_de_asistencias);
+        ESCRIBIR("El promedio de asistencia semanal es: ", promedio_semanal);
     FIN ACCION
 
 ```
@@ -872,6 +872,29 @@ Preguntas:
             FIN SI
         FIN PARA;
         ESCRIBIR('Cantidad de producto que quedan en stock son:', cantidad_producto_totales);
+    FIN ACCION
+```
+
+# Control de Asistencia Semanal con PARA
+```bash
+    ACCION control_asistencia_semanal ES
+        AMBIENTE:
+            asistencia_diaria: ENTERO;
+            total_asistencias: ENTERO;
+            promedio_semanal: REAL;
+            dia: ENTERO;
+        PROCESO:
+            total_asistencias := 0;
+            
+            PARA dia DESDE 1 HASTA 7 HACER
+                ESCRIBIR("Ingrese la cantidad de estudiantes que asistieron el día ", dia, ": ");
+                LEER(asistencia_diaria);
+                total_asistencias := total_asistencias + asistencia_diaria;
+            FIN PARA;
+            
+            promedio_semanal := total_asistencias / 7;
+            ESCRIBIR("El total de asistencias de la semana es: ", total_asistencias);
+            ESCRIBIR("El promedio de asistencia semanal es: ", promedio_semanal);
     FIN ACCION
 ```
 
@@ -1330,3 +1353,49 @@ Ejemplo:
 Restricciones: La solución debe ejecutrase en O(log n) o mejor
 
 # RESPUESTA:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
