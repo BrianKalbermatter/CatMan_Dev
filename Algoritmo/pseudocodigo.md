@@ -747,6 +747,19 @@ Dados dos **numeros enteros** A y B generar un algoritmo que permita determinar 
 
 
 
+---
+# LIBRO DE ESTRUCTURA DE DATOS 
+chrome-extension://gfbliohnnapiefjpjlpjnehglfpaknnc/pages/pdf_viewer.html?file=https://eduarmandov.wordpress.com/wp-content/uploads/2017/05/datastructures-estructuras-de-datos-osvaldo-cairo.pdf
+---
+
+
+
+
+
+
+
+
+
 
 
 
@@ -754,7 +767,7 @@ Dados dos **numeros enteros** A y B generar un algoritmo que permita determinar 
 file:///C:/Users/Usuario/Downloads/Desaf%C3%ADo%20en%20clases%20-%20Estructuras%20de%20Control%20(1).pdf
 ---
 ---
-# TRAFAJO PRACTICO
+# TRABAJO PRACTICO
 
 ## DESAFIO #1
 Preguntas:
@@ -762,7 +775,9 @@ Preguntas:
 repetitiva?
 **Respuesta:** 
 **Estructura De Control Secuencial:**
-En la estructura de control secuencial los pasos se ejecutan uno tras otros. Esto quiere decir que no es posible acelerar el proceso ejecutando mas pasos al mismo tiempo, porque cada paso tiene lugar desde el estado dejando por el paso anterior. Es decir que se hace de forma paso por paso sin saltarse ninguno. Se almacenan en la misma memoria. Se forma el famoso "cuello de botella" es una de las principales limitaciones de la estructura secuencial. 
+- En la estructura de control secuencial los pasos se ejecutan uno tras otros. Esto quiere decir que no es posible acelerar el proceso ejecutando mas pasos al mismo tiempo, porque cada paso tiene lugar desde el estado dejando por el paso anterior. Es decir que se hace de forma paso por paso sin saltarse ninguno. 
+- Se almacenan en la misma memoria. 
+- Se forma el famoso "cuello de botella" es una de las principales limitaciones de la estructura secuencial. 
 Esta limitacion ha llevado al desarrollo de **Procesamiento Parelelo, arquitectura multicore, computacion distribuida**.
 Por ejemplo:
 ```bash
@@ -805,34 +820,14 @@ se registra cuantos estudiantes asistieron
         dia_semana: ENTERO;
     PROCESO:
         total_de_asistencias_semanal:=0;
-        SEGUN dia_semana HACER
-            CASO 1: //COMENTARIO: Lunes
-                ESCRIBIR('Describa cuantos estudiantes asistieron el dia Lunes:'); 
-                LEER(numero_estudiantes);
-                total_de_asistencias_semanal := total_de_asistencias_semanal + numero_estudiantes  
-            CASO 2: //COMENTARIO: Martes
-                ESCRIBIR('Describa cuantos estudiantes asistieron el dia Martes:');
-                LEER(numero_estudiantes);
-                total_de_asistencias_semanal := total_de_asistencias_semanal + numero_estudiantes
-            CASO 3: //COMENTARIO: Miercoles
-                ESCRIBIR('Describa cuantos estudiantes asistieron el dia Miercoles:');
-                LEER(numero_estudiantes);
-                total_de_asistencias_semanal := total_de_asistencias_semanal + numero_estudiantes
-            CASO 4: //COMENTARIO: Jueves
-                ESCRIBIR('Describa cuantos estudiantes asistieron el dia Jueves:');
-                LEER(numero_estudiantes);
-                total_de_asistencias_semanal := total_de_asistencias_semanal + numero_estudiantes     
-            CASO 5: //COMENTARIO: Viernes
-                ESCRIBIR('Describa cuantos estudiantes asistieron el dia Viernes:');
-                LEER(numero_estudiantes);
-                total_de_asistencias_semanal := total_de_asistencias_semanal + numero_estudiantes
-            SINO
-                ESCRIBIR('Numero De Dia No Valido.');
-        FIN SEGUN
-        ESCRIBIR('El total de las asistencias de la semana es de: ', total_de_asistencias_semanal);
-        ESCRIBIR('El promedio de la semana de asistencias es de:', total_de_asistencias_semanal / 5);
+        ESCRIBIR('Escribe el dia de la semana que desea verificar:');
+        LEER(dia_semana);
+
+        PARA dia_semana < 6 HACER
+            ESCRIBIR('El total de las asistencias de la semana es de: ', total_de_asistencias_semanal);
+            ESCRIBIR('El promedio de la semana de asistencias es de:', total_de_asistencias_semanal / 5);
         
-        //COMENTARIO: LO QUE HICE FUE AL RESULTADO QUE SE FUE ACUMULANDO EN LA SEMA DIVIDIRLO POR 5, QUE SON LOS 5 DIAS DE LA SEMANA Y TENER ASI EL PROMEDIO DE ASISTENCIAS SEMANALES.
+        //COMENTARIO: LO QUE HICE FUE AL RESULTADO QUE SE FUE ACUMULANDO EN LA SEMANA DIVIDIRLO POR 5, QUE SON LOS 5 DIAS DE LA SEMANA Y TENER ASI EL PROMEDIO DE ASISTENCIAS SEMANALES.
     
     FIN ACCION
 
@@ -876,7 +871,7 @@ Preguntas:
 
             FIN SI
         FIN PARA;
-        ESCRIBIR('Cantidad de producto que quedan en stock son:',cantidad_producto_totales);
+        ESCRIBIR('Cantidad de producto que quedan en stock son:', cantidad_producto_totales);
     FIN ACCION
 ```
 
@@ -905,6 +900,8 @@ Preguntas:
 1. Describa cómo un mal diseño de la condición de corte en un ciclo puede llevar a un bucle infinito.
 
 2. ¿Qué estructuras de control usaría para analizar múltiples indicadores de rendimiento por semana? Justifique.
+
+**Escenario:** Una empresa evalua 4 indicadores semanales de rendimiento de sus empleados. Los valores se ingresan en forma secuencia para luego calcular el promedio.
 
 ## DESAFIO #6
 Preguntas Teoricas:
