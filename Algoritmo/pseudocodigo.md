@@ -708,6 +708,8 @@ FinAccion
             FIN_SI
     FIN ACCION
 ```
+---
+
 # Ejercicio 11:
 Dados dos **numeros enteros** A y B generar un algoritmo que permita determinar si A es divisor de B o B es divisor de A.
 ```bash
@@ -734,6 +736,319 @@ Dados dos **numeros enteros** A y B generar un algoritmo que permita determinar 
             FIN SI
     FIN ACCION
 ```
+
+---
+
+# Ejercicio 12: USANDO CONDICIONALES
+Escriba un algoritmo que acepte un número entero mayor a 100 y menor a 1000, y muestre cómo está compuesto (unidades, decenas y centenas) y si es múltiplo de 3.
+```bash
+    ACCION numeros_enteros ES
+        AMBIENTE:
+            // Constantes
+
+            // Variables 
+            num_entero: N(3); // Tambien se podria colocar ENTERO
+            // Dato importante: El N(3) indica cuantas unidades tiene el numero entero
+            unidades: N(1);
+            decenas: N(2);
+            centenas: N(3);
+            temp: N(3);
+            // Asignacion
+        PROCESO:
+            ESCRIBIR('Coloque un numero que este entre el 100 y el 1000: ');
+            LEER(num_entero);
+            //Asignacion
+            SI (num_entero > 100) Y (num_entero < 1000) ENTONCES
+                //  Se calcula unidades, decenas y centenas
+                temp:= num_entero DIV 10;
+                unidades:= num_entero MOD 10;
+                decenas:= temp MOD 10;
+                centenas:= temp DIV 10;
+
+                ESCRIBIR('Estas son las unidades: ', unidades);
+                ESCRIBIR('Estas son las decenas: ', decenas);
+                ESCRIBIR('Estas son las centenas: ', centenas);
+                // PARA SACAR EL MULTIPLO DE 3 SE HACE DE LA SIGUIENTE MANERA! :
+                SI num_entero MOD 3 = 0 ENTONCES
+                    ESCRIBIR("Es multiplo de 3");
+                SINO
+                    ESCRIBIR("No es multiplo de 3");
+            SINO
+                    ESCRIBIR("Haz colocado un numero que no esta entre el 100 y el 1000.");
+            FIN_SI;
+    FIN ACCION
+```
+### Recordar siempre el **DIV** es la division del numero. Por ejemplo **25 / 10 = 2,5 => 2**. Pero como es division entera se toma solo el 2. Y siempre el **MOD 25 / 10 = 5**
+### El resto es **5(porque 25 = 10 x 2 + 5)**.
+
+---
+
+# Ejercicio 13: USANDO CONDICIONALES
+Escriba un algoritmo que acepte un número entero mayor a 100 y menor a 1000 que representa una suma de dinero e indique cuántos billetes de cada denominación necesita, suponiendo que solo existen billetes de 100, 10 y 1 peso.
+```bash
+//MANERA 1 DE HACER EL EJERCICIO SIN UN CONDICIONAL:
+// Un numero entero mayor a 100 y menor a 1000 que 
+ACCION numeros_enteros ES
+        AMBIENTE:
+            monto: N(3);
+            billetes_100: N(3);
+            billetes_10: N(2);
+            billetes_1 : N(1);
+
+        PROCESO:
+            // Se ingresa el monto a evaluar
+            ESCRIBIR('Ingrese el monto: ');
+            LEER(monto);
+            // Lo que estoy haciendo aca es verificar si necesito billetes de 100
+            // Para billetes de 100
+            billetes_100:= monto DIV 100; // Cuantos billetes de 100 necesito
+            monto:= monto MOD 100; // Cuanto me queda despues de usar los de 100
+
+            // Para billetes de 10
+            billetes_10:= monto DIV 10; // Cuantos billetes de 10 necesito
+            monto:= monto MOD 10; // Cuanto me queda despues de usar los de 10
+
+            // Para billetes de 1
+            billetes_1:= monto; // Lo que queda son billetes de 1
+
+            ESCRIBIR('Necesitas:');
+            ESCRIBIR(billetes_100, ' billetes de 100');
+            ESCRIBIR(billetes_10, 'billetes de 10');
+            ESCRIBIR(billetes_1, 'billetes de 1');
+    FIN ACCION
+
+// MANERA 2 DE HACER EL EJERCICIO CON UN CONDICIONAL:
+ACCION numeros_enteros ES
+        AMBIENTE:
+            monto: N(3);
+            billetes_100: N(3);
+            billetes_10: N(2);
+            billetes_1 : N(1);
+             
+        PROCESO:
+            // Se ingresa el monto a evaluar
+            ESCRIBIR('Ingrese el monto: ');
+            LEER(monto);
+            // Lo que estoy haciendo aca es verificar si necesito billetes de 100
+            // Para billetes de 100
+            SI monto MOD 100 = 0 ENTONCES
+            billetes_100:= monto DIV 100; // Cuantos billetes de 100 necesito
+            monto:= monto MOD 100; // Cuanto me queda despues de usar los de 100
+
+            // Para billetes de 10
+            billetes_10:= monto DIV 10; // Cuantos billetes de 10 necesito
+            monto:= monto MOD 10; // Cuanto me queda despues de usar los de 10
+
+            // Para billetes de 1
+            billetes_1:= monto; // Lo que queda son billetes de 1
+
+            ESCRIBIR('Necesitas:');
+            ESCRIBIR(billetes_100, ' billetes de 100');
+            ESCRIBIR(billetes_10, 'billetes de 10');
+            ESCRIBIR(billetes_1, 'billetes de 1');
+    FIN ACCION
+```
+
+---
+
+# Ejercicio 14: 
+Escriba un algoritmo que lea el monto total de una compra en un supermercado y determine el total a pagar según los siguientes criterios: Si el monto de la compra supera los $ 200.000, se aplica un 15% de descuento. Luego, se consulta el tipo de entrega (el usuario ingresa el número de opción):
+- Opción 1 → retiro en sucursal, no se suma ningún cargo adicional.
+- Opción 2 → envío a domicilio dentro de Resistencia, se suma un 5% sobre el monto final.
+- Opción 3 → envío a domicilio fuera de Resistencia, se suma un 10% sobre el monto final.
+```bash
+    escribir el monto total de una compra en un super
+    si > 200000 entonces
+    
+```
+---
+
+# EJERCICIOS CON ESTRUCTURAS CONDICIONALES Y REPETITIVAS
+
+# Ejercicio 15:
+a) Hacer un algoritmo que calcule la altura aproximada de un edificio en pies, ingresando como dato la cantidad
+de pisos del mismo y la altura promedio de cada piso, en metros. (1 m = 3.28 pies)
+b) Modifique el algoritmo del punto a) para que permita calcular la altura de 50 edificios.
+c) Modifique el algoritmo del punto a) para que permita calcular la altura de una cantidad indeterminada de
+edificios. Prevea una condición de fin.
+
+# Ejercicio 16:
+a) Diseñe un algoritmo que obtenga el porcentaje de alumnos de ISI, IQ e IEM, sobre el total de egresados de la
+UTN-FRRe de un año.
+b) Modifique el algoritmo del punto a) para que permita obtener e informar los mismos porcentajes, pero para
+varias Facultades y al final emitir el total de alumnos por carrera y total general.
+
+# Ejercicio 17:
+Elabore un algoritmo que calcule el producto de dos enteros A y B empleando sólo la operación suma.
+
+# Ejercicio 18:
+Elabore un algoritmo que calcule el cociente de dos enteros F y G y el resto de la operación, empleando sólo las
+operaciones suma y diferencia.
+
+# Ejercicio 19:
+Escriba un algoritmo que determine si un número es primo.
+
+# Ejercicio 20:
+Escriba un algoritmo para imprimir los números primos menores a un valor dado n.
+
+# Ejercicio 21:
+Escriba un algoritmo para calcular cada renglón de una factura (valor unitario * cantidad vendida) y el total de la
+misma, suponiendo que el número de renglones es variable. Emitir un mensaje de error si el valor unitario es <= 0.
+Realizar la prueba de escritorio con los siguientes valores:
+Cantidad de renglones: 4
+Valor Unitario Cantidad vendida
+2 10
+1 25
+3 15
+2 8,5
+
+# Ejercicio 22:
+Escribir un algoritmo que, dado un importe dinero, permita calcular e informar cuánto corresponde pagar por un
+impuesto, en cuántas cuotas y el valor de las mismas. Tener en cuenta los siguientes datos:
+- IMPUESTO = 10% del importe dado.
+- Los importes mayores que $ 10.000 y menor o igual que $ 50.000 se pagan en dos cuotas.
+- Los mayores de $ 50.000 en tres cuotas.
+El algoritmo debe permitir tratar varios importes, finalizando cuando se ingresa 9999 como importe.
+
+# Ejercicio 23:
+Elabore un algoritmo para calcular los primeros 50 números de FIBONACCI, sabiendo que dichos números
+cumplen con lo siguiente:
+
+A0=0, A1=1, A2=A0+A1, ..... An=A(n-1)+A(n-2).
+
+# Ejercicio 24:
+Construya un algoritmo capaz de encontrar todas las cifras de tres dígitos que cumplan con la condición de que la
+suma de los cubos de sus dígitos sea igual al número que la cifra representa.
+
+# Ejercicio 25:
+Escriba un algoritmo para resolver el siguiente problema: Una empresa de transportes desea conocer el sueldo de
+sus 100 choferes. Estos se calculan teniendo en cuenta la categoría (1 o 2) y la asistencia (perfecta: sí o no).
+El sueldo se obtiene sumando el sueldo básico, más el 2% de antigüedad por cada año trabajado y $200.000 de
+premio por asistencia.
+El sueldo básico es de $700.000 para choferes de categoría 1 y de $600.000 para los de categoría 2.
+
+# Ejercicio 26:
+Una fábrica textil produce telas de dos calidades distintas (primera y segunda) y de dos materiales distintos (seda
+y algodón). Generar un algoritmo que calcule el peso de varias piezas de tela, el cual está dado por la suma del peso
+neto más un porcentaje por el apresto, más el peso del núcleo de cartón.
+Para realizar el cálculo, tener en cuenta la siguiente información, para cada pieza:
+- El peso del m2 y la longitud de cada pieza.
+- Al peso neto de la tela hay que sumarle un porcentaje por cada pieza, debido al apresto, el cual es del 2% para
+las telas de seda y del 7% para las de algodón.
+- También se debe considerar el núcleo de cartón, que es de 400 gr. para los rollos de telas de primera y de 300
+gr. en los de segunda.
+Finalizar cuando la variable FIN sea igual a ‘SI’.
+
+# Ejercicio 27:
+La fecha del domingo de Pascua corresponde al primer domingo después de la primera luna llena que sigue al
+equinoccio de primavera. La secuencia de cálculos que permite conocer esta fecha es:
+A = año mod 19
+B = año mod 4
+C = año mod 7
+D = (19*A + 24 ) mod 30
+E = (2*B + 4*C + 6*D + 5) mod 7
+N = (22+ D + E)
+Donde N indica el número del día del mes de marzo (o abril si N es superior a 31) correspondiente al domingo de
+Pascua. Realizar un algoritmo que determine esta fecha para los años comprendidos entre 1990 y 2010.
+
+# Ejercicio 28:
+Escribir un algoritmo que permita imprimir la siguiente sucesión. Considere que N es un número par, que se
+ingresa.
+2 4 6 8 ... N
+4 6 8 10 ... N
+6 8 10 12 ... N
+....
+....
+N
+
+# Ejercicio 29:
+Escribir un algoritmo que permita imprimir la siguiente sucesión. Considere que N es un número par, que se
+ingresa.
+2 4 6 ................ N
+2 4 6 .......... N-2
+2 4 6 ... N-4
+............
+2 4 6
+2 4
+2
+
+# Ejercicio 30:
+Escriba un algoritmo que acepte un número entero que representa una suma de dinero e indique cuántos billetes
+de cada denominación necesita, suponiendo que solo existen billetes de 500, 100, 50, 20, 10, 5 y 1 peso.
+
+# Ejercicio 31:
+Todo número cuya suma de sus dígitos sea múltiplo de 3 lo es también.
+Ej: 117 → 1+1+7 = 9 que es múltiplo de 3 , entonces 117 es múltiplo de 3
+Realizar un algoritmo que determine si un número es múltiplo de 3 en función de la afirmación antes realizada.
+
+---
+# FUNCIONES Y PROCEDIMIENTOS
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -836,6 +1151,7 @@ se registra cuantos estudiantes asistieron
 # CON UN PARA
 ```bash
 DESDE 1 HASTA 7
+
 ```
 # CON UN MIENTRAS
 
