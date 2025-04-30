@@ -1,8 +1,27 @@
 # Que se conoce como teoria de Sistemas?
 - Se conoce como Teoria de sistemas o Teoria General de Sistemas (T.G.S.) al estudio de los sistemas en general, desde una perspectiva interdisiplinaria, o sea, que abarca distintas diciplinas.
+Se puede definir un sistema como un conjunto de elemento dinamicamente relacionados entre si, realizando una actividad para alcanzar un objetivo, operando sobre entradas (informacion, energia o materia) y proveyendo salidas (informacion, energia o materia) procesadas, al medio ambiente en el cual esta inserto. Los elementos son el organo de que lo componen. Formando actividades que es la operacion o procesamiento del sistema para alcanzar un objetivo, o sea la finalidad del sistema, operando sobre datos, energia y materia. Para proveer informacion, energia o materia que son las salidas del sistema.
+
+El sistema esta inserto en un determinado ambiente o medio(entorno) con el cual intercambia o no materia, energia o informacion de acuerdo a su condicion de abierto o cerrado.
+En resumen el sistema es un: 
+        Conjunto de elementos.
+        Relacionados Dinamicamente.
+        Formando una actividad.
+        Para alcanzar un objetivo.
+        Operando sobre datos, energia y materia 
+        Para proveer informacion, energia y materia.
 
 - Se destaca en identificar los diversos elementos y tendencias indetificables y reconocibles de los sistemas.
+Puede definirse como una forma ordenada y cientifica de aproximacion y representacion del mundo real, y simultaneamente, como una orientacion hacia una practica estimulante para formas de trabajo transdisciplinado. Se distingue por su perspectiva  integradora, donde se considera importante la interaccion y los conjuntos que a partir de ella brotan. Gracias a la practica, la TGS crea un ambiente ideal para la socializacion e intercambio de informacion entre especialistas y especialidades.
 
+# Segun la teoria se compone de 5 elementos fundamentales:
+1. Entradas
+2. Salidas
+3. Transformadores o Procesadores
+4. Retroalimentacion
+5. Medio
+- Tambien existen otros componentes basicos como los objetivos, elementos, relaciones entre unidades
+---
 # Todo Sistema se compone de:
 - **Entradas, insumos o inputs.** Son aquellos procesos que incorporan informacion, energia o materia al sistema, proviene de afuera.
 - **Salidas, productos u outputs.** Son obtenidos mediante el funcionamiento del sistema y que por lo general salen del sistema al medio externo.
@@ -39,17 +58,7 @@
 
 - La administracion sistematica se refiere a la aplicacion de un modelo general de insumo-proceso de transformacion-productos con flujos identificables de materia, energia e informacion. Enfatiza las interacciones entre los subsistemas, asi como la del sistema con la del suprasistema al que pertenece la organizacion.
 
-# CONCEPTO de Sistemas:
-Se puede definir un sistema como un conjunto de elemento dinamicamente relacionados entre si, realizando una actividad para alcanzar un objetivo, operando sobre entradas (informacion, energia o materia) y proveyendo salidas (informacion, energia o materia) procesadas, al medio ambiente en el cual esta inserto. Los elementos son el organo de que lo componen. Formando actividades que es la operacion o procesamiento del sistema para alcanzar un objetivo, o sea la finalidad del sistema, operando sobre datos, energia y materia. Para proveer informacion, energia o materia que son las salidas del sistema.
 
-El sistema esta inserto en un determinado ambiente o medio(entorno) con el cual intercambia o no materia, energia o informacion de acuerdo a su condicion de abierto o cerrado.
-En resumen el sistema es un: 
-        Conjunto de elementos.
-        Relacionados Dinamicamente.
-        Formando una actividad.
-        Para alcanzar un objetivo.
-        Operando sobre datos, energia y materia 
-        Para proveer informacion, energia y materia.
 
 ## COMPONENTES BASICOS DE LOS SISTEMAS:
         Conjunto de elementos.
@@ -58,10 +67,6 @@ En resumen el sistema es un:
         Para alcanzar un objetivo.
         Operando sobre datos, energia y materia 
         Para proveer informacion, energia y materia.
-
-                        Objetivos
-Entrada --> Sistema --> Salida
-        Retroalimentacion
 
 1. **Objetivos**: Los objetivos son necesarios para poder medir la efectividad de los sistemas. Las mediciones de efectividad representan el valor de los atributos de sistemas. 
 Pagina 8 of 16
@@ -301,4 +306,314 @@ Goma de borrar(opcional, salida correctiva).
 - **Cerrado o semi-cerrado**(Interactua con el entorno pero tiene un proceso interno definido).
 - **Material**(es fisico)
 - **Retroalimentacion interna**
+
+
+
+
+
+
+
+
+
+Resumen Completo de Teoría General de Sistemas (TGS)
+1. Concepto Fundamental de Sistema
+Un sistema es un conjunto de elementos dinámicamente relacionados entre sí, que realizan una actividad para alcanzar un objetivo específico, operando sobre entradas (inputs) y proveyendo salidas (outputs) al medio ambiente en el que está inserto.
+
+2. Premisas Básicas de los Sistemas
+2.1     Premisas Fundamentales
+        **Jerarquía de Sistemas:**
+                Los sistemas existen dentro de sistemas (principio de recursividad)
+                        Ejemplo: moléculas → células → tejidos → órganos → organismos
+        **Sistemas Abiertos:**
+                Intercambian materia, energía e información con su entorno
+                Mantienen un proceso de intercambio constante
+                Si el intercambio cesa, el sistema se desintegra
+        **Estructura y Función:**
+                Las funciones de un sistema dependen de su estructura
+                La estructura determina el comportamiento del sistema
+2.2     Premisas Operativas
+                **Propósito u Objetivo:**
+                        -Todo sistema existe para cumplir una función específica
+                                Ejemplo: Sistema contable → registrar operaciones financieras
+                
+                - Interrelación de Partes
+                
+                - Los componentes trabajan juntos
+                
+                - El fallo de una parte puede afectar al todo
+                
+                - Operación en Entorno
+                
+                - Ningún sistema funciona aislado
+
+                - Interactúa con su entorno mediante inputs y outputs
+
+3. Componentes Básicos de un Sistema
+**Entradas (Inputs)**
+**Información**
+**Energía**
+**Materia**
+**Proceso de Transformación**
+**Mecanismo de conversión**
+**Agrega valor y utilidad**
+**Transforma inputs en outputs**
+**Salidas (Outputs)**
+**Resultados del proceso**
+**Productos o servicios**
+**Influencia en el medio ambiente**
+**Retroalimentación (Feedback)**
+**Control y monitoreo**
+**Tipos:**
+**Positiva:** Refuerza el cambio
+**Negativa:** Corrige desviaciones
+
+## Jerarquía de Sistemas
+        Macrosistema
+        Sistema superior que contiene otros sistemas
+                Ejemplo: Universo
+        Sistema
+                Unidad con fronteras definidas
+        Objetivo específico
+        Subsistema
+                Parte de un sistema mayor
+                Mantiene sus propias fronteras y objetivos
+        Sistema Elemental
+                Nivel más bajo de jerarquía
+                No requiere factorización
+## Conceptos Importantes para la UTN
+5.1 Enfoque Sistémico
+Método de análisis
+Técnica de resolución de problemas
+Estilo de administración
+5.2 Caja Negra
+Sistema donde solo se conoce inputs y outputs
+No se conoce el proceso interno
+Útil para análisis inicial
+5.3 Límites del Sistema
+Separación entre sistema y entorno
+Define elementos bajo control
+Determina alcance del análisis
+6. Aplicación en Sistemas de Información
+Componentes de un Sistema de Información
+Hardware
+Software
+Datos
+Procedimientos
+Personas
+Características de Sistemas de Información
+Interactividad
+Retroalimentación
+Adaptabilidad
+Integración
+7. Puntos Clave para el Examen
+Entender la Relación entre Componentes
+Cómo se relacionan las partes
+Impacto de cambios en el sistema
+Identificar Tipos de Sistemas
+Abiertos vs Cerrados
+Materiales vs Abstractos
+Activos vs Pasivos
+Analizar Retroalimentación
+Tipos de feedback
+Impacto en el sistema
+Control y ajuste
+Aplicar Conceptos a Casos Prácticos
+Identificar componentes
+Analizar relaciones
+Proponer mejoras
+8. Ejemplos Prácticos
+Sistema de Cafetera
+Inputs: agua, café, energía
+Proceso: transformación térmica
+Outputs: café, vapor
+Feedback: sensores, controles
+Sistema de Lápiz
+Inputs: fuerza, superficie
+Proceso: transformación mecánica
+Outputs: trazos
+Feedback: visual
+
+
+
+
+
+
+
+
+
+
+
+
+Jerarquías y Definiciones de Sistemas
+1. Jerarquía de Sistemas (Niveles)
+Macrosistema (Nivel Superior)
+Es el sistema más amplio
+Contiene otros sistemas completos
+Ejemplos:
+Universo
+Ecosistema global
+Sistema económico mundial
+Sistema (Nivel Medio)
+Tiene fronteras definidas
+Objetivo específico
+Ejemplos:
+Una empresa
+Un hospital
+Una universidad
+Subsistema (Nivel Inferior)
+Parte de un sistema mayor
+Mantiene sus propias fronteras
+Ejemplos:
+Departamento de RRHH en una empresa
+Sala de emergencias en un hospital
+Facultad de Ingeniería en una universidad
+Sistema Elemental (Nivel Mínimo)
+No requiere factorización
+Se define por entradas y salidas
+Ejemplo: Una computadora individual
+2. Definiciones Clave de Sistema
+2.1 Definición General
+Un sistema es:
+Conjunto de elementos
+Relacionados dinámicamente
+Formando una actividad
+Para alcanzar un objetivo
+Operando sobre datos, energía y materia
+Para proveer información, energía y materia
+2.2 Componentes Esenciales
+Elementos
+Unidades básicas del sistema
+Pueden ser físicos o abstractos
+Relaciones
+Conexiones entre elementos
+Interacciones dinámicas
+Objetivos
+Propósito del sistema
+Meta a alcanzar
+Entradas (Inputs)
+Información
+Energía
+Materia
+Salidas (Outputs)
+Resultados
+Productos
+Servicios
+3. Tipos de Sistemas por Jerarquía
+3.1 Sistema Abierto
+Intercambia materia/energía con el entorno
+Se adapta al medio
+Ejemplo: Ser vivo
+3.2 Sistema Cerrado
+No intercambia materia con el entorno
+Puede intercambiar energía
+Ejemplo: Motor de combustión
+3.3 Sistema Aislado
+No intercambia ni materia ni energía
+Totalmente cerrado
+Ejemplo: Termo ideal
+4. Relaciones entre Niveles
+4.1 Principio de Recursividad
+Cada sistema es subsistema de otro mayor
+Cada subsistema puede contener otros subsistemas
+Ejemplo:
+```
+  Universo → Galaxia → Sistema Solar → Tierra → Ecosistema → Organismo → Célula
+```
+4.2 Interacción entre Niveles
+Los cambios en un nivel afectan a otros
+Existe retroalimentación entre niveles
+Los objetivos deben alinearse
+5. Puntos Clave para el Examen
+5.1 Identificación de Niveles
+Reconocer el nivel jerárquico de un sistema
+Identificar subsistemas
+Determinar límites
+5.2 Análisis de Relaciones
+Cómo se relacionan los niveles
+Impacto de cambios
+Flujo de información/energía
+5.3 Aplicación Práctica
+Ejemplos reales
+Casos de estudio
+Problemas de diseño
+
+6. Ejemplos Prácticos
+
+6.1 Sistema Educativo
+```
+Macrosistema: Sistema Educativo Nacional
+  ↓
+Sistema: Universidad
+  ↓
+Subsistema: Facultad
+  ↓
+Subsistema: Departamento
+  ↓
+Sistema Elemental: Aula
+```
+6.2 Sistema Empresarial
+```
+Macrosistema: Economía
+  ↓
+Sistema: Empresa
+  ↓
+Subsistema: Departamento
+  ↓
+Subsistema: Equipo
+  ↓
+Sistema Elemental: Empleado
+```
+
+7. Preguntas Típicas de Examen
+Identificación
+¿Qué nivel jerárquico tiene este sistema?
+¿Cuáles son sus subsistemas?
+¿Dónde están sus límites?
+Análisis
+¿Cómo se relacionan los niveles?
+¿Qué impacto tienen los cambios?
+¿Cómo fluye la información?
+Aplicación
+Diseñar un sistema jerárquico
+Identificar componentes
+Proponer mejoras
+8. Consejos para Responder
+Estructura
+Comenzar con la definición
+Identificar el nivel
+Explicar relaciones
+Ejemplos
+Usar casos concretos
+Ilustrar con diagramas
+Mostrar aplicaciones
+Claridad
+Definir términos
+Explicar relaciones
+Justificar respuestas
+
+
+
+# EJEMPLO ENGLOBANDO TODO:
+## UNIVERSIDAD:
+**Sistema:** 
+- Universidad (UTN)
+
+**Entradas:** 
+- Informacion: Datos de estudiantes, planes de estudio, investigaciones
+- Energia: Electricidad, recursos energeticos para funcionamiento
+- Materiales: Equipos, mobiliario, materiales didacticos, tecnologia
+
+**Transformacion:**
+- Procesos educativos
+- Procesos administrativos
+- Procesos de investigacion
+- Procesos sociales
+
+**Salidas:**
+- Profesionales graduados
+
+
+
+
+
 
