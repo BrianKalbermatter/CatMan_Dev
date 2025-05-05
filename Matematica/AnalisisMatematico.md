@@ -127,7 +127,11 @@ Puesto que esta ecuacion admite tres soluciones, se puede concluir que la grafic
 - Es una sucesion finitas de puntos. Se llama recta real a la relacion binaria ( significa 1 con 1 ) de un punto de la recta con un numero real.
 
 # Logaritmo:
-
+- Un logaritmo es una operacion matemáticas que responde a esta pregunta:
+¿A qué potencia hay que elevar una base para obtener un cierto número?
+El logaritmo en base b de un numero x, se escribe como:
+    logb(x)=y Significa => b y = x
+Es decir, el logaritmo es el exponente al que hay que elevar la base b para obtener el numero x.
 # Conicas:
 
 
