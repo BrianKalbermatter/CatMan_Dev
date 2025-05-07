@@ -43,3 +43,95 @@ La velocidad instantanea puede ser negativa,cero o positiva.
 - 2. Comportamiento de dicha entidad con el entorno.
 
 
+
+
+---
+# 1 FISICA Y MEDICION
+---
+1.1
+1. # Estandares de longitud, masa y tiempo:
+
+- **Logitud**: Distancia entre dos puntos, su sistema internacional de medicion es en **metros**.
+- **Masa**: La unidad fundamental del SI de **Masa**, el kilogramo (kg), es definido como la masa de un cilindro de aleacion platino-iridio especifico.
+- **Tiempo**: Es definida como unidad Fundamental **Seguendos**.
+La variables longitud, tiempo y masa son ejemplos de cantidad fundamentales. La mayoria de las otras variables son cantidades deducidas, aquellas expresadas como combinacion matematica de cantidades fundamentales. La **densidad**. La densidad p se define como su masa por unidad de volumen: p equivalente m/V
+
+---
+1.2 
+# Materia y construccion de modelos  
+- **Modelo**: es una representacion simplificada de un sistema fisico. Puede ser matematico, conceptual o grafico.
+Se usan para explicar fenomenos fisicos, predicciones y entender el comportamiento del universo.
+## 📌 Ej:
+- 1. Modelo de particula puntual: Se trata a un objeto como si toda su masa estuviera concentrada en un punto.(Atomo de oro).
+- 2. Modelo de cuerpo rigido: Se considera que un objeto no se deforma, aunque en realidad todos los objetos se deforman algo.(Cubo de oro).
+- 3. Modelo de particula en movimiento: Se usa para estudiar la cinematica (movimiento sin fuerzas).
+
+**Importancia del material**: Importa estudiar resistencia, elasticidad, calor, etc.
+Materiales diferentes responden distintos ante fuerzas, temperaturas, etc.
+- Propiedades del material como masa, densidad, temperatura, elasticidad, etc., pueden influir en como se comporta un modelo fisico.
+
+**Construccion de un Modelo**:
+Se deben tener en cuenta varios datos para construir un modelo:
+1. Observar el fenomeno: **Que pasa y como pasa?**
+2. Elegir variables relevantes: **Masa, velocidad, posicion, tiempo, etc**.
+3. Simplificar la realidad: **Ignorar detalles no importantes (como friccion si es minima, o el aire si no afecta mucho)**.
+4. Aplicar leyes fisicas: Usar ecuaciones conocidas (como las de Newton, energia, etc.) para describir el sistema.
+5. Comparar con la realidad: Ver si el modelo predice bien el resultado. Si no, modificar el modelo.
+
+**Limitaciones del modelo**:
+- Todos los modelos son aproximaciones.
+- Funcionan solo bajo ciertas condiciones.
+- Se deben verificar con experimentos.
+
+## Que tipo de modelos basicos existen?: (particula puntual, cuerpo rigido).
+## Los modelos siempre tienen limites de validez
+## El material importa mas cuando se estudia propiedades como deformacion, temperatura, etc.
+
+---
+1.3
+# Analisis dimensional: 
+Es un motodo para analizar y verificar ecuaciones fisicas mediante las dimensiones de las magnitudes incolucradas (longitud, masa, tiempo, etc.).
+
+- **Dimensiones fundamentales**:
+Longitud -> [L]
+Masa -> [M]
+Tiempo -> [T]
+rapidez (v) ->  [v] = L/T. 
+Tambien pueden aparecer otras como: Temperatura [0], corrientes electrica [I], cantidad de sustancia [N], etc.
+
+## 📌 Ej:
+Velocidad -> m/s : Dimensiones: [L][T]^-1
+Aceleracion -> m/s^2 : [L][T]^-2
+
+- Una ecuacion fisica solo tiene sentido si ambos lados tienen las mismas dimensiones.
+## 📌 Ej:
+### Correcto:
+x = vt
+Dimensiones: [L] = [L][T]⁻¹ x [T] = [L]
+### Incorrecto:
+x=v+t
+[L] ≠ [L][T]⁻¹ + [T] → ❌
+
+- Tips: Consejos -
+    - A veces, con solo las dimensiones de las variables, se pueden deducir la forma de una ecuacion.
+    - Ayuda a asegurarte de que las conversiones entre, por ejemplo, km/h y m/s se hagan correctamente.
+- Reglas claves - 
+    - Nunca se pueden **sumar o restar magnitudes con diferentes dimensiones**.
+    - Las dimensiones pueden multiplicarse y dividirse como si fueran variables algebraicas.
+    - Las **constantes adimensionales** (como π, e, 2) **no afectan las dimensiones**.
+
+## 📌 Ej: Deduccion de formula:
+
+Supongamos que una piedra cae libremente y queremos encontrar el tiempo t que tarda en caer desde una altura h, Sabemos que:
+    - h tiene dimension [L].
+    - g (gravedad) tiene dimension [L][T]⁻²
+
+Expresion de x es x = 1/2at^2
+
+---
+
+1.4
+# Conversion de Unidades:
+## Metodo del factor de conversion:
+
+

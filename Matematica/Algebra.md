@@ -1,3 +1,4 @@
+
 1. Dos vectores son paralelos si...
 
     Respuesta correcta:
