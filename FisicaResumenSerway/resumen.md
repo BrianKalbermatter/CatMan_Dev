@@ -134,4 +134,31 @@ Expresion de x es x = 1/2at^2
 # Conversion de Unidades:
 ## Metodo del factor de conversion:
 
+2
+# Movimiento en una dimension:
+## Cinematica:
+
+traslacional, rotacional, vibratorio.
+Ejemplo: Traslacional: Un automovil que viaja en una autopista. 
+         Rotacional: El giro de la tierra sobre su eje.
+         Vibratorio: Movimiento de ida y vuelta de un pendulo.
+
+2.1
+# Posicion, velocidad y rapidez:
+## Posicion:
+    Posicion-Tiempo: Referencias entre la posicion y el tiempo.
+    Movimiento traslacional, se tomo el ejemplo de un automovil que va hacia adelante y en reversa a lo largo de una linea recta. Se representa como una particula.
+## Desplazamiento:
+Se define como su cambio en posicion en algun intervalo de tiempo. DELTA x equivale Xf - Xi. **Distancia** es la longitud de una trayectoria. El desplazamiento de un punto a otro y luego regresa al mismo punto es **0** el intervalo con el tiempo(Desplazamiento)mientras que la distancia que recorrio es mayor ya que el
+
+
+
+
+
+# Ejercicio 1: 
+1. Segun datos de pruebas efectuadas recientemente, un auto recorre 400,0 m  en 19,9 s, partiendo del reposo. El mismo auto, viajando a 96,5 km/h y frenando en pavimento seco, se detiene en 4450,1m. Suponga que cada movimiento es con aceleracion constante. 
+1 - Calcule la aceleracion del auto al arrancar y al frenar. 
+2 - Con que rapidez deberia estar viajando el auto despues de acelerar durante 0,250min? 
+3 - La rapidez real medida es de 70,0m/h?; 
+4 - Que le dice esto acerca del movimiento? Cuanto tarda este auto en detenerse cuando viaja a 26,8m/s?
 
