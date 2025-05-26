@@ -83,3 +83,68 @@ Usaría un bucle para generar el fixture usando la función generarPartidoAleato
 Podría almacenar los resultados en una estructura y luego calcular puntajes o clasificaciones.
 
 Esto permite separar responsabilidades: el procedimiento se encarga de la carga de datos, y la función se encarga de generar lógicamente información útil (un partido).
+
+
+# REGISTRO
+Que es un registro es un tipo de dato estructurado
+DNI: Nro: / caracteres: / muchos caracteres: alfanumericos  / registros:
+
+Es lo mismo las dos definiciones:
+campos: un campo es la entidad logica mas pequena que conforman al registro.
+Un campo es la unidad minima de uinformacion de un registros puede ser datos estructurado : Ejemplo campo fecha.
+
+dni: N(8);
+dni: entero;
+dia: 1..31;
+carrera('IEM','IQ','ISI');
+
+(Se usa = porque es un formato se usan variables)
+
+
+PERSONA = Registro
+  dominio
+  modelo
+  Fecha de nacimiento = Registro
+    //Formato estructurado
+  Fin Registro;
+Fin Registro;
+  reg:PERSONA;
+  v_modelo: entero;
+ 
+
+proceso
+  leer(v_modelo);
+  reg.modelo := v_modelo;
+  leer(reg.dominio);
+  escribir
+
+//COMENTARIO: rango 1..31 por ejemplo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
