@@ -10,3 +10,4 @@ Resistencia&025Barranqueras&123...FDS
 Para cada ticket: Forma de pago(1: efectivo, 2: tarjeta debito y 3: tarjeta credito)
 
 **TEORIA**: Del Primer parcial: 
+

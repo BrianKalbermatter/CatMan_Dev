@@ -99,7 +99,7 @@ Pseudocodigo:
     FIN_REPETIR
 ```
 
-# -**ESTRUCTURA MANEJADA POR CONTADOR**:
+# - **ESTRUCTURA MANEJADA POR CONTADOR**:
 - Esta estructura es un **Ciclo Definido**, pues se conoce de antemano la cantidad de veces que se iterara.
 - El **final de bucle** esta controlado por un contador que define la cantidad de veces a iterar.
 - La **variable contador**, se va incrementando automaticamente de acuerdo al incremento indicado. Si en lugar de incremento, debe ser decremento se indica con el signo "--". Si el incremento o decremento es diferente a 1, debe indicarse. Por ejemplo: Para f:= 1 hasta 100, 2. **No hace falta inicializar** la variable contador.
@@ -109,16 +109,35 @@ Pseudocodigo:
       <acciones>
     FIN_PARA
 ```
-![Diferencias](/Algoritmo/TreePseudocode/TAED_Todo/Img/ComparacionEntreBucles.png)
+
 --- 
 
 ## Comparacion entre estructuras Repetitivas
+![Diferencias](/Algoritmo/TreePseudocode/TAED_Todo/Img/ComparacionEntreBucles.png)
+
+---
+
+# Subacciones:
+La resolucion de problemas complejos se facilita considerablemente si se dividen en problemas mas pequenos; y la resolucion de estos subproblemas se realiza mediante **subalgoritmos** o **subacciones**.
+
+![Diferencias](/Algoritmo/TreePseudocode/TAED_Todo/Img/Subacciones.png)
+
+## Subacciones o Subalgoritmos (FUNCIONES)
+- Son acciones que forman parte de una **Accion Principal**
+- Son modulos que estan escritos para ejecutar alguna **tarea especifica**.
+- Se definen en el **AMBIENTE** pues van a ser utilizadas e invocadas durante el PROCESO del algoritmo disenado.
+- Se escriben solamente una vez, pero pueden ser referenciados en diferentes puntos del algoritmo, de modo que se pueden evitar la duplicacion innecesaria del codigo.
+
+## Control de Ejecucion
+El algoritmo principal se ejecuta en una primera instancia, y da la orden de inicio de ejecucion de los subalgoritmos. Esto puede suceder N veces.
 
 
 
 
 
-HACER LAS PREGUNTAS LUEGO PARA TENER TODO APRENDIDO AL FINAL DEL PDF
+
+
+HACER LAS PREGUNTAS LUEGO PARA TENER TODO APRENDIDO AL FINAL 
 
 
 

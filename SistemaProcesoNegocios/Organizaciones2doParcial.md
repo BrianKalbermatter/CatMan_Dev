@@ -221,77 +221,112 @@ La **administracion no solo reacciona**, tambien **anticipa los cambios del ento
 ## Funcion clave de la administracion:
 La planificacion es una de las funciones fundamentales de la administracion. Consiste en definir objetivos a futuro y determinar que acciones se deben realizar para alcanzarlos.
 
-¿Para qué sirve?
-
+# ¿Para qué sirve?
     Permite tomar decisiones anticipadas.
-
     Guía el accionar del personal.
-
     Mejora el rendimiento individual y organizacional.
-
     Reduce la incertidumbre y da dirección a la organización.
 
-Aspectos claves de la planificación
+## Aspectos claves de la planificación
+- Es el punto de partida del proceso administrativo.
+- Está basada en recursos limitados, por eso hay que usarlos con inteligencia.
+- Debe ser flexible y adaptativa ante los cambios del entorno.
+- Incluye objetivos, estrategias, políticas, planes, programas, presupuestos, procedimientos y normas.
 
-    Es el punto de partida del proceso administrativo.
-
-    Está basada en recursos limitados, por eso hay que usarlos con inteligencia.
-
-    Debe ser flexible y adaptativa ante los cambios del entorno.
-
-    Incluye objetivos, estrategias, políticas, planes, programas, presupuestos, procedimientos y normas.
-
- Objetivos en la planificación
-
+## Objetivos en la planificación
 Los objetivos son el corazón de la planificación. Sirven para:
+- Guiar las decisiones.
+- Dirigir las acciones.
+- Evaluar resultados (sin objetivos, no se puede controlar ni medir).
 
-    Guiar las decisiones.
+## Características ideales de los objetivos:
+- Claros, específicos y realistas.
+- Medibles, verificables y definidos en el tiempo.
+- Coherentes entre sí y estructurados jerárquicamente (generales → específicos).
+- Participativos: deben ser definidos con la colaboración de todos los niveles.
 
-    Dirigir las acciones.
+## Tipos de planificación
 
-    Evaluar resultados (sin objetivos, no se puede controlar ni medir).
+### Según el nivel jerárquico:
+- Estratégica (Alta gerencia): objetivos generales, largo plazo, visión global.
+- Táctica (Gerencia media): acciones para cumplir metas específicas.
+- Operativa (Gerencia de primera línea): tareas concretas y cotidianas.
 
-Características ideales de los objetivos:
+### Según el plazo de tiempo:
+- Corto plazo: hasta 1 año.
+- Mediano plazo: 1 a 3 años.
+- Largo plazo: más de 3 años.
 
-    Claros, específicos y realistas.
+### Según el grado de detalle:
+- Planes específicos: objetivos claros y definidos.
+- Planes direccionales: guías generales, más flexibles.
 
-    Medibles, verificables y definidos en el tiempo.
-
-    Coherentes entre sí y estructurados jerárquicamente (generales → específicos).
-
-    Participativos: deben ser definidos con la colaboración de todos los niveles.
-
-Tipos de planificación
-Según el nivel jerárquico:
-
-    Estratégica (Alta gerencia): objetivos generales, largo plazo, visión global.
-
-    Táctica (Gerencia media): acciones para cumplir metas específicas.
-
-    Operativa (Gerencia de primera línea): tareas concretas y cotidianas.
-
-Según el plazo de tiempo:
-
-    Corto plazo: hasta 1 año.
-
-    Mediano plazo: 1 a 3 años.
-
-    Largo plazo: más de 3 años.
-
-Según el grado de detalle:
-
-    Planes específicos: objetivos claros y definidos.
-
-    Planes direccionales: guías generales, más flexibles.
-
-Según el uso del plan:
-
-    De uso único: para situaciones únicas y específicas.
-
-    De uso permanente: guían tareas habituales y continuas.
+### Según el uso del plan:
+- De uso único: para situaciones únicas y específicas.
+- De uso permanente: guían tareas habituales y continuas.
 
 ### Conclusion:
 La planificación permite a la administración anticiparse, organizar, y dirigir el rumbo de la organización hacia sus metas. Es un proceso sistemático, racional y necesario para enfrentar los desafíos del entorno con claridad y estrategia. Sin planificación, no hay control ni dirección posible.
 
+---
 
-# Hasta la pagina 13 BRIAN!
+# La Organizacion:
+
+Es el resultado de la planificacion. Se encarga de reunir y ordenar recursos, personas y actividades de manera coherente, para alcanzar los objetivos establecidos. La organizacion une individuos en tareas interrelacionadas y busca lograr **una accion colectiva efectiva**.
+
+- **Etimologia**:
+La palabra "organizacion" deriva de "organismo" y hace referencia a una estructura con partes integradas que funcionan en relacion con el todo
+
+- **Importancia en la administracion**:
+Organizar es una funcion administrativa esencial. Permite:
+- Definir objetivos y actividades necesarias.
+- Agrupar funciones segun su importancia.
+- Determinar tipos de relaciones de autoridad.
+- Establecer estructuras estables temporales.
+- Coordinar acciones entre individuos y grupos.
+
+## Hay dos tipos de organizacion:
+
+### Organizacion FORMAL
+- Es la **estructura planeada y disenada intencionalmente** para ejecutar funciones.
+- Su objetivo es definir como funciona el sistema organizacional.
+- El diseno organizativo se basa en la **Arquitectura Organizativa**, que busca alinear estructuras formales e informales, promover grupos autonomos y adaptarse al entorno, estrategia y tecnologia.
+- Se construye con modelos (arquetipos) que varian segun el contexto.
+
+```
+¿Qué es un arquetipo?
+    Un arquetipo organizacional es un modelo base o estructura tipo que se usa como referencia para disenar una organizacion. Es como un "molde" que orienta como se debe organizar una empres o institucion segun su contexto, estrategia o tipo de trabajo.
+```
+### Organizacion INFORMAL
+- Es la **red espontanea de relaciones personales y sociales** no definidas formalmente.
+- Surge de la afinidad o rechazo entre individuos.
+- Tipos de **Relaciones**:
+1. Prescriptas (formales)
+2. Percibidas (interpretaciones)
+3. Reales (hechos)
+4. Deseadas (perferencias)
+5. Rechazadas (no deseadas)
+- Aunque no es oficial, influye en los objetivos, el control y la cultura organizacional.
+
+### Conclusion:
+La organizacion es una herramienta clave de la administracion que transforma planes en accion concreta. Incluye tanto estructuras formales disenadas estrategicamente, como dinamicas informales que surgen naturalmente entre personas. Comprender y gestionar ambas es esencial para logrear objetivos colectivos con eficacia.
+
+# La Direccion:
+Es una etapa ejecutiva del proceso administrativo. Es cuando se ponen en marcha los planes trazados, trabajado con y a traves de las personas para lograr los objetivos de la organizacion.
+
+### Caracteristicas de la Direccion
+- Es realizada por **gerentes y lideres con autoridad**.
+- Tiene un caracter **dinamico**, porque implica multiples actividades a la vez.
+- Se **adapta estrategicamente** a los cambios del entorno.
+- Es una tarea **compleja y con alta responsabilidad**.
+
+### Importancia de la Direccion
+La direccion tiene como objetivo influir positivamente en las personas, motivandolas y guiandolas para que contribuyan efectivamente al logro de metas organizacionales.
+
+## Niveles de Direccion:
+1. Alta gerencia:
+    - Mira hacia el exterior de la organizacion.
+    - Toma decisiones en condiciones de incertidumbre.
+    - Se enfoca en resultados, estrategia y dominio del entorno.
+
+
