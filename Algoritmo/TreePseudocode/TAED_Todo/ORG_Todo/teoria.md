@@ -131,13 +131,31 @@ La resolucion de problemas complejos se facilita considerablemente si se dividen
 ## Control de Ejecucion
 El algoritmo principal se ejecuta en una primera instancia, y da la orden de inicio de ejecucion de los subalgoritmos. Esto puede suceder N veces.
 
+#### Cuando realiza la solicitud, el algoritmo se detiene hasta que la subfuncion deja de realizar su tarea, luego continua; esto se conoce como control de ejecucion.
+
+## - Elementos de las Subacciones
+**Nombres**: Se definen siempre con un nombre, ese nombre debe ser unico, representativo del objetivo especifico del subaccion que indentifica y no se debe ser una palabra reservada.
+
+**Paramentros**: En algunos casos las subacciones necesitaran pasar o recibir datos para ejecutarse y alli hacemos uso de parametros que pueden ser **variables o constantes** entre algoritmo y subaccion en ambos sentidos.
+
+- Los parametros que aparecen en la definicion del subalgoritmo, se denominan **parametros formales o ficticios**.
+- Los parametros que se encuentran en la llamada a la subaccion se denominan **parametros actuales o argumentos**.
+
+## Los parametros actuales pueden ser constantes, variables, expresiones. En cambio, los parametros formales solo pueden ser variables.
+
+# 📌 Las acciones, subacciones y Funciones son SUBALGORITMOS!!!
+
+**FUNCIONES**: Una funcion es un subalgoritmo que recibe, como argumentos o parametros actuales, datos de tipo numerico o no numerico, y devuelve un unico resultado.
+Existen dos tipos de funciones: **INTERNAS Y EXTERNAS**.
+- FUNCIONES INTERNAS: Las funciones incorporadas al sistema son funciones internas o intrisecas predefinidas.
+- FUNCIONES EXTERNAS: Las funciones definidas por el usuario se llaman funciones externas.
 
 
 
 
 
 
-HACER LAS PREGUNTAS LUEGO PARA TENER TODO APRENDIDO AL FINAL 
+
 
 
 
@@ -170,7 +188,33 @@ Secuencias: Es un conjunto de datos relacionados entre si:
 
 
 
+
+
+
+
+
 **Estructuras de Control**:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cuando una secuencia es definida e indifinida
+Pura e impura
+
+
 
 
 

@@ -202,7 +202,7 @@ La organizacion debe analizar su entorno (micro y macro) para **adaptarse estrat
 
 ---
 
-# Funciones Administativas
+# Proceso Administativo
 
 ## Concepto: 
 Es el proceso distintivo que consiste en la planeacion, organizacion, direccion y control ejecutados para determinar y lograr los objetivos de una organizacion, mediante el uso de recursos.
@@ -329,4 +329,149 @@ La direccion tiene como objetivo influir positivamente en las personas, motivand
     - Toma decisiones en condiciones de incertidumbre.
     - Se enfoca en resultados, estrategia y dominio del entorno.
 
+2. Gerencia Media:
+    - Tiene un enfoque mixto: externo e interno.
+    - Trabaja en condiciones de riesgo.
+    - Traducen las decisiones estrategicas en planes operativos.
 
+3. Gerencia de primera linea:
+    - Centrada en el interior de la organizacion.
+    - Opera con mayor certeza.
+    - Supervista directamente al personal operativo.
+
+### Conclusion:
+La direccion es la fase del proceso administrativo en la que los planes cobran vida a traves de la accion de las personas. Implica liderar, motivar, coordinar y tomar decisiones a distintos niveles, con diferente grado de complejidad. Su exito depende de la capacidad para adaptarse, influir en los equipos y ejecutar con efectividad.
+
+![Piramide](/SistemaProcesoNegocios/Img/PiramideDeGerencia.png)
+
+# El Control:
+El control es la parte del proceso administrativo que verifica si las cosas estan saliendo como se planearon. Sirve para detectar errores, medir resultados y corregir lo que sea necesario para alcanzar los objetivos.
+
+**Lo explico bien Henry Fayol**:
+**El control es comprobar si todo funciona como se planifico, segun las instrucciones y principios establecidos**.
+
+## - Para qué sirve?
+
+- Para **medir el progreso**.
+- Para **comparar lo que se logro con lo que se esperaba**.
+- Para **corregir errores y evitar que se repitan**.
+- Para **asegurar que los planes se cumplan**.
+- Para **cerrar el ciclo del proceso administrativo**.
+
+## Elementos del control:
+
+1. Relacion con la planificacion: el control siempre parte de lo que se planifico.
+2. Medicion: se miden los resultados (en numeros, tiempo, calidad, etc.).
+3. Deteccion de desviaciones: encontrar lo que no salio como esperaba.
+4. Medidas correctivas: hacer los cabios necesarios para volver al camino correcto.
+
+## Tipos de control:
+
+Por ambito:
+- **Parcial**: Se aplica a un sector o actividades especifica.
+- **Total**: Se aplica a toda la empresa.
+
+Por el momento en que se aplica:
+- **A priori (preventivo)**: se planifica antes de actuar, con puntos de control.
+- **Concurrente**: Se realiza mientras se ejecutan las acciones.
+- **Retroalimentacion (Correctivo)**: se aplica despues de que ocurrio algo.
+
+Por nivel gerencial:
+- **Estrategico**: Lo hace la alta gerencia; analiza si la organizacion va bien frente a su entorno.
+- **Tactico**: Lo hacen los gerentes medios; revisan areas especificas (como marketing, fianzas).
+- **Operativo**: LO hacen los supervisores; regulan las tareas del dia a dia (inventarios, calidad, tiempos, etc), muchas veces con herramientas en tiempo real.
+
+### Conclusiones:
+El control es como el GPS de la administracion: **te dice si vas por el camino correcto o si te estas desviando**, y ayuda a **corregir el rumbo a tiempo**. Es fundamental para asegurarse de que los planes se cumplan y que los resultados sean los esperados. Sin control, una organizacion puede perder el rumbo sin darse cuanta.
+
+## Qué es decidir?
+
+**Decidir** es elegir entre varias opciones posibles. Pero en una organizacion, no se trata solo de elegir, sino de seguir un proceso logico y racional, influido por muchos factores. Las decisiones siempre surgen como respuesta a un problema, conflicto o situacion a resolver, y no se toman aisladas, sino dentro de un marco jerarquico.
+
+# Tipos de decisiones segun el nivel jerarquico:
+
+1. **Decisiones estrategicas (Alta gerencia)**:
+
+## 📌 ¿Quién las toma?
+Los directivos de mas alto nivel (la alta gerencia).
+
+**Caracteristicas**:
+- Se enfocan en los objetivos generales de la empresa.
+- Son vitales para el futuro de la organizacion (crecimiento, supervivencia).
+- Involucran el macroentorno (economia, leyes, competencia, etc.).
+- Requieren creatividad y analisis profundo.
+- Se toman en condiciones de incertidumbre (no se sabe que pasara).
+
+## 📌 También se llaman:
+Decisiones no estructuradas o no programadas. Son unicas, complejas e irrepetibles.
+
+2. **Decisiones tacticas (Gerencia media)**
+## 📌 ¿Quién las toma?
+Los gerentes intermedios (jefes de área, coordinadores).
+
+**Características**:
+
+- Buscan usar los recursos de manera eficiente.
+
+- Se enfocan en el microentorno (lo que pasa dentro de la empresa).
+
+- Se toman en condiciones de riesgo (hay información, pero no total seguridad).
+
+- Tienen una cierta frecuencia y pueden repetirse.
+
+## También se llaman:
+Decisiones semi estructuradas o semi programadas. Son decisiones de gestión, más o menos repetitivas, pero con algo de flexibilidad.
+
+3. **Decisiones operativas (Supervisores)**
+
+## 📌 ¿Quién las toma?
+Los supervisores o gerentes de primera línea (los que están en contacto directo con el personal operativo).
+
+**Características**:
+
+- Son decisiones del día a día.
+
+- Se refieren a tareas rutinarias y repetitivas.
+
+- Se toman en condiciones de certeza (todo está más o menos bajo control).
+
+- Apuntan a mantener el funcionamiento normal de la organización.
+
+📌 También se llaman:
+Decisiones estructuradas o programadas. Hay procesos claros y definidos para tomarlas.
+
+### Conclusión:
+En una organización, no todas las decisiones son iguales, y cada nivel jerárquico tiene su tipo de decisión.
+
+- La alta gerencia toma decisiones estratégicas sobre el rumbo de la empresa.
+
+- Los gerentes medios toman decisiones tácticas para que todo funcione bien entre áreas.
+
+- Los supervisores toman decisiones operativas para resolver cosas del día a día.
+
+Cada decisión responde a un contexto distinto: más incertidumbre en lo alto, más rutina en lo operativo, pero todas son esenciales para el éxito de la organización.
+
+---
+
+# Clasificacion:
+# Tipos de Organizaciones:
+1. Segun el Fin:
+    - Con Fines de Lucro: **Empresas**
+    - Sin Fines de Lucro: **ONG'S + Entidades del Gobierno** ANSES
+2. Segun la Formalidad:
+    - Formal: **Relacion en el Trabajo** 
+    - Informal: **Relacion de Amistad**: (Comentarios externo a la empresa).
+3. Segun el Grado de Descentralizacion:
+    - Centralizada:
+    Es una sola casa principal
+    - Descentralizada:
+    A abierto sucursal y a extendido por una basta region para poder funcionar y cumplir sus objetivos.
+
+# Procesos Administrativo:
+1. Planificación: Consiste en desarrollar los objetivos del negocio y decidir las acciones futuras para alcanzarlos. Esto incluye establecer metas, hacer suposiciones sobre el entorno, elegir un curso de acción, iniciar actividades y realizar los ajustes necesarios.
+
+2. Organización: Es el proceso de conectar a los empleados y sus tareas para cumplir con los objetivos de la empresa. Implica dividir el trabajo entre grupos e individuos, coordinar sus actividades y establecer la autoridad gerencial.
+
+3. Dirección: También conocida como ejecución, comando o liderazgo, esta etapa se enfoca en implementar los planes de acuerdo con la estructura organizacional. Incluye motivar y guiar a los subordinados, comunicar, supervisar y alcanzar los objetivos de la organización.
+
+4. Control: Esta etapa asegura un desempeño eficiente en el logro de los objetivos de la empresa. Implica establecer metas y estándares, comparar el desempeño medido con esos estándares, reforzar los éxitos y corregir los fracasos.
