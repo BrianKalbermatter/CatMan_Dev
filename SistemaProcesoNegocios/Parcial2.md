@@ -386,3 +386,127 @@ Cada nivel jerárquico toma distintos tipos de decisiones:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Conclusiones de ChatGPT:
+✅ 1. ¿Qué es un sistema en este contexto?
+
+Una organización (como una empresa, una ONG, etc.) se puede entender como un sistema social, porque:
+
+    Está compuesta por personas.
+
+    Tiene objetivos.
+
+    Interactúa con su entorno.
+
+    Se autorregula y se adapta.
+
+Y como todo sistema, tiene subsistemas que cumplen funciones específicas.
+✅ 2. ¿Cuáles son los subsistemas de una organización?
+
+Tu esquema es correcto, con un pequeño ajuste de nombres. Aquí va una clasificación típica:
+🔧 a) Subsistema técnico-operativo:
+
+    Encargado de producir bienes o servicios.
+
+    Incluye procesos, operaciones, maquinaria, logística.
+
+    Ejemplo: Fábrica que produce autos, o el software que desarrolla una app.
+
+👥 b) Subsistema social o humano:
+
+    Se refiere a las personas que trabajan en la organización.
+
+    Trata temas como motivación, liderazgo, comunicación, cultura organizacional.
+
+🧾 c) Subsistema administrativo-directivo (a veces dividido en dos):
+
+    Administrativo: planificación, organización, control de recursos.
+
+    Directivo o estratégico: toma de decisiones, dirección general, misión y visión.
+
+✅ 3. ¿Y el entorno?
+
+La organización no está sola. Está dentro de un sistema mayor, como bien dijiste.
+🌍 Se relaciona con varios entornos:
+a) Entorno general o macroentorno:
+
+Factores que afectan a todas las organizaciones:
+
+    Político
+
+    Económico
+
+    Sociocultural
+
+    Tecnológico
+
+    Ecológico
+
+    Legal
+    (Esto es el famoso análisis PESTEL)
+
+b) Entorno específico o microentorno:
+
+Factores que afectan a la organización directamente:
+
+    Clientes
+
+    Proveedores
+
+    Competencia
+
+    Sindicatos
+
+    Entidades reguladoras

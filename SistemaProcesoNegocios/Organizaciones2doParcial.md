@@ -428,7 +428,6 @@ Decisiones semi estructuradas o semi programadas. Son decisiones de gestión, m�
 Los supervisores o gerentes de primera línea (los que están en contacto directo con el personal operativo).
 
 **Características**:
-
 - Son decisiones del día a día.
 
 - Se refieren a tareas rutinarias y repetitivas.
@@ -475,3 +474,5 @@ Cada decisión responde a un contexto distinto: más incertidumbre en lo alto, m
 3. Dirección: También conocida como ejecución, comando o liderazgo, esta etapa se enfoca en implementar los planes de acuerdo con la estructura organizacional. Incluye motivar y guiar a los subordinados, comunicar, supervisar y alcanzar los objetivos de la organización.
 
 4. Control: Esta etapa asegura un desempeño eficiente en el logro de los objetivos de la empresa. Implica establecer metas y estándares, comparar el desempeño medido con esos estándares, reforzar los éxitos y corregir los fracasos.
+
+
