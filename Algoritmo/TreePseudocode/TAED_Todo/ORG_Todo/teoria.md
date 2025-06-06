@@ -71,7 +71,44 @@ Si el numero de alternativas es grande puede plantear serios problemas de escrit
 Ejemplo:
 ![parcial_1](/Algoritmo/TreePseudocode/TAED_Todo/Img/Alternativas_Multiples.png)
 
----
+----------------------------------------------------------------------------------------------
+
+# Estructuras de Control
+**Diferencia entre PRE-TEST y POST-TEST en estructuras de control**:
+## PRE-TEST (Mientras/While):
+- La condicion se evalua **ANTES** de ejecutar el cuerpo del bucle.
+- Si la condicion es falsa desde el inicio, el bucle no se ejecuta ni una vez.
+```bash
+   MIENTRAS condicion HACER
+       instrucciones
+   FIN MIENTRAS
+```
+## POST-TEST (Repetir/Do-While):
+- La condicion se evalua DESPUES de ejecutar el cuerpo del bucle.
+- El bucle se ejecuta al menos una vez, incluso si la condicion es falsa.
+```bash
+   REPETIR
+       instrucciones
+   HASTA condicion
+```
+### Cuándo usar cada uno:
+
+Usar **Pre-Test**:
+No sabes si necesitas ejecutar el bucle al menos una vez. La condicion puede ser falsa desde el inicio. Ejemplo: Procesar numeros hasta encontrar uno negativo,
+```bash
+    MIENTRAS numero >= 0 HACER
+        LEER(numero)
+    FIN MIENTRAS
+``` 
+Usar **Post-test**:
+Sabes que necesitas ejecutar el bucle al menos una vez. La validacion debe ocurrir despues de la primera ejecucion. Ejemplo: Pedir una contrasena hasta que sea correcta,
+```bash
+   REPETIR
+       LEER(contraseña)
+   HASTA contraseña = "correcta"
+```
+La eleccion entre uno u otro depende de si necesitas garantizar al menos una ejecucion del bucle(post-test) o si quieres podes saltar el bucle completamente (pre-test).
+
 
 ## Estructuras REPETITIVAS:
 - Las estructuras que repiten una secuencia de instrucciones un numero determinado de veces se denominan **BUCLES**. Y cada repeticion del bucle se llama **ITERACION**.
@@ -122,7 +159,7 @@ La resolucion de problemas complejos se facilita considerablemente si se dividen
 
 ![Diferencias](/Algoritmo/TreePseudocode/TAED_Todo/Img/Subacciones.png)
 
-## Subacciones o Subalgoritmos (FUNCIONES)
+## Subacciones (FUNCIONES). Tambien se los puede llamar SUBALGORITMOS
 - Son acciones que forman parte de una **Accion Principal**
 - Son modulos que estan escritos para ejecutar alguna **tarea especifica**.
 - Se definen en el **AMBIENTE** pues van a ser utilizadas e invocadas durante el PROCESO del algoritmo disenado.
@@ -150,10 +187,46 @@ Existen dos tipos de funciones: **INTERNAS Y EXTERNAS**.
 - FUNCIONES INTERNAS: Las funciones incorporadas al sistema son funciones internas o intrisecas predefinidas.
 - FUNCIONES EXTERNAS: Las funciones definidas por el usuario se llaman funciones externas.
 
+## DECLARACION DE FUNCIONES:
+Pseudocodigo
+```bash
+  FUNCION nombrefun (lista de parametros): TIPO
+  ..
+  (Declaraciones locales si fuera necesario > Ambiente)
+  ..
+  (Acciones de la funcion)
+  ..
+  // MUY IMPORTANTE NO OLVIDAR LLAMAR A LA FUNCION ANTES DE FINALIZARLA
 
+  nombrefun := <valor de la funcion>
+  FIN_FUNCION
+```
+**nombrefun**: es el nombre de la funcion.
+**lista de parametros**: es la lista de parametros formales. Esta lista NO puede ser vacia.
+**Tipo**: es el tipo de resultado que devuelve la funcion
 
+El algoritmo principal invoca la funcion con el nombre de esta ultima en una expresion seguida de una lista de argumentos que deben coincidir en cantidad, tipo y orden con los de la funcion que fue definida.
+Para que las acciones descritas en una FUNCION sean ejecutadas, se necesita que este sea invocado desde un algoritmo principal o desde otros subalgoritmos a fin de proporcionarle los argumentos de entrada necesario para realizar estas acciones.
 
+### EJEMPLO:
+```bash
+  FUNCION ES_PRIMO(A:entero):logico
+    AMBIENTE
+    PROCESO
+    ES_PRIMO := V // Habilito la funcion como bandera
+    PARA i:=2 HASTA (A-1) HACER
+      SI A mod i =0 ENTONCES
+        ES_PRIMO := F // ya no es primo
+      FIN_SI
+    FIN_PARA
+  FIN_FUNCION
+```
 
+# PROCEDIMIENTO:
+
+Un **procedimiento** tambien es una subaccion, disenado con un fin especifico, pero a diferencia de las funciones no devuelve ningun valor, solo ejecuta acciones.
+
+Por Ejemplo:
 
 
 

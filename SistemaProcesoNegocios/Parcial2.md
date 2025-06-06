@@ -510,3 +510,133 @@ Factores que afectan a la organización directamente:
     Sindicatos
 
     Entidades reguladoras
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Todo Lo que se hasta ahora
+
+✅ Organización
+
+Una organización es un conjunto de personas que trabajan juntas para lograr un objetivo común, que puede ser lucrativo o no lucrativo.
+✅ Funciones básicas de la Administración (aplicadas a organizaciones)
+
+- Planificación: Definir metas, objetivos y las acciones necesarias para alcanzarlos.
+
+    Organización: Distribución de recursos y tareas dentro de la empresa.
+
+    Dirección: Supervisión y liderazgo del personal para el cumplimiento de objetivos.
+
+    Control: Evaluación y verificación de los resultados obtenidos, comparándolos con los esperados.
+
+✅ Departamentalización
+
+Forma en que una organización divide sus actividades. Dos tipos principales:
+
+    Centralizada: La toma de decisiones se concentra en una sede principal o casa matriz.
+
+    Descentralizada: La toma de decisiones está repartida entre varias sedes o unidades en distintas ubicaciones (ej: Adidas tiene sedes en distintos países con autonomía local).
+
+✅ Características de las Organizaciones (enfoque sistémico)
+
+    Sistemas probabilísticos o no deterministas: No se puede prever todo con certeza, hay margen de incertidumbre.
+
+    Organización dentro de otra: Una organización puede ser parte de una mayor (ej: un departamento dentro de una empresa).
+
+    Interdependencia: Las partes de la organización dependen unas de otras para funcionar.
+
+    Homeostasis: Capacidad de mantener un equilibrio interno ante cambios externos.
+
+    Morfogénesis: Capacidad de adaptarse y transformarse ante nuevas condiciones.
+
+    Entropía: Tendencia natural al desorden si no hay control o regulación.
+
+    Fronteras o límites: Diferencian la organización de su entorno, pero permiten interacción.
+
+👉 La que te faltaba es:
+Sinergia: El todo es más que la suma de sus partes. Las partes trabajando juntas producen mejores resultados que por separado.
+✅ Entorno organizacional
+
+    Microentorno: Factores cercanos que influyen directamente:
+
+        Clientes
+
+        Proveedores
+
+        Competencia
+
+        Intermediarios
+
+    Macroentorno: Factores externos, más amplios:
+
+        Políticos
+
+        Económicos
+
+        Sociales
+
+        Tecnológicos
+
+        Ecológicos
+
+        Legales
+        (Modelo PESTEL)
+
+    Entorno Interno (para complementar):
+
+        Cultura organizacional
+
+        Recursos humanos
+
+        Infraestructura
+
+        Procesos internos
+
+
+
+
+
+🔚 ¿Qué te faltaría para tener un panorama completo?
+
+    Tipos de estructuras organizacionales (funcional, divisional, matricial, etc.)
+
+    Importancia del organigrama como representación gráfica.
+
+    Tipos de organizaciones (privadas, públicas, ONGs, cooperativas).
+
+    Relación entre estructura y procesos de negocio.

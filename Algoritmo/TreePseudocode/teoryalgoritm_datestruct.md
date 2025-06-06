@@ -85,38 +85,3 @@ VERDADERO). La condición debe detectar cuando no haya más datos por
 procesar, y la acción interna para ayudar con el proceso individual de cada
 elemento y así poder avanzar hacia el final.
 
-# Estructuras de Control
-**Diferencia entre PRE-TEST y POST-TEST en estructuras de control**:
-## PRE-TEST (Mientras/While):
-- La condicion se evalua **ANTES** de ejecutar el cuerpo del bucle.
-- Si la condicion es falsa desde el inicio, el bucle no se ejecuta ni una vez.
-```bash
-   MIENTRAS condicion HACER
-       instrucciones
-   FIN MIENTRAS
-```
-## POST-TEST (Repetir/Do-While):
-- La condicion se evalua DESPUES de ejecutar el cuerpo del bucle.
-- El bucle se ejecuta al menos una vez, incluso si la condicion es falsa.
-```bash
-   REPETIR
-       instrucciones
-   HASTA condicion
-```
-### Cuándo usar cada uno:
-
-Usar **Pre-Test**:
-No sabes si necesitas ejecutar el bucle al menos una vez. La condicion puede ser falsa desde el inicio. Ejemplo: Procesar numeros hasta encontrar uno negativo,
-```bash
-    MIENTRAS numero >= 0 HACER
-        LEER(numero)
-    FIN MIENTRAS
-``` 
-Usar **Post-test**:
-Sabes que necesitas ejecutar el bucle al menos una vez. La validacion debe ocurrir despues de la primera ejecucion. Ejemplo: Pedir una contrasena hasta que sea correcta,
-```bash
-   REPETIR
-       LEER(contraseña)
-   HASTA contraseña = "correcta"
-```
-La eleccion entre uno u otro depende de si necesitas garantizar al menos una ejecucion del bucle(post-test) o si quieres podes saltar el bucle completamente (pre-test).
