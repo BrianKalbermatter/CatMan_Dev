@@ -227,11 +227,38 @@ Para que las acciones descritas en una FUNCION sean ejecutadas, se necesita que 
 Un **procedimiento** tambien es una subaccion, disenado con un fin especifico, pero a diferencia de las funciones no devuelve ningun valor, solo ejecuta acciones.
 
 Por Ejemplo:
+- Desarrollar un procedimiento que muestre por pantalla la validacion del login de usuario.
+```bash
+  PROCEDIMIENTO Login(usuario, pass, valid: Alfanumerico)
+    SI pass = valid ENTONCES
+      Esc('Acceso autorizado a ', usuario);
+    Sino
+      Esc('Acceso autorizado a ', usuario);
+    FinSi
+  FIN_PROCEDIMIENTO
+```
+
+## Por que usar procedimientos?
+La estrategia de usar procedimientos al disenar soluciones argorimicas.
+- Utilizan procedimientos **facilitan el diseno top-down** de las soluciones.
+- Se pueden **ejecutar mas de una vez** en un algoritmo, con solo realizar su definicion en el ambiente y llamarlos las veces que se requieran.
+- Su uso **facilita la division de tareas** entre los desarrolladores de un equipo. Entonces si debes resolver un problema complejo pueden dividirse tareas y generar procedimiento para luego integrarlos en un unico algoritmo.
+
+## Top-Down
+Concepto: El enfoque en algoritmo y estructuras de datos es una tecnica de diseno y resolucion de problemas que consiste en dividir **un problema grande en subproblemas mas pequnos y manejables**.
+
+La idea general clave es que empiezas desde el nivel mas alto de abstaccion (el problema general) y vas descomponiendolo en partes mas concretas y simples hasta que cada parte sea lo suficientemente facil de resolver directamente.
+
+## Diseno de algoritmos:
+  - Primero piensas en el algoritmo como un todo.
+  - Luego defines lass funciones o procedimientos principales.
+  - Despues, defines los subprocedimientos necesarios para que el algoritmo funcione.
+  - Sigue refinando cada subprocedimiento hasta llegar a instrucciones basicas.
 
 
-
-
-
+## Variables Locales:
+La mayor parte de las subacciones tienen una lista de parametros. Los parametros de una subaccion tambien son variables locales.
+Las variables locales comienzan su existencia cuando la subaccion es llamada por el algoritmo principal y desaparecen cuando esta subaccion termina su ejecucion, por esta razon la variables locales no tienen sus valores de una llamada a otra.
 
 
 
