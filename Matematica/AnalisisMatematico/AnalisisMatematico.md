@@ -207,3 +207,16 @@ E(C,δ) ≡ c - δ< x < c + δ ≡ (recta que encontrare en el apunte dibujada).
 
 # Funcion 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
