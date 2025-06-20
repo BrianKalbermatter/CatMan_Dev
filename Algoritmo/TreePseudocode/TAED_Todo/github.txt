@@ -1,1 +1,5 @@
 ![repositorio de github](https://github.com/UTN-FRRe/isi-aed)
+![repositorio de todos los ejercicios resueltos GUIA](https://github.com/LeonardoBrabo/Algoritmos_Resueltos)
+
+
+
