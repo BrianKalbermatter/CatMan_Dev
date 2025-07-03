@@ -266,12 +266,26 @@ Las variables locales comienzan su existencia cuando la subaccion es llamada por
 
 
 
-Secuencias: Es un conjunto de datos relacionados entre si:
+# Secuencias: 
+Es un conjunto de datos relacionados entre si:
 | A | L | G | O | R | I | T | M | O | ... | FDS |
   1   2   3   4   5   6   7   8   9   ...    n
 
 
-- **Existencia del primer elemento de la secuencia**: Acceso posterior a los demas elementos
+- **Existencia del primer elemento de la secuencia**: Acceso posterior a los demas elemento permite **acceso posterior a los demas elementos** de la secuencia
+
+- **Relacion de sucesion entre los elementos:** Esta relacion entre los objetos de la secuencia permite construir **el acceso a todos los elementos** de la misma hasta alcanzar el **final**.
+
+- **Finitud**: **Cantidad de elementos** o bien por una **marca de fin.** Todas **las secuencias deben ser finitas** por lo que deben estar **acotadas por una condicion de fin** para evitar entrar en un **ciclo infinito**.
+
+- **Existencia del ultimo elemento de la secuencia:(FDS)** debe estar definido con un indicador de fin de secuencia: el elemento final, permite detener la enumeracion de la secuencia.
+
+
+---
+
+Una de las principales caracteristicas de secuencias es que su tamaño no es fijo, sino que dentro de algoritmo que las crea su longitud puede variar.
+
+
 
 
 
