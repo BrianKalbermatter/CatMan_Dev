@@ -283,57 +283,157 @@ Es un conjunto de datos relacionados entre si:
 
 ---
 
-Una de las principales caracteristicas de secuencias es que su tamaño no es fijo, sino que dentro de algoritmo que las crea su longitud puede variar.
+Una de las principales caracteristicas de secuencias es que **su tamaño no es fijo**, sino que dentro de algoritmo que las crea su longitud puede variar. 
+
+Si bien la condicion de finitud siempre se debe tener en cuenta, para su procesamiento se debe emplear un **esquema de asignacion de almacenamiento en memoria dinamico**.
+
+### Clasificacion:""
+Segun su contenido:
+- De datos elementales
+  1. Numero
+  2. Caracter
+- Registro
+
+Segun su **procesamiento**:
+- Definidas
+  1. Utiliza estructuras Manejada por **contador**!
+  - Ejemplo: "Repetir 5 veces".
+```bash
+  PARA i <- 1 HASTA 5 HACER
+    // instrucciones
+FINPARA
+
+```
+- **Indefinidas** (La cantidad de repeticiones no es conocida previamente).
+
+  1. **Pura**: 
+  *Se utiliza una estructura Post-Test. Son aquellas en las cuales el ultimo elemento es conocido antes de inciar el proceso.*
+  (La condicion se evalua despues de ejecutar al menos una vez el cuerpo del bucle).
+  Ejemplo: **REPETIR ... HASTA QUE ...**
+  - Son algoritmos donde el ultimo valor es conocido antes de empezar. Es decir, sabemos que estamos buscando, pero no sabemos cuantas iteraciones vamos a necesitar.
+```bash
+  REPETIR
+    LEER(numero)
+  HASTA QUE numero = 0
+```
+
+  2. **Impuras**:
+  *Se utiliza para estructuras Pre-Test. Son aquellas que cuentan con una marca de fin.*
+ - Son algoritmos donde no sabemos cual es el ultimo valor de entrada, pero si conocemos una marca de fin. Es decir, seguimos hasta que aparezca una "señal" que nos diga que termino.
+```bash 
+LEER(numero)
+MIENTRAS numero <> 0 HACER
+  // procesar
+  LEER(numero)
+FINMIENTRAS
+```
+- **Aca 0 seria la marca de fin**
+
+# Uso en el ambiente de la secuencia:
+Definicion en el ambiente:
+Para utilizarla en un algoritmo es necesario definir, la estructura de datos, y por otro lado la variable que permitira tratar cada elemento de la secuencia, pues solo se permite acceder de forma individual y secuencial.
+
+1. sec: Secuencia de caracter;
+2. v: caracter;
+
+Acciones en el procedimiento:
+La secuencialidad de estas estructuras de datos admite el uso de ciertas acciones para su procedimiento de forma tal de asegurar el acceso secuencial a sus elementos.
+
+<h2>
+- ARR(sec)
+</h2>
+
+Es el operador que permite iniciar el tratamiento de una secuencia ya existente.
+**Solo requiere que se le indique qué secuencia se esta por trabajar**.
 
 
+<h2>
+- AVZ(sec, v)
+</h2>
+
+Es el operador que permite recuperar el contenido de cada elemento de la secuencia.
+Requiere que se indique la secuencia a la cual se accedera, y la variable que permitira almacenar el contenido del elemento accedido.
 
 
+<h2>
+- CREAR(secNUEVA)
+</h2>
+
+Es el operador que permite inicializar una nueva secuencia, vacia.
+Solo requiere que se indique que secuencia almacenara desde el incio los elementos.
 
 
+<h2>
+- ESC(sec, v)
+</h2>
 
+Es el operador que permite iniciar el tratamiento de una secuencia ya existente.
+<!-- Tratar de saber bien esto -->
+# Sub Secuencias
+Concepto:
+Conjunto de elementos consecutivos, que estan incluidos en la secuencia, considerados como un sub conjunto.
 
+Por ejemplo:
+---
+### Palabra:
+Sub conjunto de elementos consecutivos de una secuencia de caracteres que comienza con un caracter distinto de " " **(espacio en blanco)** y finaliza con otro caracter " " **(espacio en blanco)** o alguna marca especifica planteada en el problema.
 
+![PALABRA (Sub Secuencia)](/Algoritmo/TreePseudocode/TAED_Todo/Img/SubSecuencia.png)
+---
+### Oracion:
+Sub conjunto de elementos consecutivos de una secuencia de caracteres que comienza con un caracter distinto de " "(espacio en blanco) y finaliza con un caracter por ejemplo el ".", o alguna marca en especifico planteada por el problema.
 
+![Oracion(Sub Secuencia)](/Algoritmo/TreePseudocode/TAED_Todo/Img/SubSecuencia_Oracion.png)
+---
+### DNI:
+Sub conjunto de 8 elementos consecutivos de una secuencia de caracteres. El topo de caracter es digito numerico.
 
+![DNI(Sub Secuencia)](/Algoritmo/TreePseudocode/TAED_Todo/Img/SubSecuencia_DNI.png)
 
+CARACTERISTICAS DE SECUENCIAS:
 
+- Existencia del primer elemento de la secuencia.
+- Relacion de sucesion entre los elementos.
+- Finitud.
+- Existencia del ultimo elemento de la secuencia.
 
+# RELACIONES DE SUB SECUENCIAS:
+Existen relaciones de enlace o relaciones de inclusion o pertenencia, estas ultimas determinan una relacion de jerarquia entre las sub secuencias.
 
+## Sub Secuencias Enlazadas:
 
+Nombre de una persona que finaliza con un caracter "-" y a continuacion comienza una sub secuencia de 8 caracteres numericos que hacen referencias a un numero de DNI. Esta ultima sub secuencia es del tipo **Definida**, por lo que no requiere una marca de fin de sub secuencia.
 
+![Enlazadas(Relacion de Sub Secuencia)](/Algoritmo/TreePseudocode/TAED_Todo/Img/SubSecuencia_enlazadas.png)
 
+**La relacion de enlace existe porque se identifica, salvo al inicio y final de la secuencia, que el inicio de una subsecuecia indica el fin de la anterior, el fin de una sub secuencia enlazada indica el inicio de otra.**
 
+## Sub Secuencia Jerarquicas:
 
+En este caso la sub secuencia estan identificadas a traves de una relacion de pertenencia o inclusion, pueden ser utilizadas para definir jerarquias de sub secuencias.
 
+Primer ejemplo: 
 
+![Enlazadas(Relacion de Sub Secuencia)](/Algoritmo/TreePseudocode/TAED_Todo/Img/ejemplo1.png)
 
-**Estructuras de Control**:
+Segundo ejemplo:
 
+![Enlazadas(Relacion de Sub Secuencia)](/Algoritmo/TreePseudocode/TAED_Todo/Img/ejemplo2.png)
 
+Y en ese caso debemos procesarlas teniendo en cuenta esta relacion:
 
+**Secuencia principal**
+   - **Oracion** -> Subsecuencia
+   - **Palabra** -> Subsecuencia
 
+**La relacion de jerarquia existe porque se identifica una relacion de pertenencia o inclusion entre sub secuencias. El inicio y fin de una sub secuencia determina el incio fin de otras sub secuencias incluido en esta.**
 
+---
 
+# Campos (UNIDAD 3)
+Concepto de Campo: es un conjunto de caracteres capaz de suministrar una determinada informacion referida a un concepto. Un campo es la entidad logica mas pequena, consiste en un conjunto de byte que conforman un dato.
 
-
-
-
-
-
-
-
-
-
-
-Cuando una secuencia es definida e indifinida
-Pura e impura
-
-
-
-
-
-
-
+![Campos)](/Algoritmo/TreePseudocode/TAED_Todo/Img/Campos-Registros.png)
 
 
 
