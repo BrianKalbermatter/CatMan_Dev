@@ -435,10 +435,29 @@ Concepto de Campo: es un conjunto de caracteres capaz de suministrar una determi
 
 ![Campos)](/Algoritmo/TreePseudocode/TAED_Todo/Img/Campos-Registros.png)
 
+Al igual que en las variables, al definir un campo hay que indicar claramente sus tres caracteristicas:
+
+- **Nombre**: Nombre que identifica a ese conjunto de caracteres.
+- **Tipo**: Tipo de caracteres que puede contener (alfanumerico, entero, etc).
+- **Tamano**: Cantidad de caracteres que puede contener.
+
+# Registros:
+
+Un registro es un conjunto de campos que permanecen juntos cuando el archivo es visto en termino de organizacion de alto nivel.
+
+```bash
+ACCION GestionPersonal ES
+  AMBIENTE
+  Persona = REGISTRO
+    DNI: Entero;
+    Nombre: AN(50);
+    Domicilio: AN(70);
+  FinRegistro;
+```
+**DATO IMPORTANTE: El regitro debe definirse en el ambiente para ser usado por el ALGORITMO.**
 
 
-
-
+Usamos el signo = en la definicion de Registro para el tipo de dato, se define una estructura personalizacion, que tiene relacion con el problema que estamos tratando o esta definida de antemano por un problema anterior.
 
 
 
