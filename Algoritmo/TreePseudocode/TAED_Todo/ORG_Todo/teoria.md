@@ -461,6 +461,17 @@ Usamos el signo = en la definicion de Registro para el tipo de dato, se define u
 
 
 
+```bash
+// Este simbolo se denomina **selector de campos**. Se utiliza para determinar a que campo dentro del registro se esta accediendo.
+
+  Reg.DNI := 23456789;
+
+  Leer(NroDNI);
+  Reg.DNI := NroDNI;
+
+  Escribir(Reg.Nombre);
+```
+
 
 
 
