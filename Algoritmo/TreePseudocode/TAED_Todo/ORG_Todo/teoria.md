@@ -456,10 +456,7 @@ ACCION GestionPersonal ES
 ```
 **DATO IMPORTANTE: El regitro debe definirse en el ambiente para ser usado por el ALGORITMO.**
 
-
 Usamos el signo = en la definicion de Registro para el tipo de dato, se define una estructura personalizacion, que tiene relacion con el problema que estamos tratando o esta definida de antemano por un problema anterior.
-
-
 
 ```bash
 // Este simbolo se denomina **selector de campos**. Se utiliza para determinar a que campo dentro del registro se esta accediendo.
@@ -472,35 +469,545 @@ Usamos el signo = en la definicion de Registro para el tipo de dato, se define u
   Escribir(Reg.Nombre);
 ```
 
+# ARCHIVO:
+
+1. Un archivo esta siempre almacenado en memoria externa, su proceso se realiza en la memoria interna. **La informacion almacenada es permanente.**
+
+2. Existe **independecia** de los datos respecto de los algoritmos que los utilicen.
+
+3. Todo algoritmo intercambia datos con el archivo y la **unidad basica de entradas / salidas** es el registro. **Los datos extraidos o almacenados en el archivo son los de un registro completo.**
+
+4. Los archivos en memoria externa permiten una gran capacidad de almacenamiento.
+
+## Consistencia y congruencia de Archivos
+La **Consistencia** de un archivo es la propiedad que verifica la validez del dato almacenado con su definicion en el ambiente.
+
+![Registros_Archivos)](/Algoritmo/TreePseudocode/TAED_Todo/Img/Registro_Archivos.png)
+
+## Consistencia Automatica:
+Hacemos referencia a la definicion de limite para los datos. Ej: Rango, Conjunto.
+
+![Registros_Automatico)](/Algoritmo/TreePseudocode/TAED_Todo/Img/Registro_automatico.png)
+
+La congruencia de un archivo es la propiedad que verifica la validez de los datos entre si.
+
+**Fina:** Validacion entre datos en archivos distintos (Datos de un campo, con datos de otro archivo, por ejemplo un DNI en un archivo de ALUMNOS, validando con un archivo de PADRON).
+
+**Gruesa:** Validacion entre datos en un mismo registro(Ejemplo: mes/dia/año -> 31/02/2019... seria consistente pero no congruente).
+
+![Registros_Consistente_NoCongruente)](/Algoritmo/TreePseudocode/TAED_Todo/Img/Consistente_noCongruente.png)
+
+**IMPORTANTE:**
+- NOTA 1: Si es consistente, no idica que ssea congruente.
+
+- NOTA 2: Si no es consistente, tampoco es congruente.
+
+**Clasificacion de Archivos por su contenido:**
+
+### De acuerdo a su UTILIDAD:
+**De Entrada:** Estos archivos estan compuestos por una serie de datos almacenados en un dispositivos de entrada.
+
+**De Salida:** Estos archivos contienen aquella informacion que se la visualiza desde la computadora.
+
+**Historico:** Esta compuesto por datos que varian en el tiempo y con informacion de los archivos actualizados.
+
+**De Movimiento:** Esta clase de archivos se utilizan junto con los constantes y poseen en comun algun campo.
+
+**Temporales:** Estos se crean en el momento en que se ejecuta algun programa y se borran una vez que finaliza la ejecucion, son auxiliares.
+
+### De acuerdo a sus DATO ALMACENADOS:
+**ASCII:** En este tipo de archivos los datos son almacenados a traves de un simple texto. Esto permite intercambiar a los datoss que contienen asi como tambien para crear archivos que el propio usuario pueda modificar.
+
+**Binarios:** Almacena informacion en un lenguaje que solo la propia computadora comprende. Ejemplo: colores, sonidos, imagenes u ordenes. Estos archivos en la memoria son de menor peso que los anteriores.
+
+# Organizacion de Archivos:
+
+La organizacion representa la manera en que se encuentran almacenados los registros en el archivo.
+
+--- 
+
+# **Soportes:** 
+### Los soportes Secuenciales:
+Los soportes secuenciales son registors que estan escritos uno a continuacion del otro. Para acceder a un determinado registro N es necesario recorrer los N-1 registros anteriores.
+
+### Los soportes Direccionables:
+Los soportes direccionables se estructuran de modo que las informaciones registradas se localicen por su direccion y no se requiera pasar por registros procedentes. Campos especificos denominados clave que identifica cada **registro de modo unico**, dos registos distintos no pueden tener un mismo valor de clave.
+
+## Tipos de organizacion:
+Secuencial
+Relativa(o Directa)
+Indexada(o Secuencial Indexada)
+
+**Un archivo con organizacion secuencial es una sucesion de registros almacenados consecutivamente (continuidad fisica)**
+
+Un archivo posee **organizacion directa** cuando el orden fisico no se corresponde necesariamente con el orden logico. Los datos se situan en el archivo y se accede a ellos mediante su posicio, es decir el lugar relativo que ocupan.
+
+
+---
+
+# 📚 Ordenamientos (Sort) según la técnica y su comportamiento en memoria
+1. **Bubble Sort** (Ordenamiento por Burbujeo)
+  💻 **En memoria**: 
+- Todo el proceso ocurre en la memoria RAM. 
+- Compara pares adyacentes y hace intercambios locales.
+- Una variable auxiliar para hacer el intercambio.
+- Los datos nunca salen de la memoria, solo cambian de lugar dentro del mismo vector.
+
+## 📦 Memoria utilizada:
+- **Vector original:** se refiere a que el proceso de ordenamiento se realiza directamente sobre el mismo arreglo(**Esto quiere decir que el vector original es el arreglo donde estan los datos que quieres ordenar.**)
+## Porque es importante?
+- Es eficiente en uso de memorias(espacio).
+- Se dice que estos algoritmos son "in-place"(en el lugar).
+
+
+🔍 Características:
+Simple.
+
+Comparación repetida de elementos vecinos.
+
+Cada "burbuja" mayor sube hacia el final del vector en cada pasada.
+
+⚙️ Ventajas:
+Fácil de programar.
+
+Ideal para listas muy pequeñas.
+
+❌ Desventajas:
+Extremadamente lento para grandes volúmenes (O(n²)).
+
+🔸 2. Selection Sort (Ordenamiento por Selección)
+💻 En memoria:
+Recorre la memoria completa buscando el mínimo.
+
+Solo intercambia una vez por pasada.
+
+Todo el trabajo es local, en el mismo vector en RAM.
+
+📦 Memoria utilizada:
+Vector original.
+
+Una variable auxiliar para el intercambio.
+
+🔍 Características:
+Busca el menor y lo coloca en su lugar final en cada pasada.
+
+⚙️ Ventajas:
+Menos cantidad de intercambios que Bubble Sort.
+
+Muy simple.
+
+❌ Desventajas:
+Igual de lento en tiempo de ejecución que Bubble Sort (O(n²)).
+
+🔸 3. Insertion Sort (Ordenamiento por Inserción)
+💻 En memoria:
+Trabaja con dos zonas dentro del mismo vector: una ordenada y una desordenada.
+
+Va tomando un elemento y lo inserta en el lugar correcto moviendo los otros.
+
+Solo usa la RAM.
+
+📦 Memoria utilizada:
+Vector original.
+
+Una variable auxiliar para desplazamientos.
+
+🔍 Características:
+Ideal para listas pequeñas o casi ordenadas.
+
+⚙️ Ventajas:
+Rápido para pequeños volúmenes.
+
+Poco movimiento si la lista ya está casi ordenada.
+
+❌ Desventajas:
+Ineficiente para listas grandes (O(n²)).
+
+🔸 4. Shell Sort (Mejora del Insertion Sort)
+💻 En memoria:
+Divide el vector en "subgrupos" separados por un salto (gap) y los ordena.
+
+Luego reduce el gap y vuelve a ordenar.
+
+Todo ocurre en RAM.
+
+📦 Memoria utilizada:
+Vector original.
+
+Variables auxiliares mínimas.
+
+🔍 Características:
+Mucho más rápido que Insertion y Bubble Sort.
+
+Usa la técnica de "gap sequence" para ordenar elementos lejanos y luego cercanos.
+
+⚙️ Ventajas:
+Eficiente para listas medianas.
+
+❌ Desventajas:
+No siempre tiene rendimiento óptimo comparado con Quick Sort.
+
+🔸 5. Quick Sort (Ordenamiento Rápido)
+💻 En memoria:
+Utiliza división y conquista.
+
+Usa recursión → en cada llamada procesa una parte del vector.
+
+Requiere espacio adicional para las llamadas recursivas (pila de activación).
+
+📦 Memoria utilizada:
+Vector original.
+
+Uso de pila para recursión (memoria adicional en RAM).
+
+🔍 Características:
+Divide el vector en menores y mayores al pivote.
+
+Cada parte se ordena de forma independiente (recursión).
+
+⚙️ Ventajas:
+Muy eficiente (O(n log n) promedio).
+
+No requiere mucha memoria adicional (solo para la pila).
+
+❌ Desventajas:
+Puede llegar a O(n²) en el peor caso (aunque es raro).
+
+Sensible a la elección del pivote.
+
+🔸 6. Merge Sort (Ordenamiento por Mezcla)
+💻 En memoria:
+Divide el vector en mitades, ordena cada mitad, y luego las fusiona.
+
+Requiere memoria adicional proporcional al tamaño del vector.
+
+A veces se utiliza disco (en archivos grandes).
+
+📦 Memoria utilizada:
+Vector original.
+
+Un vector auxiliar para la mezcla.
+
+🔍 Características:
+Siempre O(n log n).
+
+Muy estable (no cambia el orden de elementos iguales).
+
+⚙️ Ventajas:
+Seguro, rápido y predecible.
+
+Excelente para archivos externos (ordenamientos externos).
+
+❌ Desventajas:
+Usa mucha memoria extra (RAM o disco).
+
+No es in-place (necesita espacio extra).
+
+🔸 7. Heap Sort (Ordenamiento por Montículo)
+💻 En memoria:
+Usa una estructura de heap dentro del mismo vector.
+
+El ordenamiento se hace sin memoria adicional significativa.
+
+📦 Memoria utilizada:
+Vector original.
+
+Variables auxiliares mínimas.
+
+🔍 Características:
+Construye un heap (árbol binario en arreglo) y extrae el máximo en cada paso.
+
+⚙️ Ventajas:
+Muy eficiente, siempre O(n log n).
+
+No usa memoria extra → ideal si hay limitación de espacio.
+
+❌ Desventajas:
+No es estable.
+
+Puede ser más lento que Quick Sort en la práctica.
+
+🔸 8. Radix Sort (Ordenamiento por Dígitos)
+💻 En memoria:
+No compara directamente elementos.
+
+Ordena por dígitos (posición por posición).
+
+Usa RAM adicional para organizar "cubetas" o listas auxiliares por cada valor posible.
+
+📦 Memoria utilizada:
+Vector original.
+
+Listas auxiliares (o cubetas).
+
+🔍 Características:
+Ordena dígito por dígito, desde el menos significativo al más significativo (LSD) o al revés (MSD).
+
+⚙️ Ventajas:
+Extremadamente rápido si los datos tienen estructura adecuada (como números de igual longitud).
+
+❌ Desventajas:
+Solo sirve para ciertos tipos de datos (números, cadenas fijas).
+
+Requiere memoria extra.
 
 
 
+-------------------
 
 
+####################################################################################################################################################################
+
+# Repasando todo: 
 
 
+<!-----Estructura de ACCIONES------->
+## Asignacion Pura
 
+```bash
+Receptor := Emisor
+- (Receptor puede ser cualquier nombre) o (contadores en si, variables)
+- (Emisor puede ser constante o variable)
+```
+## Asignacion Funcional
+```bash
+Receptor := Funcion_Interna (Emisor)
+(Funes internas: ABSO-SQRT-LN-LOG-EXP-TRUNC-REDOND-SQR-SIN-COS-TAN)
+```
 
+## Asignacion algebraica
+```bash
+Receptor := Emisor Operador Emisor
+(Operadores matematicos: *,/,+,-,**,DIV,MOD)
+```
 
+## Contador
+```bash
+Receptor := Receptor + 1
+```
 
+## Acumulador
+```bash
+Acumulador:= Acumulador + Variables
+```
 
+## Accion con nombre
+```bash
+  ACCION NOMBRE ES
+    ACCION 1;
+    ...
+    ACCION n;
+  FIN ACCION
+```
 
+## Condicional Simple
+```bash
+  Si CONDICION entonces
+    ACCION 1;
+  FIN Si
+``` 
 
+## Condicional Alternativo
+```bash
+  Si Condicion entonces
+    Accion1;
+  Sino
+    Accion2;
+  Fin Si
+```
 
+## Condicional de seleccion multiple 
+```bash
+  Segun VARIABLE CONDICIONAL hacer
+    valor 1: accion 1;
+    ...
+    valor n: accion n;
+    otro: accion n+1;
+  Fin Segun
+```
 
+## Ciclo "Pre-Test" (Rango: 0 a n)
+Un Pre-Test es una estructura repetitiva donde la condicion se evalua antes de ejecutar el bloque de instrucciones. 
 
+```bash
+  Mientras CONDICION hacer
+    Accion 1;
 
+    Accion n;
+  Fin Mientras
+```
 
+**Importante**: 
+- Si la condicion es falsa desde el principio, el bloque puede no ejecutarse ni una sola vez.
 
+Ejemplo en Pseudocodigo:
+```bash
+  contador := 1;
+  MIENTRAS contador <= 5 HACER
+    ESC("Hola");
+    contador := contador + 1;
+  FINMIENTRAS
+```
+- La condicion (contador <= 5) se chequea antes de cada repeticion.
 
+## Ciclo "Post-Test" (Rango: 1 a n)
+- Un Post-Test es una estructura repetitiva donde la condicion se evalua despues de ejecutar el bloque de instrucciones.
 
+```bash
+  Repetir
+    Accion 1;
+    ...
+    Accion n;
+  HASTA QUE condicion
+```
 
+- El bloque se ejecuta al menos una vez, incluso si la condicion es falsa desde el principio.
 
+## Ciclo manejado por contador
+- El incremento es automatico: no necesita actualizarlo dentro del bucle.
+- Suele usarse cuando sabes de antemano cuantas veces se repite.
 
+```bash 
+  Para VC := VI Hasta VF, I Hacer
+    Accion 1;
+    ...
+    Accion n;
+  Fin Para
+```
 
+# Contador manual
+Este es el contador clasico que vos controlas dentro del cuerpo del algoritmo. Se usa mucho con estructuras de Mientras o Repetir.
 
+# SECUENCIA (Lineales)
+Concepto: Un conjunto de elementos homogeneos esta organizado en forma de secuencia si es posible las nociones siguientes:
 
+  - **Primer elemento de la secuencia:** un elemento del conjunto, llamado primero, se distingue de los demás. El acceso a este elemento permite el acceso a todos los demás elementos de la secuencia.
 
+  - **Relación de sucesión entre los elementos:** todo objeto de la secuencia (salvo el elemento final) precede a uno de los demás objetos (su sucesor).
 
+  - **Caracterización del fin de secuencia:** debe estar definido un indicador de fin de secuencia: caracteriza el elemento final, y en particular, permite detener la enumeración de la secuencia por observación de la característica del último elemento.
+  Las secuencias así definidas no autorizan el acceso a un elemento más que a través del elemento que le precede.
 
+## Clasificacion de secuencias:
+  - Por su condicion de fin:
+    - **Puras:** El ultimo elemento de la secuencia indica el fin de la misma y debe ser tratado como un elemento cualquiera. Se utiliza el ciclo Post-Test.
+    - **Impuras:** Posee una marca de fin, es decir, un objeto extrano al final que no debe ser tratado como el resto de los elementos, se utiliza ciclo Pre-Test.
+  - Por su cantidad de elementos:
+    - **Definida:** Se conoce a priori la cantidad de elementos que posee.
+    - **Indefinida**: No se conoce a priori la cantidad de elementos que posee.
+## Subsecuencias:
+Son secuencias de menor nivel que pertenecen a una secuencia mayor de la cual heredan sus caracteristicas. Se pueden presentar de maneras enlazadas o jerarquizadas.
+
+  - **Subsecuencias Enlazadas**: Son cadenas de Subsecuencias. Una subsecuencia termina cuando comienza la siguiente. Se encuentran enganchadas una a la otra.
+  - **Subsecuancias Jerarquicas**: Son Subsecuencias que van desde la de mayor importancia a la de menor importancia. Existe un elemento que sirve de puente. No hay continuidad ni encadenamiento.
+
+**RECETAS DE SECUENCIAS**:
+## REPETIR - PURA 
+```bash
+ACCION secuencia_pura ES
+  AMBIENTE
+    Sec: Secuencia de caracteres;
+    v: caracteres;
+  PROCESO
+    ARR(S);
+    INICIALIZAR
+    Repetir
+      AVZ(S,v);
+      TRATAR_ELTO
+    hasta que ELTO_FINAL
+    TRATAR_FINAL
+FIN ACCION
+```
+## MIENTRAS - IMPURA
+```bash
+ACCION secuencia_impura ES
+  AMBIENTE
+    Sec: Secuencia de caracteres;
+    v: caracteres;
+  PROCESO
+    ARR(S);
+    INICIALIZAR
+    AVZ(S,v);
+    MIENTRAS v <> marca HACER
+      TRATAR_ELTO
+      AVZ(S,v);
+    FIN MIENTRAS
+    TRATAR_FINAL
+FIN ACCION
+```
+## PARA - DEFINIDA
+```bash
+ACCION secuencia_definida ES 
+  AMBIENTE
+    S: secuencia de caracteres;
+    v: caracter
+    i: entero
+  PROCESO
+    ARR(S);
+    INICIALIZAR
+    PARA i := EI HASTA EF, incremento HACER
+      AVZ(S,v);
+      TRRATAR_ELTO
+    FIN PARA
+    TRATAR_FINAL
+FIN ACCION 
+```
+![Ejercicios de cada uno](/Algoritmo/TreePseudocode/TAED_Todo/Img/EjemploTipo_Secuencia.png)
+
+![Ejercicios de Subsecuencias](/Algoritmo/TreePseudocode/TAED_Todo/Img/Recetas_Subsecuencias.png)
+
+# REGISTRO
+**Concepto**: Estructura de datos que contiene informacion referida a una entidad y esta compues de un numero fijo de componentes llamados "campos", donde cada uno de ellos viene definido con un nombre y un tipo. Es una estructura estatica, compleja y se almacena en memoria externa. Los campos que contiene puede ser continentes y contenidos.
+
+**Campo contienente**: Contiene a otros campos. Es complejo. Tiene la estructura segmentada.
+**Campo contenido**: Contenido por otro campo. Es simple. No tiene segmentaciones. Requiere que se le defina tipo y tamano.
+
+REPRESENTACION DE REGISTROS:
+
+![Registros_TipoRegistros](/Algoritmo/TreePseudocode/TAED_Todo/Img/Registros_TiposRegistros.png)
+
+Longutud variable por enumeracion
+
+MOVA = Registro        |MOVB = Registro      |MOVC = Registro      |BAJAS = Registro
+  CLAVE = Registro     |  CLAVE = Registro   |  CLAVE = Registro   |  CLAVE = Registro
+    CodOP: N(1)        |    CodOP: N(1)      |    CodOP: N(1)      |    CodOP: N(1)
+    Accion: N(2)       |    Accion: N(2)     |    Accion: N(2)     |    Accion: N(2)
+  FIN REGISTRO         |  FIN REGISTRO       |  FIN REGISTRO       |  FIN REGISTRO
+  CodMov: 'A'          |  CodMov: 'B'        |  CodMov: 'C'        |  CodMov: ('D','E')
+FIN REGISTRO           |FIN REGISTRO         |FIN REGISTRO         |FIN REGISTRO
+
+ArchMov: Archivo de MOVA, MOVB, MOVC, BAJAS.
+
+# ARCHIVO
+**Concepto**: Es una estructura de datos que colecciona datos que son todos del mismo tipo y que se encuentran almacenados en una memoria externa permanente. La estructura de un fichero se caracteriza porque su cardinalidad es infinita. Por esta razon no hace falta dar la longitud del fichero, pero su cardinalidad es potencialemtne infinita por la capacidad de la memoria externa. A todo fichero hay que darle nombre y tipo.
+
+**Organizacion**: Es la manera en como van a ser almacenados los datos dentro de un fichero. La organizacion es permanente, ya que una vez definida no puede cambiarse. La forma de almacenamiento nace y muere con el archivo.
+
+**Acceso**: Es la manera en la que se van a leer (recuperar) los registros de un fichero.
+
+## Clasificacion:
+### Por su organizacion:
+  - Secuenciales. --> Acceso secuencial
+  - No secuenciales:
+      - Relativos. --> Acceso secuencial y directo.
+      - Indexados. --> Acceso secuencial, directo y dinamico.
+### Por su acceso:
+  - Secuencial.
+  - Directo.
+  - Dinamico o mixto.
+
+PROCESOS CON ARCHIVOS 
+![Procesos con Archivos](/Algoritmo/TreePseudocode/TAED_Todo/Img/Archivos_Procesos.png)
+
+**Diferencia entre corte y padron**:
+Si se solicita que un archivo este ordenado por cierto campo, entonces tenemos un padron. Un proceso Corte de Control es un padron con totales parciales. Es necesario, para hacer el corte, que el archivo este ordenado por clave compleja. El total final se obtiene con el padron. Los totales parciales, con el corte de control.
+
+Concepto de **CLAVE**:
+La clave es un dato dentro de registro que permite identificar univocamente un dato, dado que no existen dos datos iguales en el archivo. Una clave es simple cuando es un campo contenido. Una clave es completa cuando es campo continente.
+
+**¿Qué condiciones se tienen que dar para qué un archivo sea correcto?**
+Debe cumplir dos condiciones:
+**Ser consistente:** Que la informacion que se este guardando coincida con el formato usado en la definicion. Leer un dato desde un archivo o pantalla y verificar que cumpla con las caracteristicas de la salida. Dicho proceso se debe realizar con la carga de datos.
+
+**Ser congruente:** Se verifica la consistencia de cada elemento consigo mismo. Se compara a un elemento con algun otro. Un archivo es consistente grueso cuando el dato es correcto. Se comparan los datos de un mismo registro y se observa si se cumplen. Compara, por ejemplo, que un valor dentro del rango dado.
 
