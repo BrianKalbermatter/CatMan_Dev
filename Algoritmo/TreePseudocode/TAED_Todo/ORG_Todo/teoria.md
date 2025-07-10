@@ -1011,3 +1011,4 @@ Debe cumplir dos condiciones:
 
 **Ser congruente:** Se verifica la consistencia de cada elemento consigo mismo. Se compara a un elemento con algun otro. Un archivo es consistente grueso cuando el dato es correcto. Se comparan los datos de un mismo registro y se observa si se cumplen. Compara, por ejemplo, que un valor dentro del rango dado.
 
+
