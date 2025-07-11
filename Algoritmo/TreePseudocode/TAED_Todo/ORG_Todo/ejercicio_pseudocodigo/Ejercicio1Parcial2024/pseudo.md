@@ -89,11 +89,69 @@ pseudocodigo:
                     AVZ(secAdopt2, vAdopt2);
                 FIN PARA
                 SI (!bandera) ENTONCES
-                    ESC(secId_masc4, idTemporal);
+                    ESCRIBIR(secId_masc4, idTemporal);
                     Total_no_adoptados := Total_no_adoptados + 1;
                 FIN SI
-                
+                idTemporal := " ";
+                SI (vResc1 == "C") Y (bandera) ENTONCES
+                    AVZ(secResc1, vResc1);
+                    #// Copio el Sexo
+                    ESC(secSal3. idTemporal);
+                    AVZ(secResc1, vResc1);
+                    #// Copio la Edad
+                    PARA i = 1 HASTA 3 HACER
+                        #// Esto quiere decir que se guarda en la secuencia de Perros
+                        ESCRIBIR(secSal3, vResc1);
+                        AVZ(secResc1, vResc1);
+                    FIN PARA
+                    #// Copio el nombre
+                    MIENTRAS (vResc1 <> '#') HACER
+                        ESCRIBIR(secSal3, vResc1);
+                        AVZ(secResc1, vResc1);
+                    FIN MIENTRAS
+                    #// Avanzo el id del albergue
+                    PARA i = 1 HASTA 3 HACER
+                        AVZ(secResc1, vResc1);
+                    FIN PARA
+                    #// Avanzo toda la secuencia de adoptados "hasta el numero de telefono que es lo que me interesa".
+                    MIENTRAS (vAdopt2 <> "%") HACER
+                        AVZ(secAdopt2, vAdopt2);
+                    FIN MIENTRAS
+                    PARA i = 1 HASTA 10 HACER
+                        ESCRIBIR(secSal3, vAdopt2);
+                        AVZ(secAdopt2, vAdopt2);
+                    FIN PARA
+                SINO
+                    SI (vResc1 == "C") Y (!bandera) ENTONCES
+                        cantidad_perros := cantidad_perros + 1;
+                    SINO
+                        SI (vResc1 == "F") Y (!bandera) ENTONCES
+                            cantidad_gatos := cantidad_gatos + 1;
+                    FIN SI
+    #//----------------------------------------------------------------
+                    #// Reinicio la secuencia
+                    MIENTRAS (vResc1 <> "#") HACER
+                        AVZ(secResc1, vResc1);
+                    FIN MIENTRAS
+                    PARA i = 1 HASTA 3 HACER
+                        AVZ(secResc1, vResc1);
+                    FIN PARA
+                    MIENTRAS (vAdopt2 <> "%") HACER
+                        AVZ(secAdopt2, vAdopt2);
+                    FIN MIENTRAS
+                    PARA i = 1 HASTA 10 HACER
+                        AVZ(secAdopt2, vAdopt2);
+                    FIN PARA
+                FIN SI
             FIN MIENTRAS
+            
+            ESCRIBIR("El porcentaje de perros no adoptados es:", (cantidad_perros) * 100);
+            ESCRIBIR("El porcentaje de gatos no adoptados es: ", (cantidad_gatos) * 100);
+
+            CERRAR(secResc1);
+            CERRAR(secAdopt2);
+            CERRAR(secSal3);
+            CERRAR(secId_masc4);
     FIN ACCION
 ```
 
@@ -101,10 +159,5 @@ pseudocodigo:
 
 
 
-# Corte de control:
-LLAMO AL ANTERIOR siempre en corte de control
-Escribo
-Acumular los acumuladores
-Resguardar
-Y coloco en 0 los totales.
+
 

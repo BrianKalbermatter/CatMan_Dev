@@ -106,7 +106,7 @@ M01Huesos#3624112233$
 2. Generar una secuencia de enteros, con todos los id_masc de las mascotas no adoptados, cada ventana es un id (entero de dos dígitos)
 
 3. Informar porcentaje de gatos y perros no adoptados sobre el total de no adoptados.
-
+```bash
 Accion: guarderia ES
 AMBIENTE
 bandera: booleano;
@@ -122,49 +122,72 @@ AVZ(secResc, vResc);
 AVZ(secAdop, vAdop);
 contPerros := 0;
 contGatos := 0;
-contTotla := 0;
+contTotal := 0;
 // mi bucle general
 mientras (vResc <> "*") y (vAdop <> "*") hacer
-    // id_masc[2]Tipo_animal[1]Sexo[1]Edad[3]Nombre#id_albergue_asignado[3]
-    // id_masc[2]Fecha_adopcion[6]Dirección%Nro_telefono[10]
+    #// secResc = id_masc[2]Tipo_animal[1]Sexo[1]Edad[3]Nombre#id_albergue_asignado[3]
+    #// secAdop = id_masc[2]Fecha_adopcion[6]Dirección%Nro_telefono[10]
+    
+    #// id_masc[2] esto es para la primera secuencia
     Para i = 1 hasta 2 hacer
         si (vResc == vAdop) entonces
+            #// Se usa una bandera para luego comprar
             bandera:= V;
         sino
             bandera:= F;
         fin si
-        idTemporal:= idTemporal + vResc; 01
+        #// Aca lo que estoy haciendo es usar la (idTemporal) una variable que se usa como acumulador de la ventana id_masc[2]
+        idTemporal:= idTemporal + vResc; #// 01
+        #// Avanzamos la secuencia junto con la ventana.
+        #// Tipo_animal[1]
         AVZ(secResc, vResc);
+        #// Fecha_adopcion[6]
         AVZ(secAdop, vAdop);
     fin para
+
+    #// SI bandera = Falso
     si (!bandera) entonces
+        #// Escribir en la secuencia de salida de ids los idtemporales que colocamos antes
         ESC(secIds, idTemporal);
+        #// Aca se usa un contador para ir contando lo no adoptados
         contTotal:= contTotal + 1;
     fin si
+    #// El idTemporal lo reseteo
     idTemporal:= "";
-    si (vResc == "C") y bandera entonces 
+    
+    #// ----------------------------------------
+    #// Si la ventana de Rescatados es igual a C y bandera es [Verdadero]
+    si (vResc == "C") y bandera entonces
         AVZ(secResc, vResc);
+        
+        #// ---------
+        #// 
         // copio el sexo
         ESC(secPerros, vResc);
         AVZ(secResc, vResc);
+        #// ---------
         // copio la edad
         para (i = 1 hasta 3) hacer
             ESC(secPerros, vResc);
             AVZ(secResc, vResc);
         fin para
+        #// ---------
         // copio el nombre
         mientras (vResc <> "#") hacer
             ESC(secPerros, vResc);
             AVZ(secResc, vResc);
         fin mientras
+        #// ---------
         // avanzo el id del albergue
         para (i = 1 hasta 3) hacer
             AVZ(secResc, vResc);
         fin para
+        #// ---------
         // Avanzo toda la secuencia de adoptados hasta el numero de tel que es lo que me interesa
         mientras vAdop <> "%" hacer
             AVZ(secAdop, vAdop);
         fin mientras
+        #// ---------
         para (i = 1 hasta 10) hacer
             ESC(secPerros, vAdop);
             AVZ(secAdop, vAdop);
@@ -172,10 +195,11 @@ mientras (vResc <> "*") y (vAdop <> "*") hacer
     sino
         si (vResc == "C") y (!bandera) entonces
             contPerros:= contPerros + 1;
-        sino si (vResc == "F") y (!bandera) entonces
-            contGatos := contGatos + 1;
+        sino 
+            si (vResc == "F") y (!bandera) entonces
+                contGatos := contGatos + 1;
         fin si
-
+        #// ---------
         // Reinicio la secuencia
         mientras (vResc <> "#") hacer
             AVZ(secResc, vResc);
@@ -199,3 +223,4 @@ CERRAR(secResc);
 CERRAR(secAdop);
 CERRAR(secPerros);
 CERRAR(secIds);
+```
