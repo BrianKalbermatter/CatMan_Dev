@@ -124,3 +124,51 @@ El interior del circulo representan los elementos de ese conjunto. Hay dos conju
 
 Las regiones especificas de los diagramas de Venn se describen por sombreados. El conjunto A ∪ B se muestra en la figura de la izquierda y en la figura de la derecha representa el conjunto A - B.
 
+![Conjuntos de Diagrama de Venn](/Matematica/LOGICAYESTRUCTURADEDATOS/Nuevos_Resumenes/Img/ConjuntosImg.png)
+
+## Ejemplo completo de una clase de la facultado:
+Conjunto de 165 estudiantes.
+CALC
+PSIC
+COMP 
+- Como 8 estudiantes toman calculo, psicologia y computacion, hay un 8 en la region que representa **CALC ∩ PSIC ∩ COMP**(Aca hay una interseccion en el medio que por eso estan con un signo de interseccion). De los 33 estudiantes que toman calculo, 8 toman tambien psicologia; entonces, 25 toman calculo y computacion pero no psicologia. Escribimos 25 en la region que representa **CALC ∩ (complemento)PSIC ∩ COMP**. 12 en la region que representa **CALC ∩ PSIC ∩ (complemento)COMP** y 16 en la region correspondiente a **(complemento)CALC ∩ PSIC ∩ (complemento)COMP** y 14 en la que corresponde a **(complemento)CALC ∩ (complemento)PSIC ∩ COMP**. Quedarian 156 estudiantes en todas las asignaturas por lo que nos deja con 9 estudiantes que no toman ninguna de las 3 materias. 
+
+![Diagrama de Venn Conjunto de materias](/Matematica/LOGICAYESTRUCTURADEDATOS/Nuevos_Resumenes/Img/asignaturasDiagramaVenn.png)
+
+ --- 
+
+(todo complemento)(A∪B) y (complento)A ∩ (complemento)B
+Esto quiere decir que ambos conjuntos son iguales
+
+# Sea U un conjunto universal y sea A, B y C subconjuntos de U. Las siguientes propiedades se cumplen.
+
+- Leyes asociativas:
+    **(A ∪ B) ∪ C = A ∪ (B ∪ C), (A ∩ B) ∩ C = A ∩ (B ∩ C)** 
+- Leyes conmutativas:
+    **A ∪ B = A ∪ B, A ∩ B = B ∩ A**
+- Leyes distributivas:
+    **A∩(B∪C)=(A∩B)∪(A∩C), A∪(B∩C)=(A∪B)∩(A∪C)**
+- Leyes de identidad:
+    **A∪∅=A, A∩U=A**
+- Leyes de complemento:
+    **A∪A'=U, A∩A'=∅**
+- Leyes de idempotencia:
+    **A ∪ A' = U, A∩A=A**
+- Leyes de acotacion:
+    **A ∪ A' = U, A ∩ A' = ∅**
+- Leyes de absorcion:
+    **A∪(A∩B)=A, A∩(A∪B)=A**
+- Leyes de involucion:
+    **A" [EstoEsDobleComplemento] = A**
+- Leyes 0/1:
+    **∅' = U, U' = ∅**
+- Leyes de De Morgan para conjuntos:
+    **(A∪B)' = A' ∩ B', (A ∩ B)' = A' ∪ B'**
+
+## Notaciones
+- U: conjunto universal
+- ∅: conjunto vacio
+- A(complemento) acordate que es con un **(')** alado de la A o arriba un **(-)**. 
+- ⊆: subconjunto
+- ∪: Union
+- ∩: interseccion
