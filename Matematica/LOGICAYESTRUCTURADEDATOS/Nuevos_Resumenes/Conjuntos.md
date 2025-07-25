@@ -1,20 +1,10 @@
 # TEMAS:
 
-## UNIDAD 3: 
-Grafos. Digrafos y grafos: Primeros ejemplos. Nodos, arcos, adyacencia, incidencia, grado,
-caminos, ciclos. Subgrafos y dígrafos parciales. Relaciones binarias y digrafos. Conexidad. Matrices y
-digrafos. Matriz de adyacencia y de conexión. Suma y producto de digrafos. Grafos regulares, completos,
-eulerianos, hamiltonianos. Árboles. Árboles con raíz. Los árboles como estructuras ordenadas y
-etiquetadas.
-
 ## UNIDAD 4: 
-Estructuras Algebraicas finitas. Leyes de composición interna. Propiedades de una ley de
-composición interna. Estructuras algebraicas: Grupos. Propiedades y ejemplos en cada caso. Grupos
-finitos.
+Estructuras Algebraicas finitas. Leyes de composición interna. Propiedades de una ley de composición interna. Estructuras algebraicas: Grupos. Propiedades y ejemplos en cada caso. Grupos finitos.
 
 ## UNIDAD 5: 
-Inducción Matemática. Primeras definiciones. Teorema de Inducción. Principios de inducción
-matemática. Ejemplos.
+Inducción Matemática. Primeras definiciones. Teorema de Inducción. Principios de inducción matemática. Ejemplos.
 
 # Conjuntos: Concepto
 
@@ -172,3 +162,6 @@ Esto quiere decir que ambos conjuntos son iguales
 - ⊆: subconjunto
 - ∪: Union
 - ∩: interseccion
+
+
+![Preguntas para estudiar](/Matematica/LOGICAYESTRUCTURADEDATOS/Nuevos_Resumenes/Img/PreguntasParaEstudiar.png)

@@ -162,3 +162,4 @@ Se define como su cambio en posicion en algun intervalo de tiempo. DELTA x equiv
 3 - La rapidez real medida es de 70,0m/h?; 
 4 - Que le dice esto acerca del movimiento? Cuanto tarda este auto en detenerse cuando viaja a 26,8m/s?
 
+
