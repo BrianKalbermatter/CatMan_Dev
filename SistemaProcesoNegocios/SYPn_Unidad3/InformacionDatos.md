@@ -19,5 +19,4 @@ INFORMACION
 ### Informacion
     - Reduce la incertidumbre para orientar una decision.
     - Conjunto de datos = informacion
-    - Es cualquier conocimiento o mensaje util 
-    
+    - Es cualquier conocimiento o mensaje util para la decision y la accion.
