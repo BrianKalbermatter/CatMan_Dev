@@ -32,11 +32,10 @@ begin
     WriteLn(edad);
 end;
 
-
-
 begin//Inicio del programa principal
     WriteLn(Persona(Humano));
     Saludar('Juan');
     Edad(20);
     WriteLn(PI);
 end.//Fin del programa principal
+
