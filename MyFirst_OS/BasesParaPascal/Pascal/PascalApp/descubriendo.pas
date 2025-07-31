@@ -1,8 +1,10 @@
+
+{ACCION}
 //Nombre del programa
 program descubriendo;
 
 //Uso de las librerias
-uses crt
+uses crt;
 
 //Constantes Globales
 const 
@@ -13,6 +15,7 @@ var
     edad: integer;
 
 //Funciones Declaraciones, si hay algunos
+// Funtion Func_Name(param...); Return_Valuel ---> Este si devuelve algo
 //function Persona(Humano: boolean): string;
 //begin
 //    if Humano = True then
@@ -21,7 +24,7 @@ var
 //        Persona := 'No soy Humano';
 //end;
 
-//Procedimientos
+{Procedimientos} 
 procedure Saludar(nombre: string);
 begin
     WriteLn(nombre);
@@ -32,10 +35,13 @@ begin
     WriteLn(edad);
 end;
 
-begin//Inicio del programa principal
+{PROCESO}
+begin{Inicio del programa principal}
     WriteLn(Persona(Humano));
     Saludar('Juan');
     Edad(20);
     WriteLn(PI);
-end.//Fin del programa principal
+    readkey;
+end.{Fin del programa principal}
+
 
