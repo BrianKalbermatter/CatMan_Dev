@@ -201,20 +201,376 @@ Comunicacion interpersonal directa es necesaria para coordinar y planificar.
 ### Tipos de Sistema de Informacion:
 Dependiendo de las necesidades de la empresa y el nivel de la organizacion. Puedo diferenciar seis tipos:
 
-1. Sistemas de Procesamiento de Transacciones (TPS).
+1. *Sistemas de Procesamiento de Transacciones (TPS)*.
 **Es un software que automatiza las tareas repetitivas y rutinarias de una empresa.** Procesa grandes volumenes de datos de forma automatica, sigue procedimientos estandar sin variaciones. Requiere minima intervencion humana.
 
 - Una transaccion:
     Facturacion, pago de empleados, depositos bancarios. Entrega de mercancia.
 > Cliente introduce datos → Sistema verifica → Procesa → Entrega resultado
 - Se usa en una empresa cuando tiene muchas transacciones similares, procedimientos bien definidos, pocos excepciones a las reglas normales.
+---
+2. *Sistemas de Informacion Administrativa (MIS)*.
+Un sistema de Informacion Administrativa (MIS) es un sistema computarizado que organiza y presenta informacion util para ayudar a gerentes y administrativos a tomar decisiones efectivas dentro de una empresa.
 
-2. Sistemas de Informacion Administrativa (MIS).
+El MIS es utilizado por personas dentro de la empresa: A veces toda la organizacion, y otras veces solo un area, sucursal o departamento. La informacion generada puede ser utilizada tanto por gerentes como por personal no directivo para resolver problemas y mejorar la gestion.
+La informacion que ofrece un MIS incluye:
+- Lo que paso en el pasado (ventas, gastos, ingresos historicos).
+- Lo que esta ocurriendo ahora (datos actuales o tiempo real).
+- LO que podria pasar en el futuro (simulaciones y proyecciones).
+Esa informacion se presenta a traves de reportes periodicos, reportes especiales y salidas de simulaciones o analisis matematicos.
+En resumen, un MIS permite tomar decisiones mas inteligentes y resolver problemas operativos o estrategicos dentro de una empresa.
+
+---
 
 3. Sistemas para el soporte de Decisiones (DSS).
-4. Sistemas para Automatizacion de la Oficina (OA).
-5. Sistemas Basados en el COnocimiento (IA - SE).
-6. Sistemas para Ejecutivos (EIS).
-7. Los sistemas de planificacion de recursos empresariales (ERP).
-8. LOs sistemas de gestion de relaciones con el cliente (CRM).
 
+**Sistema de informacion gerencial que combina modelos de analisis y datos para resolver problemas semi-estructurados y no estructurados.**
+
+
+### CARACTERÍSTICAS PRINCIPALES:
+1. **Flexibilidad máxima** - No se puede diseñar de antemano
+2. **Múltiples fuentes de datos** - No solo un archivo maestro
+3. **Interfaz amigable** - Orientado al usuario
+
+### TIPOS DE DECISIONES:
+- **Estructuradas**: Procedimientos claros 
+- **Semi-estructuradas**: Algunos procedimientos + juicio humano 
+- **No estructuradas**: Sin procedimientos claros
+
+### LAS 4 ETAPAS DEL PROCESO (ORDEN CRÍTICO)
+1. **INTELIGENCIA** - Recopilar información
+2. **DISEÑO** - Concebir alternativas  
+3. **SELECCIÓN** - Elegir la mejor opción
+4. **IMPLEMENTACIÓN** - Ejecutar y seguir
+
+---
+
+## 🧠 MNEMOTÉCNICOS PARA MEMORIZAR
+
+### 📝 DSS = "Decision Support System"
+**D**atos + **S**oporte + **S**istema
+
+### 🎯 Las 4 Etapas: **IDSI**
+- **I**nteligencia
+- **D**iseño  
+- **S**elección
+- **I**mplementación
+
+### 🔍 Tipos de Decisiones: **ESN**
+- **E**structuradas
+- **S**emi-estructuradas  
+- **N**o estructuradas
+
+---
+
+## PREGUNTAS FRECUENTES DE EXAMEN
+
+### 1. ¿Qué es un DSS?
+**RESPUESTA COMPLETA:**
+Un sistema de información gerencial que combina modelos de análisis (información, procesos, etc.) y datos para resolver problemas semi-estructurados y no estructurados, involucrando al usuario a través de una interfaz amigable.
+
+### 2. ¿Cuáles son las 4 etapas del proceso de decisión?
+**RESPUESTA:**
+1. **Inteligencia**: Recopilar información e identificar problemas
+2. **Diseño**: Concebir las posibles alternativas
+3. **Selección**: Seleccionar una alternativa entre las posibles
+4. **Implementación**: Ejecutar la decisión e informar el progreso
+
+### 3. ¿Qué tipos de decisiones maneja un DSS?
+**RESPUESTA:**
+- **Decisiones No Estructuradas**: Sin procedimientos claros
+- **Decisiones Semi-estructuradas**: Con algunos procedimientos pero requieren juicio humano
+
+### 4. ¿Cuál es la diferencia principal entre DSS y otros sistemas?
+**RESPUESTA:**
+- **Mayor flexibilidad** que otros sistemas
+- **No se puede diseñar de antemano** el formato de reportes
+- **Múltiples fuentes de datos** (no solo un archivo maestro)
+- **El usuario define** el contenido de los informes
+
+### 5. ¿El DSS reemplaza al tomador de decisiones?
+**RESPUESTA:**
+**NO**. Los DSS ayudan pero **no reemplazan** el criterio del directivo. La decisión final siempre depende de la persona responsable.
+
+---
+
+## 🎯 PUNTOS CRÍTICOS PARA EL EXAMEN
+
+### ✅ LO QUE SÍ HACE UN DSS:
+- ✅ Ayuda a tomar decisiones complejas
+- ✅ Procesa múltiples fuentes de datos
+- ✅ Presenta alternativas de solución
+- ✅ Permite análisis "¿Qué pasaría si...?"
+- ✅ Transforma datos en información útil
+
+### ❌ LO QUE NO HACE UN DSS:
+- ❌ NO reemplaza al tomador de decisiones
+- ❌ NO toma decisiones automáticamente
+- ❌ NO funciona solo con un archivo de datos
+- ❌ NO tiene formato fijo de reportes
+
+---
+
+## 📋 RESUMEN RÁPIDO PARA REPASO
+
+### 🎯 PROPÓSITO PRINCIPAL
+**Transformar datos complejos en información estratégica** para decisiones inteligentes.
+
+### 🔧 FUNCIONES CLAVE
+1. **Procesar** grandes volúmenes de datos
+2. **Identificar** patrones y tendencias
+3. **Simular** diferentes escenarios
+4. **Recomendar** cursos de acción
+
+### 👥 USUARIOS TÍPICOS
+- Ejecutivos de alta administración
+- Gerentes de línea
+- Usuarios individuales o grupales
+
+### 💡 BENEFICIOS PRINCIPALES
+- Reducción de costos
+- Incremento en productividad
+- Mejor comunicación
+- Ventaja competitiva
+
+---
+
+## 🚀 CONSEJOS PARA EL EXAMEN
+
+### 📝 AL ESCRIBIR LA RESPUESTA:
+1. **Siempre menciona** que es un "sistema de información gerencial"
+2. **Incluye** que combina modelos de análisis y datos
+3. **Especifica** que es para problemas semi-estructurados y no estructurados
+4. **Menciona** la interfaz amigable
+
+### 🎯 PALABRAS CLAVE PARA USAR:
+- "Sistema de información gerencial"
+- "Modelos de análisis"
+- "Problemas semi-estructurados y no estructurados"
+- "Interfaz amigable"
+- "Flexibilidad"
+- "Múltiples fuentes de datos"
+
+### ⚠️ ERRORES COMUNES A EVITAR:
+- ❌ Decir que "reemplaza" al tomador de decisiones
+- ❌ Confundir con sistemas de transacciones
+- ❌ Olvidar mencionar la flexibilidad
+- ❌ No mencionar las 4 etapas del proceso
+
+---
+
+## 🎯 FRASE CLAVE PARA MEMORIZAR
+**"DSS = Datos + Soporte + Sistema para decisiones complejas con flexibilidad máxima"**
+
+---
+
+## 📚 REPASO FINAL - 5 MINUTOS
+
+### 🔍 ¿Qué es?
+Sistema que ayuda a tomar decisiones complejas
+
+### 🎯 ¿Para qué?
+Transformar datos en información estratégica
+
+### 👥 ¿Quién lo usa?
+Directivos y gerentes
+
+### 🔄 ¿Cómo funciona?
+4 etapas: Inteligencia → Diseño → Selección → Implementación
+
+### 💡 ¿Por qué es importante?
+Porque permite tomar decisiones más inteligentes y fundamentadas.
+
+---
+
+4. Sistemas para Automatizacion de la Oficina (OA).
+## Concepto:
+**Conjunto de sistemas electronicos, formales e informales, cuya funcion principal es facilitar la comunicacion de informacion entre personas dentro y fuera de la compania.**
+
+## Caracteristicas Principales:
+1. Facilita la comunicacion (oral y escrita)
+2. Incluye sistemas formales e informales.
+3. Permite el trabajo desde cualquier lugar (oficina virtual).
+
+- Los tipos de sistemas pueden ser:
+**Formales**: Planificados y documentados, implementados a nivel organizacional (como un MIS).
+
+**Informales**: No planificados, usados segun necesidad individual(como un DSS).
+
+**Oficina Virtual**: El trabajo de ofinina puede hacerse desde cualquier lugar conectado electronicamente.
+
+### Conceptos Claves:
+- Teleprocesos:
+- Teletrabajos:
+- Trabajo a distancias:
+
+# CONSEJOS PARA EL EXAMEN
+**AL ESCRIBIR LA RESPUESTA:**
+Siempre menciona la comunicación como función principal
+Incluye ejemplos de aplicaciones OA
+Especifica la existencia de sistemas formales e informales
+Menciona la oficina virtual y el trabajo remoto
+**PALABRAS CLAVE PARA USAR:**
+Comunicación
+Oficina virtual
+Sistemas formales/informales
+Teletrabajo
+Aplicaciones OA
+
+
+## Algunas aplicaciones típicas de la OA son:
+
+1. Procesamiento de textos: es el uso de una computadora para realizar automáticamente muchas de las tareas necesarias para preparar documentos mecanografiados o impresos.
+
+2. Correo Electrónico (e-mail): es el uso de una red de computadoras que permite a los usuarios enviar, almacenar y recibir mensajes empleando terminales y dispositivos de almacenamiento.
+
+3. Correo de voz: es similar al correo electrónico, sólo que se envían los mensajes hablando al teléfono en lugar de teclearlos, y se usa el teléfono para recuperar mensajes recibidos.
+
+4. Agenda electrónica: implica el uso de una computadora conectada a una red para almacenar y recuperar la agenda de citas de un gerente.
+
+5. Audio conferencias: implica el uso de equipo de comunicación de voz para establecer un enlace de audio entre personas que están dispersas geográficamente, para que puedan celebrar una reunión.
+
+6. Videoconferencias: implican el uso de equipo de televisión para vincular participantes que están dispersos geográficamente. El equipo proporciona tanto sonido como imagen.
+
+7. Conferencias por computadora: implican el uso de una computadora conectada a una red para que participantes que tienen una característica en común intercambien información respecto a un tema específico. Las conferencias por computadora son una forma más disciplinada de correo electrónico.
+
+8. Transmisión de facsímil (fax): implica el uso de equipo especial que puede leer una imagen de documento en un extremo de un canal de comunicación y producir una copia en el otro extremo (generalmente es una línea telefónica).
+
+9. Videotex: Es el uso de una computadora para exhibir material narrativo y gráfico almacenado en una pantalla.
+
+10. Manejo de imágenes: es el uso de reconocimiento óptico de caracteres (OCR) para convertir datos que están en papel, en un formato digital que se guarda en un dispositivo de almacenamiento secundario
+
+11. Autoedición. O DTP desktop publishing es el uso de una computadora para preparar salidas cuya calidad es muy cercana a la que produciría un taller tipográfico.
+
+
+# PREGUNTAS FRECUENTES DE EXAMEN
+1. ¿Qué es la Automatización de la Oficina (OA)?
+**RESPUESTA COMPLETA:**
+Es el conjunto de sistemas electrónicos, formales e informales, cuya función principal es facilitar la comunicación de información entre personas dentro y fuera de la compañía, permitiendo incluso el trabajo remoto (oficina virtual).
+
+2. ¿Cuáles son las dos clases de sistemas OA?
+**RESPUESTA:**
+Formales: Planificados y documentados, implementados a nivel organizacional
+Informales: No planificados, usados según necesidad individual
+
+3. ¿Qué es una oficina virtual?
+**RESPUESTA:**
+Es la capacidad de realizar trabajo de oficina desde cualquier lugar, siempre que exista conexión electrónica con la empresa.
+
+4. Menciona 5 aplicaciones típicas de OA.
+**RESPUESTA:**
+Procesamiento de textos, correo electrónico, agenda electrónica, videoconferencias, manejo de imágenes.
+
+5. ¿Cuál es la palabra clave que caracteriza la OA?
+**RESPUESTA:**
+Comunicación
+
+# REPASO FINAL - 5 MINUTOS
+## ¿Qué es?
+Sistemas electrónicos para facilitar la comunicación y el trabajo de oficina
+## ¿Para qué?
+Mejorar la comunicación y permitir el trabajo remoto
+## ¿Quién lo usa?
+Todo el personal de oficina, dentro y fuera de la empresa
+## ¿Cómo funciona?
+A través de aplicaciones como correo electrónico, videoconferencias, agenda electrónica, etc.
+## ¿Por qué es importante?
+Porque permite trabajar y comunicarse desde cualquier lugar, aumentando la eficiencia y flexibilidad
+
+---
+
+5. Sistemas Basados en el Conocimiento (IA - SE).
+## Concepto:
+**Un sistema experto es un tipo de inteligencia artificial que simula el razonamiento de un experto humano mediante una base de conocimientos, un motor de inferencia y una interfaz de usuario, con el objetivo de analizar informacion, resolver problemas concretos, tomar decisiones autonomas y explicar su razonamiento, diferenciandose de los sistemas de apoyo a decisiones (DSS) porque no solo asesora, sino que selecciona la mejor solucion posible, y se aplica en areas como medicinas, finanzas, industria y atencion al cliente, junto con otras ramas de la IA como redes neuronales, procesamiento de lenguaje natural, sistemas perceptivos y aprendizaje automatico.**
+
+# Puntos Claves:
+- Simula el pensamiento de un experto humano.
+- Usa base de conocimientos, motor de inferencia e interfaz de usuario.
+- Resuelve problemas especificos y toma decisiones por si mismo.
+- Explica como llego a sus conclusiones.
+- Se diferencia del DSS porque no solo ayuda: elige la mejor opcion.
+- Se aplica en salud, banca, industria y mas.
+- Forma parte de la IA junto a otras areas como: 
+    - Redes neuronales.
+    - Procesamiento del lenguaje natural.
+    - Sistemas perceptivos.
+    - Aprendizaje automatico.
+
+---
+
+6. Sistemas para Ejecutivos (EIS).
+## Concepto:
+**Un sistema de Informacion para Ejecutivos o Sistema de Informacion Ejecutiva es una herramienta software, basada en un DSS, que provee a los gerentes de un acceso sencillo a informacion interna y externa de su compania, y que es relevante para sus factores clave de exito. Permite a los ejecutuvos tener una vision rapida, clara y profunda del estado del negocio, ayudandolos a tomar decisiones estrategicas basadas en datos actualizados, sin depender de terceros, con herramientas visuales, acceso a multiples fuentes de informacion y modelos como el cuadro de Mando Integral.**
+- Se conecta a Sistemas Transaccionales internos y a fuentes externas (bases de datos, noticias, informes del sector).
+- Filtra, resume y organiza la informacion critica.
+- Usa Hardware especializado, pantallas tactiles, impresoras avanzadas, etc.
+
+
+Sistemas Transaccionales:
+
+---
+
+7. Los sistemas de planificacion de recursos empresariales (ERP).
+## Concepto:
+**Un Enterprise Resource Planning es un sistema de software que integra y automatiza todos los procesos de una empresa en una sola plataforma, con una base de datos comun, ayudando a ahorrar tiempo, reducir errores, aumentar la productividad y facilitar la toma de decisiones, tanto en grandes empresas como en pymes.**
+
+El objetivo principal es optimizar la gestion de los recursos de la empresa. Ahorrando tiempo y mejorando la eficiencia operativa mediante la integracion de datos y procesos.
+
+- Requiere de una infraestructura tecnologica comun.
+- Es clave un proceso de implementacion y personalizacion, que lleva tiempo y recursos.
+- Se compone de modulos funcionales (finanzas, logisticas, ventas, RRHH, etc.) que se pueden adaptar a las necesidades de cada negocio.
+- Garantiza que la informacion se cargue una sola vez y este disponible en tiempo real para todas las areas.
+- Permite una automatizacion completa del flujo de trabajo y la trazabilidad de operaciones.
+
+Empresa PYMES:
+
+---
+
+8. Los sistemas de gestion de relaciones con el cliente (CRM).
+## Concepto:
+**Estrategico, organizativo y ternlogico: Es el conjunto de herramientas TIC principalmente software, que va a permitir no solo reunir toda la informacion necesaria sobre el cliente y mejorar las decisiones de gestion de estos, sino tambien darle un mayor acceso a la compania con la que se pretende que se identifique**.
+-Organizan ciertos procesos empresariales en torno a un eje distinto al habitual, como el producto por ejemplo. Tiene varias ventajas importante de utilizacion e incorporacion de soluciones:
+- Posibilidad de identificar oportunidades de negocio.
+- Incremento de calidad y cantidad de informacion.
+- Posibilidad de aumentar las ventas y la fidelizacion del cliente.
+- Promueven procesos de cambio para la mejora.
+
+---
+
+# Sistemas Integrado de Informacion:
+## Conceptos:
+**Integracion de Sistemas: Es el entrelazamiento de sistemas donde los datos de un sistema pueden pasarse rutinariamente a uno o varios sistemas mas. Los sistemas "interactuan" cuando comparten flujos de datos, y cuando se establecen "uniones" internas entre elementos de datos, se dice que estan "integrados".**
+
+**Flujos de Datos: Los sistemas se relacionan por flujos de informacion cuando los datos de un sistema son necesarios para otro sistema que no puede generarlos, o cuando seria mas costoso, lento o menos exacto generarlos por separado.**
+
+### Tipo de Integracion:
+
+**Jerarquica**: 
+Los sistemas de nivel de transacciones alimentan datos a los de nivel administrativo, o viceversa. Es la mas probable de ser identificada porque los administradores saben que la informacion debe resumirse de las lineas de jerarquia.
+
+**Horizontal**: 
+Dentro de una linea de mando, los datos se procesan entre sistemas de informacion de varios departamentos de produccion cuando los productos se muevan de un departamento a otro.
+
+### Mecanismos de Integracion:
+- Procedimientos estándar para transporte físico de datos
+- Comunicación directa entre administradores
+- Respuestas automatizadas a condiciones internas
+- Cálculos automáticos
+- Diseños de bases de datos formales
+- Transferencias automáticas de datos
+- Extracción simultánea de información de varios sistemas
+
+### Beneficios:
+- Mejores flujos de información en la empresa
+- Informes más puntuales
+- Información más relevante disponible cuando se necesita
+- Obliga a compartir información entre departamentos
+- Evita la "negociación" de información como intercambio de favores
+
+**Limitaciones**: 
+
+
+Ningun SIG(SIG:**Es un sistema donde los diferentes sistemas de informacion de una empresa estan integrados entre si, permitiendo que los datos fluyan entre ellos de manera rutinaria. Es fundamental para que la informacion fluya eficientemente en toda la organizacion, permitiendo mejores flujos de informacion, informe mas puntuales y obligando a compartir informacion entre departamento.**) tiene todos sus sistemas completamente integrados porque seria inefectivo en costo. La integracion aumentar el costo al hacer el diseno mas dificil, requerir mas equipos y programas mas complejos.
+
+**Identificacion de Interacciones**: 
+Se logra mejor cuando los sistemas se planean y disenan juntos, no por separado. La investigacion de sistemas no limitada a uno solo es la forma mas efectiva de identificar interacciones potencialmente utiles.

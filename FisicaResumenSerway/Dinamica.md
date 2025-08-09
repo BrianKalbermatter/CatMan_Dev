@@ -57,6 +57,6 @@ Una lampara suspendida de una cadena ligera unida al techo. El diagrama de cuerp
     **$\sum \vec{F}_y$ = T - F<sub>g</sub> = 0 o T = F<sub>g</sub>**
 
 - **Particula bajo una fuerza neta**:
-
+Si un objeto experimenta una aceleracion, su movimiento se puede analizar con el modelo de particula bajo una fuerza neta. La ecuacion apropiada para este modelo es la segunda ley de Newton. Considerar una caja que se jala hacia la derecha sobre una superficie horizontal sin friccion. Queremos encontrar la aceleracion de la caja y la fuerza que el suelo ejerce sobre ella. Las fuerzas que actuan sobre la caja se ilustra en el diagrama de cuerpo libre. La fuerza horizontal  **$\vec{T}$** que se aplica a la caja actua a traves de la soga. La magnitud de **$\vec{T}$** es igual a la tension en la soga. Ademas de la fuerza en **$\vec{T}$**, el diagrama de cuerpo libre para la caja incluye la fuerza gravitacional **$\vec{F}_g$** y la fuerza normal **$\vec{n}$** que ejerce el suelo sobre la caja.
 
 
