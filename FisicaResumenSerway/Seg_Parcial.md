@@ -138,6 +138,8 @@ Un carro de mina de 200kg se mueve a 2.0 m/s hacia la derecha y choca de frente 
 
 - Verificar si la cantidad de movimiento se conserva.
 
+
+
 ## Colisiones en un punto 
 Un proyectil de 0.50kg que se mueve a 20m/s choca frontalmente con un bloque de 1.50kg en reposo. El choque es perfectamente elástico.
 
@@ -148,6 +150,8 @@ Un proyectil de 0.50kg que se mueve a 20m/s choca frontalmente con un bloque de 
 - Verificar que la energía cinética se conserve.
 
 - Graficar la variación de energía cinética para cada objeto antes y después del choque.
+
+
 
 ## Energía de Cuerpo Rígido
 Un disco macizo de radio 0.25m y masa 4.0kg está en reposo y comienza a girar debido a una fuerza tangencial constante de 6.0N aplicada en su borde. La fuerza actúa durante 5.0s.
@@ -161,6 +165,8 @@ Un disco macizo de radio 0.25m y masa 4.0kg está en reposo y comienza a girar d
 - Determinar la energía cinética rotacional del disco al final de los 5.0s.
 
 - Calcular el trabajo realizado por la fuerza.
+
+
 
 ## Dinámica de Cuerpo Rígido
 Una rueda de radio 0.40m y masa 8.0kg (supón un disco macizo) rueda sin deslizar sobre un plano inclinado 15∘ partiendo del reposo. El plano tiene una longitud de 5.0m.
