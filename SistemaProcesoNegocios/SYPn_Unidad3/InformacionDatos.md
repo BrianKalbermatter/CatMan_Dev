@@ -241,11 +241,10 @@ En resumen, un MIS permite tomar decisiones mas inteligentes y resolver problema
 
 3. # <span style= "color: green;">***Sistemas para el soporte de Decisiones (DSS)***</span>
 (ALTA GERENCIA)
-(SEMI-ESTRUCTURADAS Y NO ESTRUCTURADAS): ANALISIS "what-if", ESCENARIOS.
+(SEMI-ESTRUCTURADAS Y NO ESTRUCTURADAS): ANALISIS, ESCENARIOS.
 
-El DSS es un sistema de informacion gerencial que combina modelos de analisis y datos para resolver problemas semi-estructurados y no estructurados, involucrado al usuario a traves de la interfaz amigable. Su porposito principal es dar apoyo y mejorar el proceso de toma de decisiones a lo largo de las etapas del mismo: inteligencia, diseno, seleccion e implementacion. Principalmente se utilizan para decisiones estrategicas y tacticas en la gestion a nivel superior
-
-### REPASO FINAL - 5 MINUTOS
+El DSS es un sistema de informacion gerencial que combina modelos de analisis y datos para resolver problemas semi-estructurados y no estructurados, involucrado al usuario a traves de la interfaz amigable. Su porposito principal es dar apoyo y mejorar el proceso de toma de decisiones a lo largo de las etapas del mismo: inteligencia, diseno, seleccion e implementacion. Principalmente se utilizan para decisiones estrategicas y tacticas en la gestion a nivel superior, donde las situaciones consideradas como problematicas se presentan con baja frecuencia.
+Un factor clave en el uso de estos sistemas es determinar la informacion necesaria.
 
 ### ¿Qué es?
 Sistema que ayuda a tomar decisiones complejas
