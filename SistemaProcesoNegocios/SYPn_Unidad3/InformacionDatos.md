@@ -35,6 +35,28 @@ Para que sea util, respaldar el proceso de toma de decisiones de una organizacio
 
 - **OPORTUNIDAD**: Si la informacion esta disponible cuando se necesita o esta desactualizada cuando se la recibe o cuando se desea usarla y sin retraso.
 
+---
+## Atributos:
+- **Completitud** ↔ Extensión
+Completitud significa que no falten datos importantes.
+En tu práctico lo llaman Extensión.
+---
+- **Oportunidad** ↔ Frecuencia + Temporalidad
+Oportunidad es que la información llegue en el momento justo.
+Esto se desdobla en:
+Frecuencia → cada cuánto se entrega.
+Temporalidad → si está actualizada o atrasada.
+---
+- **Relevancia** ↔ Forma + Origen + Pertinencia
+Relevancia significa que la información sea útil para quien la recibe.
+Esto se refleja en:
+Forma → cómo se presenta (clara o confusa).
+Origen → a quién se entrega (persona correcta o equivocada).
+---
+- **Exactitud**:
+Este suele estar igual en todas las listas: que los datos sean correctos, sin errores.
+---
+
 ## El concepto principal:
 - **Los sistemas de informacion** mas exitosos (que generan mas beneficios para la empresa) nacen de las necesidades reales de los usuarios, no de la tecnologia por si misma.
 1. Origen del exito: Se originan en los usuarios.
@@ -225,17 +247,46 @@ La informacion que ofrece un MIS incluye:
 Esa informacion se presenta a traves de reportes periodicos, reportes especiales y salidas de simulaciones o analisis matematicos.
 En resumen, un MIS permite tomar decisiones mas inteligentes y resolver problemas operativos o estrategicos dentro de una empresa.
 
-> 
+> MIS (Sistema de Información Administrativa):
+La gerencia media (jefes de área, gerentes de sucursales) no quiere ver cada ticket de compra, sino reportes consolidados que les ayuden a administrar y tomar decisiones tácticas.
 
----
+El MIS podría generar:
 
+Reporte semanal de ventas por sucursal:
 
----
+Sucursal A: $3.200.000
 
+Sucursal B: $2.450.000
 
+Sucursal C: $1.950.000
 
----
+Análisis de productos más vendidos:
 
+1° Leche entera
+
+2° Pan lactal
+
+3° Gaseosa cola 2L
+
+Reporte de rotura de stock:
+
+El sistema avisa que en la sucursal C se están acabando los fideos y la harina.
+
+Proyecciones de demanda para la próxima semana:
+
+Basado en patrones de compras históricas + estacionalidad.
+
+Ejemplo de uso:
+El gerente de la sucursal B ve en el MIS que las ventas bajaron un 12 % respecto al mes pasado, y que el producto “Aceite de girasol” está en falta desde hace 5 días.
+Decide coordinar con logística para acelerar reposición de stock y planear una promoción de fin de semana para recuperar ventas.
+
+Clave de un MIS en este nivel:
+
+Usuarios: gerencia media (no la alta dirección todavía).
+
+Decisiones: tácticas y administrativas (qué vender más, cómo organizar turnos, cómo reponer stock).
+
+Información: estructurada y semi-estructurada (reportes periódicos y algunos análisis).
 
 ---
 
@@ -262,6 +313,7 @@ Directivos y gerentes
 Porque permite tomar decisiones más inteligentes y fundamentadas.
 
 ---
+
 4. # <span style="color: orange;">***Sistemas de Informacion para Ejecutivos (EIS)***</span>
 (ALTA GERENCIA)
 (NO ESTRUCTURADA): ESTRATEGICAS, ALTA DIRECCION.
