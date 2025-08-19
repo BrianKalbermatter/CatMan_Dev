@@ -273,6 +273,8 @@ Porque permite tomar decisiones más inteligentes y fundamentadas.
 - Usa Hardware especializado, pantallas tactiles, impresoras avanzadas, etc.
 
 Ejemplo:
+El director de la empresa abre el EIS y ve que en la región sur las ventas de un producto están cayendo, mientras en la competencia suben. El sistema cruza datos con fuentes externas (estadísticas de mercado, informes de consumidores) y muestra que un competidor lanzó una promoción fuerte.
+Con esa información, el director decide lanzar una campaña de marketing urgente en esa zona.
 ---
 
 
