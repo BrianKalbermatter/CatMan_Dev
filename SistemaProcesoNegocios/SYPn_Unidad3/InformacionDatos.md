@@ -4,17 +4,17 @@
 - **TIPOS DE SISTEMAS DE INFORMACIÓN**: Sistemas de procesamiento de transacciones. Sistemas de información administrativa. Sistemas para el soporte de decisiones. Sistemas para automatización de la oficina. Sistemas basados en el conocimiento. Sistemas de información para ejecutivos. 
 - **SISTEMAS INTEGRADOS DE INFORMACION**
 
-## Sistema de Informacion:
+# Sistema de Informacion:
 - Entidad abstacta denominada **Sistema de Informacion**.
 - Medio de Sistema por lo cual los datos fluyen de una persona o departamento hacia otros y pueden ser cualquier cosa, desde la comunicacion interna entre los diferentes componentes de la organizacion y lineas telefonicas hasta sistemas de computo que generan reportes periodicos para varios usuarios. 
 - La informacion es considerada como **la fuente de la organizacion de los sistemas abiertos**. 
 - **Sistema de informacion esta incluido en otro sistema mayor, recibe, almacena, procesa y distribuye informacion.**
 - Definido por una coleccion de personas, procedimientos y equipos disenados para recolectar, almacenar, procesar y distrbuir todos los datos relativos a la informacion de la Empresa.
 
-### DATOS:
+## DATOS:
     Numeros, letras, simbolos, imagenes y sonidos, que describen objetos, condiciones o situaciones. Termino que lleva un mensaje que en si mismo no lleva ninguna informacion. Son intereses para distintos objetivos, entre los cuales se encuentra la toma de decisiones.
 
-### INFORMACION:
+## INFORMACION:
     - Reduce la incertidumbre para orientar una decision.
     - Conjunto de datos = informacion.
     - Es cualquier conocimiento o mensaje util para la decision y la accion.
@@ -180,6 +180,7 @@ Dependiendo de las necesidades de la empresa y el nivel de la organizacion. Pued
 
 1. # <span style="color: red;">***Sistemas de Procesamiento de Transacciones (TPS)***</span>
 (NIVEL OPERATIVO)
+(ESTRUCTURADAS): OPERATIVAS, REPETITIVAS.
 
 ## Se refiere aquellos sistemas que se encargan de retirar, procesar y almacenar las operaciones diarias y rutinarias de una organizacion.
 No estan pensados para analisis avanzado ni toma de decisiones estrategicas.
@@ -211,7 +212,8 @@ Es el conjunto de procedimientos para el manejo, incluye actividades como: Calcu
 ---
 
 2. # <span style="color: yellow;">***Sistemas de Informacion Administrativa (MIS)***</span>
-(ALTA GERENCIA)
+(GERENCIA MEDIA)
+(ESTRUCTURADAS Y SEMI-ESTRUCTURADAS): TACTICAS/ADMINISTRATIVAS. 
 
 Un sistema de Informacion Administrativa (MIS) es un sistema computarizado que organiza y presenta informacion util para ayudar a gerentes y administrativos a tomar decisiones efectivas dentro de una empresa.
 
@@ -230,39 +232,7 @@ En resumen, un MIS permite tomar decisiones mas inteligentes y resolver problema
 
 ---
 
-# <span style="color: purple;">DATOS IMPORTANTES:</span>
-## **Entrada de datos (Recoleccion de datos)**:
-MIS se regiere al Management Information System(Sistema de Informacion Gerencial o Sistema de Informacion de Gestion).
-- Proporciona informacion a los gerentes para la toma de decisiones.
 
-- Procesa datos operativos para generar reportes gerenciales.
-
-- Sirve como puente entre los sistemas operativos y la direccion de la empresa.
-
-La **entrada de datos** actua como un "sensor" del MIS porque:
-
-1. Captura eventos del mundo real, recepcion de pedidos de clientes, terminacion de operaciones de fabricacion, llegada de cheques de clientes. 
-
-2. Convierte transacciones en datos procesables: El sistema recibe muchos datos que describen sucesos reales de la empresa.
-
-3. Mantiene contacto con la realidad operativa:
-
-> **Eventos del mundo real** → **Entrada de datos** → **Procesamiento** → **Información gerencial** → **Toma de decisiones**.
-
-- El MIS transforma las tansacciones diarias, datos operativos en informacion estrategica que los gerentes pueden usar para tomar decisiones informadas sobre el negocio.
-
-- **TECNICAS DE ENTRADA DE DATOS**: Para introducir datos se usa una diversidad de medios. El metodo tradicional es mediante la operacion de un teclado. En la figura se representa un modelo de pantalla en donde los rectangulos muestran los datos a introducir por el operador. Cada uno de estos datos se denomina **campo**.
-
-Exploracion optica de ingreso de datos, lectura automatica de los caracteres impresos.
-
-- **Coste de entrada de datos**: 
-La funcion entrada de datos, el costo de recoger los datos es tan grande que el valor de la informacion.
-
-- **Control de errores**. (Validacion):
-La funcion de entrada de datos es critica, no solo por su coste, sino porque es la funete de errores del sistema mas incisiva. La calidad de las salidas de un MIS depende de la calidad de sus datos de entrada.
-
-- **Entrada de datos integrada**:
-Significa que los datos se capturan una sola vez en el lugar donde se generan. Por ejemplo: un cajero, un agente de seguros, un vendedor. Luego, se comparten con todos los sectores que lo necesiten. **Ejemplo: Si un cliente de su direccion al abrir una cuenta, esa informacion se usa para facturacion, soporte, marketing, etc, sin volver a pedirla.**
 
 ---
 
@@ -271,6 +241,7 @@ Significa que los datos se capturan una sola vez en el lugar donde se generan. P
 
 3. # <span style= "color: green;">***Sistemas para el soporte de Decisiones (DSS)***</span>
 (ALTA GERENCIA)
+(SEMI-ESTRUCTURADAS Y NO ESTRUCTURADAS): ANALISIS "what-if", ESCENARIOS.
 
 **Sistema de informacion gerencial que combina modelos de analisis y datos para resolver problemas semi-estructurados y no estructurados.**
 
@@ -430,9 +401,21 @@ Directivos y gerentes
 Porque permite tomar decisiones más inteligentes y fundamentadas.
 
 ---
+4. # <span style="color: orange;">***Sistemas de Informacion para Ejecutivos (EIS)***</span>
+(ALTA GERENCIA)
+(NO ESTRUCTURADA): ESTRATEGICAS, ALTA DIRECCION.
 
-4. # <span style="color: blue;">***Sistemas para Automatizacion de la Oficina (OA).***</span>
+## Concepto:
+**Un sistema de Informacion para Ejecutivos o Sistema de Informacion Ejecutiva es una herramienta software, basada en un DSS, que provee a los gerentes de un acceso sencillo a informacion interna y externa de su compania, y que es relevante para sus factores clave de exito. Permite a los ejecutuvos tener una vision rapida, clara y profunda del estado del negocio, ayudandolos a tomar decisiones estrategicas basadas en datos actualizados, sin depender de terceros, con herramientas visuales, acceso a multiples fuentes de informacion y modelos como el cuadro de Mando Integral.**
+- Se conecta a Sistemas Transaccionales internos y a fuentes externas (bases de datos, noticias, informes del sector).
+- Filtra, resume y organiza la informacion critica.
+- Usa Hardware especializado, pantallas tactiles, impresoras avanzadas, etc.
+---
+
+
+5. # <span style="color: blue;">***Sistemas para Automatizacion de la Oficina (OA)***</span>
 (ESTE SISTEMAS ESTA EN TODOS LOS NIVELES)
+(NO DECIDE): FACILITA CUALQUIER TIPO DE COMUNICACION Y COORDINACION.
 
 ## Concepto:
 **Conjunto de sistemas electronicos, formales e informales, cuya funcion principal es facilitar la comunicacion de informacion entre personas dentro y fuera de la compania.**
@@ -529,8 +512,10 @@ Porque permite trabajar y comunicarse desde cualquier lugar, aumentando la efici
 
 ---
 
-5. # <span style="color: cyan;">***Sistemas Basados en el Conocimiento (IA - SE)***</span>
+6. # <span style="color: cyan;">***Sistemas Basados en el Conocimiento (IA - SE)***</span>
 (ESTE SISTEMAS ESTA EN TODOS LOS NIVELES)
+(PUEDE AUTOMATIZAR ESTRUCTURAS Y ASISTIR SEMI/NO ESTRUCTURADAS EN DOMINIOS ESPECIFICOS)
+
 
 ## Concepto:
 **Un sistema experto es un tipo de inteligencia artificial que simula el razonamiento de un experto humano mediante una base de conocimientos, un motor de inferencia y una interfaz de usuario, con el objetivo de analizar informacion, resolver problemas concretos, tomar decisiones autonomas y explicar su razonamiento, diferenciandose de los sistemas de apoyo a decisiones (DSS) porque no solo asesora, sino que selecciona la mejor solucion posible, y se aplica en areas como medicinas, finanzas, industria y atencion al cliente, junto con otras ramas de la IA como redes neuronales, procesamiento de lenguaje natural, sistemas perceptivos y aprendizaje automatico.**
@@ -550,16 +535,7 @@ Porque permite trabajar y comunicarse desde cualquier lugar, aumentando la efici
 
 ---
 
-6. Sistemas para Ejecutivos (EIS).
-## Concepto:
-**Un sistema de Informacion para Ejecutivos o Sistema de Informacion Ejecutiva es una herramienta software, basada en un DSS, que provee a los gerentes de un acceso sencillo a informacion interna y externa de su compania, y que es relevante para sus factores clave de exito. Permite a los ejecutuvos tener una vision rapida, clara y profunda del estado del negocio, ayudandolos a tomar decisiones estrategicas basadas en datos actualizados, sin depender de terceros, con herramientas visuales, acceso a multiples fuentes de informacion y modelos como el cuadro de Mando Integral.**
-- Se conecta a Sistemas Transaccionales internos y a fuentes externas (bases de datos, noticias, informes del sector).
-- Filtra, resume y organiza la informacion critica.
-- Usa Hardware especializado, pantallas tactiles, impresoras avanzadas, etc.
-
-
----
-
+# Estos dos tipos no entran:
 7. Los sistemas de planificacion de recursos empresariales (ERP).
 ## Concepto:
 **Un Enterprise Resource Planning es un sistema de software que integra y automatiza todos los procesos de una empresa en una sola plataforma, con una base de datos comun, ayudando a ahorrar tiempo, reducir errores, aumentar la productividad y facilitar la toma de decisiones, tanto en grandes empresas como en pymes.**
@@ -572,7 +548,6 @@ El objetivo principal es optimizar la gestion de los recursos de la empresa. Aho
 - Garantiza que la informacion se cargue una sola vez y este disponible en tiempo real para todas las areas.
 - Permite una automatizacion completa del flujo de trabajo y la trazabilidad de operaciones.
 
-Empresa PYMES:
 
 ---
 
@@ -586,6 +561,41 @@ Empresa PYMES:
 - Promueven procesos de cambio para la mejora.
 
 ---
+
+# <span style="color: purple;">DATOS IMPORTANTES:</span>
+## **Entrada de datos (Recoleccion de datos)**:
+MIS se regiere al Management Information System(Sistema de Informacion Gerencial o Sistema de Informacion de Gestion).
+- Proporciona informacion a los gerentes para la toma de decisiones.
+
+- Procesa datos operativos para generar reportes gerenciales.
+
+- Sirve como puente entre los sistemas operativos y la direccion de la empresa.
+
+La **entrada de datos** actua como un "sensor" del MIS porque:
+
+1. Captura eventos del mundo real, recepcion de pedidos de clientes, terminacion de operaciones de fabricacion, llegada de cheques de clientes. 
+
+2. Convierte transacciones en datos procesables: El sistema recibe muchos datos que describen sucesos reales de la empresa.
+
+3. Mantiene contacto con la realidad operativa:
+
+> **Eventos del mundo real** → **Entrada de datos** → **Procesamiento** → **Información gerencial** → **Toma de decisiones**.
+
+- El MIS transforma las tansacciones diarias, datos operativos en informacion estrategica que los gerentes pueden usar para tomar decisiones informadas sobre el negocio.
+
+- **TECNICAS DE ENTRADA DE DATOS**: Para introducir datos se usa una diversidad de medios. El metodo tradicional es mediante la operacion de un teclado. En la figura se representa un modelo de pantalla en donde los rectangulos muestran los datos a introducir por el operador. Cada uno de estos datos se denomina **campo**.
+
+Exploracion optica de ingreso de datos, lectura automatica de los caracteres impresos.
+
+- **Coste de entrada de datos**: 
+La funcion entrada de datos, el costo de recoger los datos es tan grande que el valor de la informacion.
+
+- **Control de errores**. (Validacion):
+La funcion de entrada de datos es critica, no solo por su coste, sino porque es la funete de errores del sistema mas incisiva. La calidad de las salidas de un MIS depende de la calidad de sus datos de entrada.
+
+- **Entrada de datos integrada**:
+Significa que los datos se capturan una sola vez en el lugar donde se generan. Por ejemplo: un cajero, un agente de seguros, un vendedor. Luego, se comparten con todos los sectores que lo necesiten. **Ejemplo: Si un cliente de su direccion al abrir una cuenta, esa informacion se usa para facturacion, soporte, marketing, etc, sin volver a pedirla.**
+
 
 # Sistemas Integrado de Informacion:
 ## Conceptos:
