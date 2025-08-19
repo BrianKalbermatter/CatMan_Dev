@@ -1,4 +1,4 @@
-# Temas: Estudiarlos a todos!
+# Temas:
 - **SISTEMA DE INFORMACIÓN**: Concepto. Dato e información. Atributos de la información. 
 - **FUNCIONES BASICAS DEL SI**: Entrada de datos. Almacenamiento de datos. Cálculo. Presentación. Comunicación. 
 - **TIPOS DE SISTEMAS DE INFORMACIÓN**: Sistemas de procesamiento de transacciones. Sistemas de información administrativa. Sistemas para el soporte de decisiones. Sistemas para automatización de la oficina. Sistemas basados en el conocimiento. Sistemas de información para ejecutivos. 
@@ -51,11 +51,11 @@ El proposito fundamental de un sistema de informacion debe ser mejorar la organi
 # FUNCIONES DEL SISTEMA DE INFORMACION:
 
 En el proceso por el cual un dato se procesa y se convierte en informacion para la toma de decisiones, reduciendo la incertidumbre con estas funciones:
-1. Entrada de datos.
-2. Almacenamiento de datos.
-3. Calculo-Proceso.
-4. Presentacion.
-5. Comunicacion.
+1. Entrada de datos. **Captura y validacion de origen.**
+2. Almacenamiento de datos. **Persistencia estructurada.**
+3. Calculo-Proceso. **Reglas de negocios, validaciones, ordenamientos, busquedas, actualizaciones.**
+4. Presentacion. **Tableros, reportes, alertas, impresiones: visuales o sonoras.** 
+5. Comunicacion. **Intercambio entre areas/sistemas(APIs, colas, redes), y colaboracion humana.**
 
 -----
 -----
@@ -243,147 +243,9 @@ En resumen, un MIS permite tomar decisiones mas inteligentes y resolver problema
 (ALTA GERENCIA)
 (SEMI-ESTRUCTURADAS Y NO ESTRUCTURADAS): ANALISIS "what-if", ESCENARIOS.
 
-**Sistema de informacion gerencial que combina modelos de analisis y datos para resolver problemas semi-estructurados y no estructurados.**
+El DSS es un sistema de informacion gerencial que combina modelos de analisis y datos para resolver problemas semi-estructurados y no estructurados, involucrado al usuario a traves de la interfaz amigable. Su porposito principal es dar apoyo y mejorar el proceso de toma de decisiones a lo largo de las etapas del mismo: inteligencia, diseno, seleccion e implementacion.
 
-
-### CARACTERÍSTICAS PRINCIPALES:
-1. **Flexibilidad máxima** - No se puede diseñar de antemano
-2. **Múltiples fuentes de datos** - No solo un archivo maestro
-3. **Interfaz amigable** - Orientado al usuario
-
-### TIPOS DE DECISIONES:
-- **Estructuradas**: Procedimientos claros 
-- **Semi-estructuradas**: Algunos procedimientos + juicio humano 
-- **No estructuradas**: Sin procedimientos claros
-
-### LAS 4 ETAPAS DEL PROCESO (ORDEN CRÍTICO)
-1. **INTELIGENCIA** - Recopilar información
-2. **DISEÑO** - Concebir alternativas  
-3. **SELECCIÓN** - Elegir la mejor opción
-4. **IMPLEMENTACIÓN** - Ejecutar y seguir
-
----
-
-## 🧠 MNEMOTÉCNICOS PARA MEMORIZAR
-
-### 📝 DSS = "Decision Support System"
-**D**atos + **S**oporte + **S**istema
-
-### 🎯 Las 4 Etapas: **IDSI**
-- **I**nteligencia
-- **D**iseño  
-- **S**elección
-- **I**mplementación
-
-### 🔍 Tipos de Decisiones: **ESN**
-- **E**structuradas
-- **S**emi-estructuradas  
-- **N**o estructuradas
-
----
-
-## PREGUNTAS FRECUENTES DE EXAMEN
-
-### 1. ¿Qué es un DSS?
-**RESPUESTA COMPLETA:**
-Un sistema de información gerencial que combina modelos de análisis (información, procesos, etc.) y datos para resolver problemas semi-estructurados y no estructurados, involucrando al usuario a través de una interfaz amigable.
-
-### 2. ¿Cuáles son las 4 etapas del proceso de decisión?
-**RESPUESTA:**
-1. **Inteligencia**: Recopilar información e identificar problemas
-2. **Diseño**: Concebir las posibles alternativas
-3. **Selección**: Seleccionar una alternativa entre las posibles
-4. **Implementación**: Ejecutar la decisión e informar el progreso
-
-### 3. ¿Qué tipos de decisiones maneja un DSS?
-**RESPUESTA:**
-- **Decisiones No Estructuradas**: Sin procedimientos claros
-- **Decisiones Semi-estructuradas**: Con algunos procedimientos pero requieren juicio humano
-
-### 4. ¿Cuál es la diferencia principal entre DSS y otros sistemas?
-**RESPUESTA:**
-- **Mayor flexibilidad** que otros sistemas
-- **No se puede diseñar de antemano** el formato de reportes
-- **Múltiples fuentes de datos** (no solo un archivo maestro)
-- **El usuario define** el contenido de los informes
-
-### 5. ¿El DSS reemplaza al tomador de decisiones?
-**RESPUESTA:**
-**NO**. Los DSS ayudan pero **no reemplazan** el criterio del directivo. La decisión final siempre depende de la persona responsable.
-
----
-
-## 🎯 PUNTOS CRÍTICOS PARA EL EXAMEN
-
-### ✅ LO QUE SÍ HACE UN DSS:
-- ✅ Ayuda a tomar decisiones complejas
-- ✅ Procesa múltiples fuentes de datos
-- ✅ Presenta alternativas de solución
-- ✅ Permite análisis "¿Qué pasaría si...?"
-- ✅ Transforma datos en información útil
-
-### ❌ LO QUE NO HACE UN DSS:
-- ❌ NO reemplaza al tomador de decisiones
-- ❌ NO toma decisiones automáticamente
-- ❌ NO funciona solo con un archivo de datos
-- ❌ NO tiene formato fijo de reportes
-
----
-
-## 📋 RESUMEN RÁPIDO PARA REPASO
-
-### 🎯 PROPÓSITO PRINCIPAL
-**Transformar datos complejos en información estratégica** para decisiones inteligentes.
-
-### 🔧 FUNCIONES CLAVE
-1. **Procesar** grandes volúmenes de datos
-2. **Identificar** patrones y tendencias
-3. **Simular** diferentes escenarios
-4. **Recomendar** cursos de acción
-
-### 👥 USUARIOS TÍPICOS
-- Ejecutivos de alta administración
-- Gerentes de línea
-- Usuarios individuales o grupales
-
-### 💡 BENEFICIOS PRINCIPALES
-- Reducción de costos
-- Incremento en productividad
-- Mejor comunicación
-- Ventaja competitiva
-
----
-
-## 🚀 CONSEJOS PARA EL EXAMEN
-
-### 📝 AL ESCRIBIR LA RESPUESTA:
-1. **Siempre menciona** que es un "sistema de información gerencial"
-2. **Incluye** que combina modelos de análisis y datos
-3. **Especifica** que es para problemas semi-estructurados y no estructurados
-4. **Menciona** la interfaz amigable
-
-### 🎯 PALABRAS CLAVE PARA USAR:
-- "Sistema de información gerencial"
-- "Modelos de análisis"
-- "Problemas semi-estructurados y no estructurados"
-- "Interfaz amigable"
-- "Flexibilidad"
-- "Múltiples fuentes de datos"
-
-### ⚠️ ERRORES COMUNES A EVITAR:
-- ❌ Decir que "reemplaza" al tomador de decisiones
-- ❌ Confundir con sistemas de transacciones
-- ❌ Olvidar mencionar la flexibilidad
-- ❌ No mencionar las 4 etapas del proceso
-
----
-
-## 🎯 FRASE CLAVE PARA MEMORIZAR
-**"DSS = Datos + Soporte + Sistema para decisiones complejas con flexibilidad máxima"**
-
----
-
-## 📚 REPASO FINAL - 5 MINUTOS
+### REPASO FINAL - 5 MINUTOS
 
 ### 🔍 ¿Qué es?
 Sistema que ayuda a tomar decisiones complejas
@@ -410,6 +272,8 @@ Porque permite tomar decisiones más inteligentes y fundamentadas.
 - Se conecta a Sistemas Transaccionales internos y a fuentes externas (bases de datos, noticias, informes del sector).
 - Filtra, resume y organiza la informacion critica.
 - Usa Hardware especializado, pantallas tactiles, impresoras avanzadas, etc.
+
+Ejemplo:
 ---
 
 
