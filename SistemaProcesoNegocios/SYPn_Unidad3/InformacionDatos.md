@@ -36,6 +36,7 @@ Para que sea util, respaldar el proceso de toma de decisiones de una organizacio
 - **OPORTUNIDAD**: Si la informacion esta disponible cuando se necesita o esta desactualizada cuando se la recibe o cuando se desea usarla y sin retraso.
 
 ---
+
 ## Atributos:
 - **Completitud** ↔ Extensión
 Completitud significa que no falten datos importantes.
@@ -56,6 +57,7 @@ Origen → a quién se entrega (persona correcta o equivocada).
 - **Exactitud**:
 Este suele estar igual en todas las listas: que los datos sean correctos, sin errores.
 ---
+
 
 ## El concepto principal:
 - **Los sistemas de informacion** mas exitosos (que generan mas beneficios para la empresa) nacen de las necesidades reales de los usuarios, no de la tecnologia por si misma.
@@ -79,6 +81,12 @@ En el proceso por el cual un dato se procesa y se convierte en informacion para 
 4. Presentacion. **Tableros, reportes, alertas, impresiones: visuales o sonoras.** 
 5. Comunicacion. **Intercambio entre areas/sistemas(APIs, colas, redes), y colaboracion humana.**
 
+## Pensamiento que debo tener:
+- Se esta cargando algo nuevo? -> ENTRADA.
+- Se guarda o consulta algo existente? -> ALMACENAMIENTO.
+- Se hace un calculo, filtro u orden? -> PROCESO.
+- Se muestra un resultado? -> PRESENTACION.
+- Se manda la informacion a otro lugar/persona? -> TRANSMISION.
 -----
 -----
 
@@ -614,8 +622,76 @@ Respusta:
 
 ```
 
+---
 
+# CLASIFICACION DE SISTEMAS DE INFORMACION:
+1. TPS - Sistema de Procesamiento de Transacciones: **Estructuradas**.
+- Nivel Operativo.
+- Registra operaciones rutinarias automaticas.
+- Empleados de nivel operativo.
+Ejemplos:
+> Cajero automatico que procesa extracciones.
+> Caja de supermercado que registra ventas.
+> Sensor que activa un riesgo automatico.
+---
+2. MIS - Sistema de Informacion Gerencial: **Semi-Estructurada y Estructuradas**.
+- Nivel Tactico / Gerencial Medio.
+- Resume informacion de los TPS en reportes periodicos.
+- Jefes, gerentes intermedios.
+Ejemplos:
+> Informe mensual de ventas por sucursal.
+> Reporte de stock.
+> Graficos de produccion mensual.
+---
+3. DSS - Sistema para el Soporte de Desiciones: **Semi-Estructurada y No Estructurada**.
+- Nivel Tactico / Alta Gerencia
+- Analiza informacion y modelos para ayudar en decisiones no rutinarias.
+- Gerentes o analistas.
+Ejemplos:
+> Simular distintos escenarios de demanda futura.
+> Proyecciones de produccion si cambia el clima.
+> Comparar costos entre varios proveedores.
+---
+4. OA - Sistema de Automatizacion de Oficina: **Facilita comunicacion y coordinacion administrativa**.
+- Nivel Administrativo pero No decide(Se lo coloca asi en la piramide).
+- Facilita el trabajo de oficina y la comunicacion.
+- Empleados administrativos, staff.
+Ejemplos:
+> Correo electronico.
+> Procesadores de texto, planillas Excel.
+> Agenda electronica, gestion de documentos.
+---
+5. IA-SE - Analisis de Informacion - Inteligencia Artificial / Sistema Expertos: **Estructurada y Semi-Estructurada**.
+- Nivel de Conocimiento / Analitico.
+- Usa IA o reglas de conocimiento experto para resolver problemas complejos o especializados.
+- Especialistas, ingenieros, medicos, tecnicos.
+Ejemplos:
+> Un sistema experto medico que diagnostica enferemedades.
+> IA que recomienda planes de inversion.
+> Motor experto que aconseja fertilizacion de cultivos segun suelo y clima.
+---
+6. EIS/ESS - Sistema de Soporte Ejecutivo: **No Estructurada**.
+- Nivel Estrategico (Alta direccion).
+- Brinda vision global con informacion resumida y tendencia.
+- Directivos.
+Ejemplos:
+> Dashboard con indicadores economicos mundiales.
+> Reporte comparativo de la empresa frente a la competencia.
+> Tablero con indicadores de rentabilidad, mercado, clientes.
+---
 
+## **La pirámide típica de SI**.
+Nivel operativo → TPS (transacciones diarias).
+Nivel administrativo (u oficina) → OA (automatización de oficina).
+Nivel táctico / gerencial medio → MIS (informes) y DSS (decisiones no rutinarias).
+Nivel estratégico / alta dirección → ESS/EIS (visión global).
 
+---
 
-
+## **Tip mental para diferenciar:**
+TPS → rutina operativa automática.
+MIS → informes gerenciales periódicos.
+DSS → apoyo a decisiones no rutinarias.
+OA → trabajo de oficina, comunicación.
+IA-SE → inteligencia artificial, sistemas expertos especializados.
+ESS/EIS → nivel estratégico, visión global de la empresa.
