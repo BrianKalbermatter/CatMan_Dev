@@ -508,6 +508,7 @@ La **entrada de datos** actua como un "sensor" del MIS porque:
 
 - El MIS transforma las tansacciones diarias, datos operativos en informacion estrategica que los gerentes pueden usar para tomar decisiones informadas sobre el negocio.
 
+
 - **TECNICAS DE ENTRADA DE DATOS**: Para introducir datos se usa una diversidad de medios. El metodo tradicional es mediante la operacion de un teclado. En la figura se representa un modelo de pantalla en donde los rectangulos muestran los datos a introducir por el operador. Cada uno de estos datos se denomina **campo**.
 
 Exploracion optica de ingreso de datos, lectura automatica de los caracteres impresos.
