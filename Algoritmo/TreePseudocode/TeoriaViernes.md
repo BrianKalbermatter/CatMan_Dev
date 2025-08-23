@@ -121,6 +121,12 @@ proceso
 //COMENTARIO: rango 1..31 por ejemplo.
 
 
+UNIDAD 2:  
+
+MEZCLAS:
+Procesos Multiples con Archivos.
+PROCESO ESTADISTICO
+
 
 
 
