@@ -1,9 +1,6 @@
 # 📚 CatMan_Dev - Material Académico
 
 <div align="center">
-
-![CatMan Banner](image/GatitoLindo.jpeg)
-
 ### 🎓 Repositorio de Apuntes y Material de Estudio
 *Ciencias de la Computación | Matemática | Física | Programación*
 
