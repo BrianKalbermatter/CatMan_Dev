@@ -1,6 +1,56 @@
+# Archivos específicos del proyecto
 calendarioMaterias.md
 codeclean.md
-/FisicaResumenSerway/resumen.md
+/02-Mathematics/Physics/resumen.md
 
+# Build artifacts
+build/
+bin/
+*.o
+*.out
+*.exe
+a.out
 
+# C/C++
+*.so
+*.a
+*.dylib
+*.obj
+*.elf
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Assembly
+*.bin
+*.lst
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.backup

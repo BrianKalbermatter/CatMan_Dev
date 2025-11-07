@@ -1,0 +1,11 @@
+Pascal:
+ 
+function
+
+procedure
+
+Pseudocodigo:
+
+funcion
+
+procedure

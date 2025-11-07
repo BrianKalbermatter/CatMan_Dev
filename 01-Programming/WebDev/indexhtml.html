@@ -1,0 +1,198 @@
+<!--ASPIRO A ESTO: https://www.ibm.com/history/personal-computer -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatorio | Etapa 1 | Porfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+</head>
+<style>
+    :root {
+        --main-color: black;
+        --background: rgb(179, 152, 80);
+    }
+
+    body {
+        font-family: 'Cinzel Decorative', serif;
+        background-color: #ddd0ab;
+        color: #333;
+        padding: 40px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    p::first-letter {
+        font-size: 3em;
+        float: left;
+        line-height: 1;
+        padding-right: 8px;
+        color: #7b3f00;
+        font-weight: bold;
+    }
+
+    .header_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        padding: 0.3rem 1rem;
+        background-color: #f5deb3;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+        color: var(--main-color);
+    }
+
+    .icon_logo_perfil {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .header-name {
+        font-size: 2.2em;
+        color: var(--main-color);
+        margin-top: 20px;
+    }
+
+    .yo_seductor {
+        width: 300px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .navegacion__imagenteclado {
+        display: block;
+        margin: 30px auto;
+        width: 500px;
+        height: auto;
+    }
+
+    .button-github {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #7b3f00;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .button-github:hover {
+        background-color: #5e2a0c;
+    }
+
+    nav a {
+        text-decoration: none;
+        margin-right: 15px;
+        font-weight: bold;
+        color: var(--main-color);
+    }
+
+    nav a:hover {
+        color: #7b3f00;
+    }
+
+    .section {
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    footer {
+        background-color: #f5deb3;
+        padding: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .footer-button {
+        padding: 10px 20px;
+        background-color: #7b3f00;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .footer-button:hover {
+        background-color: #5e2a0c;
+    }
+
+
+
+</style>
+
+<body>
+    <div id="particles-background"></div>
+    <header class="header_main">
+        <div class="navbar">
+            <!-- Nombre a la izquierda -->
+            <a class="navbar-brand" href="#">CatManDev</a>
+            <!-- Navegación -->
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+            </nav>
+            <!-- Imagen a la derecha -->
+            <img class="icon_logo_perfil" src="img_porfolio/logo-GitHub.jpg" alt="Imagen Logo Pagina">
+        </div>
+        <!-- INICIO -->
+        <header id="inicio" class="header_main">
+            <!-- ... contenido de bienvenida ... -->
+        </header>
+
+        <img src="img_porfolio/Yo-modo-seductor.jpg" class="yo_seductor" alt="Foto Personal" />
+        <section id="sobre-mi" class="section">
+            <h1 class="header-name">KALBERMATTER BRIAN || BACK-END DEVELOPER.</h1>
+
+            <p class="header-desciptions personal-desciptions">
+                Soy programador con conocimientos en C, Python y C#, y experiencia en el desarrollo de videojuegos,
+                aplicaciones de escritorio y backend. Me destaco por mi enfoque autodidacta, la búsqueda constante de
+                documentación precisa y el aprendizaje estructurado a partir de fuentes confiables, como manuales
+                técnicos y documentos académicos en formato PDF.
+                He trabajado con tecnologías como Unity 3D, ASP.NET MVC y MySQL, y actualmente me encuentro
+                profundizando en áreas como sistemas operativos, testing, desarrollo de APIs y automatización. Me
+                interesa construir proyectos prácticos, bien organizados y correctamente documentados, que reflejen no
+                solo mis habilidades técnicas, sino también mi pasión por el aprendizaje profundo y el desarrollo
+                limpio.
+                Mi principal interés se enfoca en el desarrollo de sistemas operativos, campo en el que busco adquirir
+                un conocimiento cada vez más sólido. Me fascina comprender cómo funciona internamente una computadora:
+                desde la estructura lógica de sus componentes hasta la forma en que se distribuyen y ejecutan las
+                instrucciones de manera precisa y ordenada en cada acción cotidiana del usuario.
+            </p>
+        </section>
+        <p>
+            <a class="button-github" href="https://github.com/BrianKalbermatter" target="_blank">Ver GitHub</a>
+        </p>
+
+        <img src="img_porfolio/Teclado-Yo-modo-Programador.jpg" class="navegacion__imagenteclado"
+            alt="Imagen Teclado" />
+    </header>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+
+
+</html>
+<!--Modificar el antiguo porfolio sobre mi y colocarlo aca para mas sabor y agregar en style tambien
+Flexbox
+-->

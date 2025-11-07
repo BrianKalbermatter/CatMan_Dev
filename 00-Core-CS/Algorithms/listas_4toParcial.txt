@@ -1,0 +1,319 @@
+Ejercicio: de parcial 2:
+La secretaria de Turismo lanzo el programa "EcoRutas Naturales", destinado a promover actividades turisticas ecologicas, como avistamiento de aves, caminatas guiadas y recorridos interpretativos en distintas reservas naturales del area metropolitana.
+El programa incluye 6 circuitos ecologicos, distribuidos en distintas zonas rurales y costeras de la reguion. Se cuenta con un archivo secuencial con la informacion de todos los equipos disponibles para las actividades, tales como binoculares, bastones de trekking y guias GPS.
+
+ARCHIVO: EQUIPOS (Ordennado por: tipo_equipo, nro_equipo)
+tipo_equipo | nro_equipo | fecha_adquisicion | fecha_ult_mantenimiento | horas_de_uso | disponibilidad |
+
+Ademas, se cuenta con un archivo de Novedades que registra los distintos evento ocurridos sobre los quipos durante los meses transcurridos del ano actual. Las novedades pueden ser nuevos ingresos, prestamos a turistas o mantenimientos.
+
+ARCHIVO: NOVEDADES (Ordenado por tipo_equipo, nro_equipo, tipo_novedad, fecha)
+tipo_equipo | nro_equipo | tipo_novedad | fecha_novedad | hora_inicio | hora_fin | nro_circuito | id_usuario |
+
+Donde tipo_novedad puede ser:
+1 (Alta de nuevo equipo)
+2 (Prestamo) -> por cada Prestamo se debe incrementar las horas de uso del equipo, teniendo en cuenta hora_inicio y hora_fin.
+3 (Mantenimiento) -> implica actualizar el campo disponibilidad a Falso y modificar la fecha_ult_mantenimiento con fecha_novedad.
+
+Se pide:
+a)- Desarrollar un algoritmo que permita mantener actualizado el archivo de EQUIPOS, considerando que pueden existir multiples novedades para un mismo numero de equipo. Controlar cualquier tipo de error en los datos o referencias inexistentes, informando adecuadamente al usuario.
+b)- Informar la cantidad de equipos de un tipo_equipo ingresado por el usuario, que tengan 150 horas de uso o mas (despues de la actualizacion).
+c)- Informar cuantos equipos nuevos ingresaron.
+Nota: Suponer que se dispone de la funcion diff(hora_inicio, hora_fin) que devuelve la diferencia de horas.
+
+
+ACCION parcial2 ES
+	AMBIENTE
+
+	    HV = 9999999;
+
+		fecha = REGISTRO
+			AA: ENTERO;
+			MM: 1..12;
+			DD: 1..31;
+		FIN_REGISTRO
+		reg_fecha: fecha;
+
+		equipo = REGISTRO
+			// Ordenados por:
+			clave: ENTERO;
+			tipo_equipo: ENTERO;
+			nro_equipo: ENTERO;
+			// ----
+			fecha_adquisicion: reg_fecha;
+			fecha_ult_mantenimiento: reg_fecha;
+			horas_de_uso: ENTERO;
+			disponibilidad: BOOLEANO;
+		FIN_REGISTRO
+		
+		// Registro auxiliar de equipo
+		reg_equipo: equipo;
+		// Archivo ordenado por clave de equipo
+		arch_equipo: archivo de equipo ordenado por clave;
+		
+		novedades = REGISTRO
+			// Ordenado por:
+			clave: ENTERO;
+			tipo_equipo: ENTERO;
+			nro_equipo: ENTERO;
+			tipo_novedad: ENTERO;
+			fecha: reg_fecha;
+			// ----
+			fecha_novedad: reg_fecha;
+			hora_inicio: ENTERO;
+			hora_fin: ENTERO;
+			nro_circuito: ENTERO;
+			id_usuario: ENTERO;
+		FIN_REGISTRO
+
+		// Registro auxiliar de novedades
+		reg_novedades: novedades;
+		// Archivo ordenado por clave de novedades
+		arch_novedades: archivo de novedades ordenado por clave;
+		
+		// Lee el archivo completo con todos los registos como el HV es siempre indefinido y mayor que clave de equipo entonces le da la oportunidad de que cuando termina el archivo registro se siga comparando el otro archivo tambien si no termino de comparar todos los archivos novedades.
+
+		PROCEDIMIENTO leer_equipo() ES
+			LEER(arch_equipo, reg_equipo);
+			SI FDA(arch_equipo) ENTONCES
+				reg_equipo.clave:= HV;
+			FIN_SI
+		FIN_PROCEDIMIENTO
+		
+		PROCEDIMIENTO leer_novedades() ES
+			LEER(arch_novedades, reg_novedades);
+			SI FDA(arch_novedades) ENTONCES
+				reg_novedades.clave:= HV;
+			FIN_SI
+		FIN_PROCEDIMIENTO
+		contado_tipo_equipo: ENTERO;
+		contador_equipos_nuevos: ENTERO;
+		aux:= ENTERO; // Auxiliar para guardar las copias de equipo
+
+	PROCESO
+		// Iniciar todos los archivos recorridos
+		// FIJARSE CUANDO ES DE ENTRADA Y DE SALIDA A LA VEZ
+		ABRIR E(arch_equipo);
+		ABRIR E(arch_novedades);
+		ABRIR S(arch_salida);
+		leer_equipo();
+		leer_novedades();
+		
+		MIENTRAS (reg_equipo.clave <> HV) O (reg_novedades.clave <> HV) HACER
+			SI reg_equipo.clave < reg_novedades.clave ENTONCES // Maestro sin movimiento
+				reg_equipo:= reg_equipo;
+				GRABAR(arch_salida, reg_salida);
+				leer_equipo();
+			SINO
+				SI reg_equipo.clave = reg_novedades.clave ENTONCES
+					aux:= reg_equipo;
+					MIENTRAS (aux.clave = reg_novedades) HACER
+						SI reg_novedades.tipo_novedad = 1 ENTONCES
+							ESCRIBIR("Error");
+						SINO
+							SI reg_novedades.tipo_novedad = 2 ENTONCES
+                                aux.horas_de_uso:= aux.horas_de_uso + diff(reg_novedades.hora_inicio, reg_novedades.hora_fin)
+                            SINO
+                                aux.disponibilidad:= FALSO;
+                                aux.fecha_ult_mantenimiento:= reg_novedades.fecha_novedad;
+                            FIN_SI
+                        FIN_SI
+                        leer_novedades();
+                    FIN_MIENTRAS
+
+Ejercicio 2:
+La secretaria desea analizar la informacion estadistica de los distintos circuitos y equipo
+
+// ============================================================
+// EXPLICACIÓN DETALLADA DEL ALGORITMO DE APAREO
+// ============================================================
+
+// ========== CONCEPTOS CLAVE ==========
+//
+// 1. MAESTRO: Archivo principal (EQUIPOS) - Contiene todos los equipos existentes
+// 2. MOVIMIENTO: Archivo de cambios (NOVEDADES) - Contiene las actualizaciones
+// 3. APAREO: Técnica de comparación de dos archivos ORDENADOS por la misma clave
+// 4. HV (High Value): Valor muy grande (9999) que se asigna cuando un archivo termina
+//    para que las comparaciones sigan funcionando correctamente
+
+// ========== PROCEDIMIENTOS DE LECTURA ==========
+//
+// PROCEDIMIENTO leer_equipo():
+//    - Lee un registro del archivo de equipos
+//    - Si llegó al final del archivo (FDA), asigna clave = HV
+//    - Esto permite que el otro archivo (novedades) se procese completamente
+//
+// PROCEDIMIENTO leer_novedades():
+//    - Lee un registro del archivo de novedades
+//    - Si llegó al final del archivo (FDA), asigna clave = HV
+//    - Garantiza que todos los equipos restantes se procesen
+
+// ========== ESTRUCTURA DEL BUCLE PRINCIPAL ==========
+//
+// LECTURA INICIAL:
+//    leer_equipo();      // Carga el primer equipo
+//    leer_novedades();   // Carga la primera novedad
+//
+// CONDICIÓN DEL MIENTRAS:
+//    MIENTRAS (reg_equipo.clave <> HV) O (reg_novedades.clave <> HV) HACER
+//
+//    Explicación: El bucle continúa mientras AL MENOS UNO de los archivos tenga registros.
+//    - Si ambos tienen registros: VERDADERO O VERDADERO = VERDADERO
+//    - Si solo equipos tiene registros: VERDADERO O FALSO = VERDADERO
+//    - Si solo novedades tiene registros: FALSO O VERDADERO = VERDADERO
+//    - Si ambos terminaron: FALSO O FALSO = FALSO → Sale del bucle
+
+// ========== CASO 1: MAESTRO SIN MOVIMIENTO ==========
+//
+// SI reg_equipo.clave < reg_novedades.clave ENTONCES
+//
+// Ejemplo:
+//    Equipos:    001  003  005  008
+//                     ↑
+//    Novedades:  001  005  007
+//                     ↑
+//
+// Comparación: 003 < 005 = VERDADERO
+// Significado: El equipo 003 NO tiene novedades asociadas
+// Acción:
+//    - Grabar el equipo sin modificaciones
+//    - Avanzar SOLO en equipos (leer_equipo)
+//    - Novedades queda en la misma posición
+
+// ========== CASO 2: APAREO (Claves iguales) ==========
+//
+// SI reg_equipo.clave = reg_novedades.clave ENTONCES
+//
+// Ejemplo:
+//    Equipos:    001  005  008
+//                     ↑
+//    Novedades:  001  005  005  005  007
+//                     ↑    ↑    ↑
+//
+// Comparación: 005 = 005 = VERDADERO
+// Significado: El equipo 005 SÍ tiene novedades para procesar
+//
+// AUXILIAR:
+//    aux := reg_equipo;
+//
+//    ¿Por qué un auxiliar?
+//    - Un equipo puede tener MÚLTIPLES novedades (3 en este ejemplo)
+//    - Si modificamos reg_equipo directamente y avanzamos, perdemos el equipo
+//    - El auxiliar permite acumular TODAS las novedades antes de grabar
+
+// ========== BUCLE INTERNO: Múltiples novedades del mismo equipo ==========
+//
+// MIENTRAS (aux.clave = reg_novedades.clave) HACER
+//
+// Ejemplo del flujo:
+//    aux.clave = 005
+//
+//    Iteración 1: reg_novedades.clave = 005 (préstamo)
+//                 → Suma horas de uso
+//                 → leer_novedades()
+//
+//    Iteración 2: reg_novedades.clave = 005 (mantenimiento)
+//                 → disponibilidad = FALSO
+//                 → Actualiza fecha_ult_mantenimiento
+//                 → leer_novedades()
+//
+//    Iteración 3: reg_novedades.clave = 005 (préstamo)
+//                 → Suma más horas de uso
+//                 → leer_novedades()
+//
+//    Iteración 4: reg_novedades.clave = 007 (otra cosa)
+//                 → 005 ≠ 007 → Sale del MIENTRAS
+//
+// Después del bucle:
+//    GRABAR(arch_salida, aux);  // Graba el equipo con TODAS las actualizaciones
+//    leer_equipo();             // AHORA SÍ avanza al siguiente equipo
+
+// ========== TIPOS DE NOVEDADES ==========
+//
+// TIPO 1: ALTA de nuevo equipo
+//    SI reg_novedades.tipo_novedad = 1 ENTONCES
+//        ESCRIBIR("Error");
+//
+//    ¿Por qué ERROR?
+//    - Estamos en CASO 2 (apareo): el equipo YA EXISTE en el maestro
+//    - Si existe, NO puede ser un ALTA (alta = nuevo ingreso)
+//    - Es una inconsistencia en los datos
+//
+// TIPO 2: PRÉSTAMO
+//    SI reg_novedades.tipo_novedad = 2 ENTONCES
+//        aux.horas_de_uso := aux.horas_de_uso + diff(hora_inicio, hora_fin);
+//
+//    Acción: Incrementa las horas de uso del equipo
+//    - diff() es una función que calcula la diferencia entre horas
+//    - Ejemplo: diff(10:00, 13:00) = 3 horas
+//
+// TIPO 3: MANTENIMIENTO
+//    SINO
+//        aux.disponibilidad := FALSO;
+//        aux.fecha_ult_mantenimiento := reg_novedades.fecha_novedad;
+//
+//    Acción: Marca el equipo como NO disponible y actualiza la fecha
+
+// ========== CASO 3: NOVEDAD HUÉRFANA ==========
+//
+// SINO (cuando reg_equipo.clave > reg_novedades.clave)
+//
+// Ejemplo:
+//    Equipos:    001  005  008
+//                     ↑
+//    Novedades:  001  003  005
+//                     ↑
+//
+// Comparación: 005 > 003 = VERDADERO
+// Significado: Hay una novedad para un equipo (003) que NO existe en el maestro
+//
+// EXCEPCIÓN: Si es tipo_novedad = 1 (ALTA)
+//    SI reg_novedades.tipo_novedad = 1 ENTONCES
+//        // Es válido: Es un equipo NUEVO que se está dando de ALTA
+//        // Crear el nuevo equipo con los datos de la novedad
+//        contador_equipos_nuevos := contador_equipos_nuevos + 1;
+//        leer_novedades();
+//    SINO
+//        // ERROR: Novedad tipo 2 o 3 para un equipo inexistente
+//        ESCRIBIR("Error: Novedad sin equipo asociado");
+//        leer_novedades();
+//
+// Acción: Avanzar SOLO en novedades (leer_novedades)
+
+// ========== RESUMEN DEL FLUJO COMPLETO ==========
+//
+// 1. Abrir archivos y lectura inicial
+// 2. MIENTRAS al menos uno tenga registros:
+//
+//    A) equipo < novedad → Maestro sin movimiento
+//       - GRABAR(equipo sin cambios)
+//       - leer_equipo()
+//
+//    B) equipo = novedad → Apareo
+//       - aux = equipo
+//       - MIENTRAS sea la misma clave:
+//           * Procesar según tipo_novedad
+//           * leer_novedades()
+//       - GRABAR(aux actualizado)
+//       - leer_equipo()
+//
+//    C) equipo > novedad → Novedad huérfana
+//       - Si tipo=1: Alta válida
+//       - Si tipo≠1: ERROR
+//       - leer_novedades()
+//
+// 3. Cerrar archivos
+
+// ========== DIAGRAMA DE COMPARACIONES ==========
+//
+// Equipos:    001  003  005  008  HV   HV
+// Novedades:  001  002  005  005  007  HV
+//
+// Paso 1: 001 = 001 → Apareo (procesar novedades del 001)
+// Paso 2: 003 > 002 → Novedad huérfana (error o alta)
+// Paso 3: 003 < 005 → Maestro sin movimiento (grabar 003)
+// Paso 4: 005 = 005 → Apareo (procesar 2 novedades del 005)
+// Paso 5: 008 > 007 → Novedad huérfana
+// Paso 6: 008 < HV  → Maestro sin movimiento (grabar 008)
+// Paso 7: HV = HV   → Termina el bucle
+
